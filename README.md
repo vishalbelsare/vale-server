@@ -1,1 +1,1 @@
-# ValeBot
+# Vale Server
