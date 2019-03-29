@@ -6,12 +6,10 @@ before_install:
   - cd docs
 install:
   - go get github.com/ValeLint/vale
-  - go get github.com/olekukonko/tablewriter
   - pip install pipenv
   - gem install awesome_bot
 script:
   - pipenv sync
-  - go run api.go
   - vale content
   - awesome_bot --allow-dupe --allow-redirect content/*.md
 after_success:
