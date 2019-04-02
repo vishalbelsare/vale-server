@@ -11,7 +11,7 @@ install:
 script:
   - pipenv sync
   - vale content
-  - awesome_bot --allow-dupe --allow-redirect content/*.md
+  - awesome_bot --allow-dupe --allow-redirect -w http://localhost:7777 content/*.md
 after_success:
   # Build our data sources:
   - markdata --directives='content/directives' content
