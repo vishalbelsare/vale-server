@@ -12,7 +12,8 @@ download link and drag the application into your Applications folder.
 
 When you open the app, Vale Server will launch in the background at
 `http://localhost:7777` (by default) and you will see this icon <img src="img/menu-icon.png" style="height: 20px; padding-left: 2px; padding-right: 2px">
-in your menu bar.
+in your menu bar. Clicking this icon will open a menu that allows you to
+configure the server:
 
 ![Vale Server menu](img/menu.png)
 
