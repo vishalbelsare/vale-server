@@ -1,5 +1,5 @@
-## Windows
+# Overview
 
-## macOS
+## Dashboard
 
-## Linux
+## Sidebar
