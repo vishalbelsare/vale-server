@@ -1,11 +1,9 @@
-# Getting Started
+# Installation
 
 Vale Server is a standalone desktop application for [Vale][1], a linter for
 prose that emphasizes performance, privacy, and extensibility.
 
-## Installation
-
-### macOS
+## macOS
 
 To install on macOS, simply open the `.dmg` file provided in your
 download link and drag the application into your Applications folder.
@@ -19,8 +17,8 @@ interact with the server:
 
 ![Vale Server menu](img/menu.png)
 
-### Windows
+## Windows
 
-### Linux
+## Linux
 
 [1]: https://github.com/errata-ai/vale

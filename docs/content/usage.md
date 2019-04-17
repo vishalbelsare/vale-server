@@ -2,4 +2,8 @@
 
 ## Dashboard
 
+### Terminology
+
+### Spelling
+
 ## Sidebar
