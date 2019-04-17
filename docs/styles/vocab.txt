@@ -5,6 +5,7 @@ choco
 docutils
 flesch
 gunning fog
+uninstallation
 haskell
 homebrew
 ignorecase

@@ -13,8 +13,10 @@ edit_uri: edit/master/docs/content/
 copyright: 'Copyright &copy; 2016 - 2019 Joseph Kato'
 
 nav:
-- Getting Started: index.md
-- Usage: usage.md
+- "Vale Server for Mac": index.md
+- "Vale Server for Windows": windows.md
+- "Vale Server for Linux": linux.md
+- Integrations: usage.md
 
 theme:
   name: material
@@ -25,6 +27,7 @@ theme:
     accent: 'light blue'
 
 extra_css:
+  - 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'
   - 'css/style.css'
   - 'css/quickstart.css'
 
