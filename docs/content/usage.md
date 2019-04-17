@@ -6,4 +6,8 @@
 
 ### Spelling
 
-## Sidebar
+## Google Docs
+
+## Microsoft Word
+
+## Sublime Text
