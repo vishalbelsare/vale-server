@@ -14,6 +14,7 @@ copyright: 'Copyright &copy; 2016 - 2019 Joseph Kato'
 
 nav:
 - Getting Started: index.md
+- Configuration: config.md
 - Usage: usage.md
 
 theme:
