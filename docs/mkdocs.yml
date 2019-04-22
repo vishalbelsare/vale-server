@@ -15,7 +15,9 @@ copyright: 'Copyright &copy; 2016 - 2019 Joseph Kato'
 nav:
 - Getting Started: index.md
 - Configuration: config.md
-- Usage: usage.md
+- Dashboard: usage.md
+- Google Docs: gdocs.md
+- Sublime Text: sublime.md
 
 theme:
   name: material
