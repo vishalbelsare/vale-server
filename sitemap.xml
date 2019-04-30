@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>https://errata-ai.github.io/vale-server/</loc>
+     <lastmod>2019-04-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://errata-ai.github.io/vale-server/windows/</loc>
+     <lastmod>2019-04-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://errata-ai.github.io/vale-server/linux/</loc>
+     <lastmod>2019-04-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://errata-ai.github.io/vale-server/usage/</loc>
+     <lastmod>2019-04-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
