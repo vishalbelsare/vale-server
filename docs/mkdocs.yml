@@ -16,6 +16,7 @@ nav:
 - "Vale Server for Mac": index.md
 - "Vale Server for Windows": windows.md
 - "Vale Server for Linux": linux.md
+- "Migrating from Vale": vale.md
 - Integrations: usage.md
 
 theme:

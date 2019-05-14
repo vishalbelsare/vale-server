@@ -116,6 +116,36 @@ will listen on:
 
 ## Dashboard
 
+The Vale Dashboard allows you to manage a custom Vocabulary for each of your
+Projects. To open your dashboard, select <img src="img/menu-icon.png" style="height: 18px; padding-left: 2px; padding-right: 2px">
+<i class="fas fa-long-arrow-alt-right"></i> **Open Dashboard...** from the menu bar.
+
+<img alt="Vale Server Preferences (Advanced)" src="img/ui/macOS/dashboard.png" style="width: 75%; display: block; margin: 0 auto;">
+
+A *Vocabulary* consists of terms and phrases that belong to one of two groups:
+
+- **Preferred**: Entries marked as "Preferred" will be enforced on as-entered
+  basis&mdash;for example, if the term "JavaScript" is marked as Preferred, any
+  variation that doesn't exactly match (e.g., "Javascript", "javascript", etc.) will
+  raise an error. Additionally, any Preferred entries will automatically be
+  added as exceptions to `spelling`, `capitalization`, and `conditional` rules.
+
+- **Do not use**: Any use of an entry marked as "Do not use" will raise an error.
+
+To manually edit a Vocabulary file, choose <img src="img/menu-icon.png" style="height: 18px; padding-left: 2px; padding-right: 2px">
+<i class="fas fa-long-arrow-alt-right"></i> **Browse Styles...** from the menu
+bar and then navigate to the `/Vocab/<project name>` directory.
+
+## Clipboard
+
+Vale Server has the ability to check the contents of your clipboard against the
+current Project's configuration, allowing it to be used from any application or
+website. To check your clipboard, choose <img src="img/menu-icon.png" style="height: 18px; padding-left: 2px; padding-right: 2px">
+<i class="fas fa-long-arrow-alt-right"></i> **Check Clipboard as...** from the menu
+bar:
+
+<img alt="Vale Server (Check Clipboard)" src="img/ui/macOS/clipboard.png" style="width: 50%; display: block; margin: 0 auto;">
+
 ## Uninstallation
 
 1. Select <img src="img/menu-icon.png" style="height: 18px; padding-left: 2px; padding-right: 2px">
