@@ -17,6 +17,7 @@ lua
 macos
 mkdocs
 nonword
+ons
 pre
 proselint
 rcs
