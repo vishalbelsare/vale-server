@@ -35,7 +35,7 @@ interact with the server.
 
 1. Select **Quit Vale Server** from the menu bar:
 
-    <img src="assets/ui/macOs/quit.png" class="small">
+    <img src="assets/ui/macOS/quit.png" class="small">
 
 2. Open your Applications folder and drag the Vale Server application to the Trash.
 
@@ -52,7 +52,7 @@ Vale Server supports Windows 7, 8.1, and 10.
 Download either `vs-setup-x64.exe` (64-bit systems) or `vs-setup-x86.exe`
 (32-bit systems) and follow the on-screen instructions:
 
-![A screenshot of Vale Server's Windows installer](assets/ui/Windows/installer.png)
+![A screenshot of Vale Server's Windows installer](assets/ui/Windows/install.png)
 
 After completing the installation wizard, Vale Server will be installed at
 `C:\Program Files\Vale Server` (64-bit) or `C:\Program Files (x86)\Vale Server`
@@ -62,7 +62,7 @@ To start the application click `Vale Server.exe` from the installation
 location. Vale Server will launch in the background at `http://localhost:7777`
 (by default) and you will see its icon in your menu bar:
 
-![A screenshot highlighting Vale Server's icon in the taskbar](assets/ui/Windows/menu.png)
+![A screenshot highlighting Vale Server's icon in the taskbar](assets/ui/Windows/taskbar.png)
 
 ### Uninstallation
 
@@ -70,7 +70,7 @@ Navigate to your Vale Server installation folder
 (`C:\Program Files\Vale Server` or `C:\Program Files (x86)\Vale Server`),
 click `maintenancetool.exe`, and select "Remove all components":
 
-![A screenshot of Vale Server's maintenance tool](assets/ui/Windows/remove.png)
+![A screenshot of Vale Server's maintenance tool](assets/ui/Windows/uninstall.png)
 
 ## Ubuntu
 
