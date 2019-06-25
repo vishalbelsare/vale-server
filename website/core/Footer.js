@@ -24,6 +24,42 @@ class Footer extends React.Component {
   render () {
     return (
       <footer className='nav-footer' id='footer'>
+        <section className='sitemap'>
+          <a href={this.props.config.baseUrl} className='nav-home'>
+            {this.props.config.footerIcon && (
+              <img
+                src={this.props.config.baseUrl + this.props.config.footerIcon}
+                alt={this.props.config.title}
+                width='66'
+                height='58'
+              />
+            )}
+          </a>
+          <div>
+            <h5>Product</h5>
+            <a href='https://errata.ai/vale-server/'>
+              Overview
+            </a>
+            <a href='#'>
+              Buy now
+            </a>
+          </div>
+          <div>
+            <h5>Support</h5>
+            <a href='https://github.com/errata-ai/vale-server/issues'>
+            Issue Tracker
+            </a>
+            <a href='#'>
+              FAQ
+            </a>
+          </div>
+          <div>
+            <h5>More</h5>
+            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+            <a href='https://github.com/errata-ai'>GitHub</a>
+          </div>
+        </section>
+
         <section className='copyright'>{this.props.config.copyright}</section>
       </footer>
     )
