@@ -6,7 +6,7 @@ title: What is Vale Server?
 ## Vale Server is a *linter* for prose
 
 [Vale Server](https://errata.ai/vale-server/) is a cross-platform
-(macOS, Windows, and Linux) desktop application built on top of
+(macOS and Windows) desktop application built on top of
 [Vale](https://github.com/errata-ai/vale), an open-source linter for prose.
 
 :::important Definition

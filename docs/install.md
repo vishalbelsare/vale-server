@@ -4,8 +4,7 @@ title: Installation
 sidebar_label: Installation
 ---
 
-Vale Server is a commercial desktop application available on macOS,
-Windows, and Linux.
+Vale Server is a commercial desktop application available on macOS and Windows.
 
 See the Vale Server [homepage](https://errata.ai/vale-server/) to learn more.
 
