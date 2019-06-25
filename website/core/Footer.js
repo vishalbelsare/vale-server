@@ -40,7 +40,7 @@ class Footer extends React.Component {
             <a href='https://errata.ai/vale-server/'>
               Overview
             </a>
-            <a href='#'>
+            <a href='https://errata.ai/vale-server/#puchase'>
               Buy now
             </a>
           </div>
@@ -49,7 +49,7 @@ class Footer extends React.Component {
             <a href='https://github.com/errata-ai/vale-server/issues'>
             Issue Tracker
             </a>
-            <a href='#'>
+            <a href='https://errata.ai/vale-server/#faq'>
               FAQ
             </a>
           </div>
