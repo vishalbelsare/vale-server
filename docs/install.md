@@ -16,7 +16,7 @@ See the Vale Server [homepage](https://errata.ai/vale-server/) to learn more.
 Vale Server requires at least macOS Sierra 10.12.
 :::
 
-Double-click `Vale Server.dmg` to open the installer, then drag the application
+Double-click `vs-setup-x64-mac.dmg` to open the installer, then drag the application
 to the Applications folder.
 
 ![Vale Server DMG](assets/ui/macOS/dmg.png)
@@ -48,7 +48,7 @@ interact with the server.
 Vale Server supports Windows 7, 8.1, and 10.
 :::
 
-Download either `vs-setup-x64.exe` (64-bit systems) or `vs-setup-x86.exe`
+Download either `vs-setup-x64-windows.exe` (64-bit systems) or `vs-setup-x86-windows.exe`
 (32-bit systems) and follow the on-screen instructions:
 
 ![A screenshot of Vale Server's Windows installer](assets/ui/Windows/install.png)
