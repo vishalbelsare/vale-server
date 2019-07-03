@@ -25,7 +25,7 @@ When you open the application, Vale Server will launch in the background at
 `http://localhost:7777` (by default) and you will see its icon in your menu
 bar:
 
-<img src="assets/ui/macOs/menu.png">
+![Vale Server menu icon](assets/ui/macOS/menu.png)
 
 Clicking this icon will open a menu that allows you to
 interact with the server.

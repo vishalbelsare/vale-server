@@ -94,4 +94,4 @@ Vale Server users.
 
 ![A screenshot of the Vale Server Dashboard's Styles page](assets/ui/dash-styles.png)
 
-See the [dedicated repository](https://github.com/errata-ai/styles) to lean more.
+See the [dedicated repository](https://github.com/errata-ai/styles) to learn more.
