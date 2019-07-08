@@ -48,6 +48,13 @@ interact with the server.
 Vale Server supports Windows 7, 8.1, and 10.
 :::
 
+:::important
+If you're warned about Vale Server being an "unrecognized app," you can
+click "More info" and then "Run anyway."
+
+![A screenshot of Windows "unrecognized app" warning](assets/ui/Windows/security.png)
+:::
+
 Download either `vs-setup-x64-windows.exe` (64-bit systems) or `vs-setup-x86-windows.exe`
 (32-bit systems) and follow the on-screen instructions:
 
