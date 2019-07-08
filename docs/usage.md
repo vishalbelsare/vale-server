@@ -43,7 +43,17 @@ After you've installed a style (or styles), you need to create a [project](ui#pr
 
 To open the Projects page, click the **Preferences...** option from the context menu and follow the instructions on [creating a new project](ui#projects).
 
-## Step 3: Using the clipboard
+## Step 3: Updating your vocabulary
+
+1. Click the **Open Dashboard...** option from the context menu.
+
+2. Select your desired project from the drop-down menu:
+
+    ![A screenshot showing the dashboard's project drop-down menu circled.](assets/ui/project-select.png)
+
+3. Follow the directions for [adding terms](ui#vocabularies) to your project.
+
+## Step 4: Using the clipboard
 
 The **Check Clipboard as...** option allows you to use your Vale Server
 configuration anywhere that supports copy-and-paste (e.g., web
@@ -54,7 +64,7 @@ To check your content, simply copy it to your clipboard and choose
 
 <img src="assets/ui/macOS/clipboard.png" class="small">
 
-## Step 4: Using a client application
+## Step 5: Using a client application
 
 Our third-party integrations provide an enhanced experience for certain
 applications. Click on an application below to learn more.
