@@ -25,7 +25,7 @@ To get started, you'll probably want to use one of our [community-contributed st
 
     ![A screenshot showing the dashboard's 'Styles' option circled.](assets/ui/install.png)
 
-   You can click on a style's name to learn more it.
+   You can click on a style's name to learn more about it.
 
 ### Installing a custom style
 
