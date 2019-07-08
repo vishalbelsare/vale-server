@@ -3,10 +3,47 @@ id: usage
 title: Usage
 ---
 
-There are two ways to use Vale Server: via the **Check Clipboard as...** menu
-option or through a third-party integration.
+This page provides a step-by-step guide to getting up and running with Vale Server.
 
-## Clipboard
+## Step 1: Installing a style
+
+The first step you'll need to take before using Vale Server is to install a [style](style).
+
+### Installing a pre-made style
+
+To get started, you'll probably want to use one of our [community-contributed styles](https://github.com/errata-ai/styles):
+
+1. Click the **Open Dashboard...** option from the context menu:
+
+    <img class="rounded" src="assets/ui/menu.gif" style="max-width: 60%;">
+
+2. Click **Styles** from the dashboard sidebar:
+
+    ![A screenshot showing the dashboard's 'Styles' option circled.](assets/ui/styles.png)
+
+3. Choose a style from the list and click **install**:
+
+    ![A screenshot showing the dashboard's 'Styles' option circled.](assets/ui/install.png)
+
+   You can click on a style's name to learn more it.
+
+### Installing a custom style
+
+To install a style that hasn't been submitted to the [library](https://github.com/errata-ai/styles):
+
+1. Click the **Browse Styles...** option from the context menu:
+
+    <img class="rounded" src="assets/ui/menu.gif" style="max-width: 60%;">
+
+2. Copy your style into the `styles` directory.
+
+## Step 2: Creating a project
+
+After you've installed a style (or styles), you need to create a [project](ui#projects).
+
+To open the Projects page, click the **Preferences...** option from the context menu and follow the instructions on [creating a new project](ui#projects).
+
+## Step 3: Using the clipboard
 
 The **Check Clipboard as...** option allows you to use your Vale Server
 configuration anywhere that supports copy-and-paste (e.g., web
@@ -17,7 +54,7 @@ To check your content, simply copy it to your clipboard and choose
 
 <img src="assets/ui/macOS/clipboard.png" class="small">
 
-## Integrations
+## Step 4: Using a client application
 
 Our third-party integrations provide an enhanced experience for certain
 applications. Click on an application below to learn more.

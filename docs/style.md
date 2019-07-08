@@ -421,7 +421,3 @@ ignore:
 ```
 
 <!-- vale 18F.Clarity = YES -->
-
-## Management
-
-Coming soon.
