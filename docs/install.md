@@ -55,16 +55,14 @@ click "More info" and then "Run anyway."
 ![A screenshot of Windows "unrecognized app" warning](assets/ui/Windows/security.png)
 :::
 
-Download either `vs-setup-x64-windows.exe` (64-bit systems) or `vs-setup-x86-windows.exe`
-(32-bit systems) and follow the on-screen instructions:
+Download `vs-setup-x64-windows.exe` and follow the on-screen instructions:
 
 ![A screenshot of Vale Server's Windows installer](assets/ui/Windows/install.png)
 
 After completing the installation wizard, Vale Server will be installed at
-`C:\Program Files\Vale Server` (64-bit) or `C:\Program Files (x86)\Vale Server`
-(32-bit).
+`C:\Program Files (x86)\Vale Server` by default.
 
-To start the application click `Vale Server.exe` from the installation
+To start the application click, `Vale Server.exe` from your installation
 location. Vale Server will launch in the background at `http://localhost:7777`
 (by default) and you will see its icon in your task bar:
 
