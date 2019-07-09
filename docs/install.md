@@ -66,9 +66,9 @@ After completing the installation wizard, Vale Server will be installed at
 
 To start the application click `Vale Server.exe` from the installation
 location. Vale Server will launch in the background at `http://localhost:7777`
-(by default) and you will see its icon in your menu bar:
+(by default) and you will see its icon in your task bar:
 
-![A screenshot highlighting Vale Server's icon in the taskbar](assets/ui/Windows/taskbar.png)
+![A screenshot highlighting Vale Server's icon in the taskbar](assets/ui/Windows/taskbar2.png)
 
 ### Uninstallation
 
