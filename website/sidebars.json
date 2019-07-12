@@ -2,7 +2,7 @@
   "docs": {
     "Guides": ["about", "style", "format", "ini"],
     "Tutorial": ["install", "ui", "usage"],
-    "Clients": ["atom", "gdocs", "st3", "vscode"]
+    "Clients": ["atom", "gdocs", "st3", "vscode", "chrome"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
