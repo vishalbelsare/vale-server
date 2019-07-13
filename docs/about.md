@@ -83,9 +83,9 @@ This sub-second performance means that you don't have to worry about file sizes 
 
 ## Built with collaboration in mind
 
-Vale Server, fundamentally, is designed to meet custom needs. By allowing nearly every aspect of the application&mdash;e.g., rules, styles, and integrations&mdash;to be customized, we're able to provide a highly tailored experience for all of our users.
+Vale Server, fundamentally, is designed to meet custom needs. By allowing nearly every aspect of the application&mdash;e.g., rules, styles, and integrations&mdash;to be customized, it's able to provide a highly tailored experience for all of its users.
 
-However, even with all the potential for customization, Vale Server's entire [configuration](ini) consists of two easy-to-share plain text files. This means that you can easily sync configurations between computers, coworkers, projects, etc.
+However, even with all the potential for customization, Vale Server's entire [configuration](ini) consists of only two easy-to-share plain text files. This means that you can easily sync configurations between computers, coworkers, projects, etc.
 
 ## An open-source core
 
