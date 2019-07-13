@@ -3,6 +3,10 @@ id: style
 title: Styles 101
 ---
 
+:::tip Have a style you'd like to see implemented?
+Let us know! We're actively looking to expand our library of [pre-made, open-source styles](https://github.com/errata-ai/styles/issues/new).
+:::
+
 ## Overview
 
 Vale Server has a powerful extension system that doesn't require knowledge of
