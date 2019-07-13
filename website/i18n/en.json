@@ -6,10 +6,13 @@
     "tagline": "A website for testing",
     "docs": {
       "about": {
-        "title": "What is Vale Server?"
+        "title": "Why Vale Server?"
       },
       "atom": {
         "title": "Atom"
+      },
+      "chrome": {
+        "title": "Google Chrome"
       },
       "format": {
         "title": "Formats & Scoping"
