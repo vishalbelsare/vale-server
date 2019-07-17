@@ -1,6 +1,7 @@
 ---
-id: ui
+id: version-1.1.0-ui
 title: User Interface
+original_id: ui
 ---
 
 Vale Server's user interface (UI) consists of two parts: a native desktop
