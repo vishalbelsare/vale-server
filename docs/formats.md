@@ -7,8 +7,7 @@ title: Formats & Scoping
 
 Vale Server is "syntax aware," which means that it's capable of both applying
 rules to and ignoring certain sections of text. This functionality is
-implemented through a *scoping* system. A scope (i.e., a particular section of
-text) is specified through a *selector* such as `paragraph.rst`, which
+implemented through a *scoping* system. A scope is specified through a *selector* such as `paragraph.rst`, which
 indicates that the rule applies to all paragraphs in reStructuredText files.
 Here are a few examples:
 
@@ -89,7 +88,7 @@ When working with non-HTML markup, you'll probably find that there are certain
 non-standard sections of text you'd like to ignore. Vale supports doing this at
 both the block and inline levels.
 
-To ignore entire blocks of text&mdash;e.g.,
+To ignore entire blocks of text&mdash;for example,
 [Hugo's shortcodes][p8]&mdash;you'll want to define `BlockIgnores`. For
 example, consider the following shortcode-like `file` snippet:
 

@@ -20,7 +20,8 @@ And then click the **Preferences...** option from the context menu.
 
 - **Notify me about style updates**: If checked, you'll receive a desktop notification (on application start) if there are any available updates to your styles.
 
-- **Compatibility Mode**: If checked, clients (e.g., VS Code and Atom) will check documents according to their local Vale configuration files whenever possible.
+- **Compatibility Mode**: If checked, clients (for example, VS Code and Atom) will check documents according to their local Vale configuration files whenever possible.
+
 
 
 ### Projects
@@ -40,7 +41,7 @@ You can now edit the configuration file on the right to customize the new
 project. To remove a project, click its name and then click the "Remove"
 button.
 
-After you've created and configured your projects, you can quickly switch
+After you've created and configured your projects, you can switch
 between them by choosing **Select Project** from the menu bar:
 
 <img src="assets/ui/macOS/select-project.png" class="small">
@@ -50,7 +51,7 @@ via the [Dashboard](#dashboard).
 
 ### Styles
 
-The Styles page provides quick access to all of your installed styles. You can
+The Styles page provides quick access to all your installed styles. You can
 add your own styles by choosing **Browse Styles...** from the menu bar and then
 copying the relevant files.
 
@@ -71,7 +72,7 @@ assets.
 
 ![A screenshot of the Vale Server Dashboard](assets/ui/dash.png)
 
-To open your dashboard, click thie **Open Dashboard...** option from the context
+To open your dashboard, click the **Open Dashboard...** option from the context
 menu.
 
 ### Vocabularies
@@ -83,10 +84,10 @@ Vocabulary entries belong to one of two groups:
 
 - `Preferred`: Entries marked as `Preferred` will be enforced on as-entered
   basis&mdash;for example, if the term "JavaScript" is marked as Preferred, any
-  variation that doesn't exactly match (e.g., `Javascript`, `javascript`, etc.) will
+  variation that doesn't exactly match (for example, `Javascript`, `javascript`, etc.) will
   raise an error. Additionally, any Preferred entries will automatically be
   added as exceptions to `spelling`, `capitalization`, and `conditional` rules
-  in all of your active styles.
+  in all your active styles.
 
   ![A screenshot of a dashboard entry being created.](assets/ui/dash-entry.png)
 

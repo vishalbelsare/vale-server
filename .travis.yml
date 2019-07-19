@@ -6,7 +6,15 @@ branches:
     - master
 cache:
   yarn: true
+install:
+  # Install the latest release of Vale:
+  - curl -sL https://install.goreleaser.com/github.com/ValeLint/vale.sh | bash
+  # Install the latest releases of our third-party styles:
+  - bash ci/scripts/get-styles.sh
+  - unzip Microsoft.zip -d ci/styles && rm -rf Microsoft.zip
 script:
+  - ./bin/vale docs
+after_success:
   - git config --global user.name "${GH_NAME}"
   - git config --global user.email "${GH_EMAIL}"
   - echo "machine github.com login ${GH_NAME} password ${GITHUB_TOKEN}" > ~/.netrc
