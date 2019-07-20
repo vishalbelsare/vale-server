@@ -20,7 +20,7 @@ Vale Server expects its external rules to have an extension of `.yml` (not `.yam
 
 The core component of Vale's extension system are collections of writing
 guidelines called *styles*. These guidelines are expressed through *rules*,
-which are YAML files enforcing a particular writing construct&mdash;e.g.,
+which are YAML files enforcing a particular writing construct&mdash;for example,
 ensuring a certain readability level, sentence length, or heading style.
 
 Styles are organized in a hierarchical folder structure, as shown below.
@@ -121,7 +121,7 @@ tokens:
 The most general extension point is `existence`. As its name implies, it looks
 for the "existence" of particular tokens.
 
-These tokens can be anything from simple phrases (as in the above example) to complex regular expressions&mdash;e.g., [the number of spaces between sentences](https://github.com/testthedocs/vale-styles/blob/master/18F/Spacing.yml) and [the position of punctuation after quotes](https://github.com/testthedocs/vale-styles/blob/master/18F/Quotes.yml).
+These tokens can be anything from simple phrases (as in the above example) to complex regular expressions&mdash;for example, [the number of spaces between sentences](https://github.com/testthedocs/vale-styles/blob/master/18F/Spacing.yml) and [the position of punctuation after quotes](https://github.com/testthedocs/vale-styles/blob/master/18F/Quotes.yml).
 
 You may define the tokens as elements of lists named either `tokens`
 (shown above) or `raw`. The former converts its elements into a word-bounded,
@@ -272,7 +272,7 @@ either:
 | `ignorecase` | `bool` | Makes all matches case-insensitive.                                |
 | `either`     | `map`  | A map of `option 1: option 2` pairs, of which only one may appear. |
 
-`consistency` will ensure that a key and its value (e.g., "advisor" and "adviser") don't both occur in its scope.
+`consistency` will ensure that a key and its value (for instance, "advisor" and "adviser") don't both occur in its scope.
 
 ### `conditional`
 
@@ -395,13 +395,13 @@ ignore: ci/vocab.txt
 
 |   NAME    |   TYPE   |                              DESCRIPTION                               |
 |-----------|----------|------------------------------------------------------------------------|
-| `aff`     | `string` | The fully-qualified path to a Hunspell-compatible `.aff` file.         |
+| `aff`     | `string` | The fully qualified path to a Hunspell-compatible `.aff` file.         |
 | `custom`  | `bool`   | Turn off the default filters for acronyms, abbreviations, and numbers. |
-| `dic`     | `string` | The fully-qualified path to a Hunspell-compatible `.dic` file.         |
+| `dic`     | `string` | The fully qualified path to a Hunspell-compatible `.dic` file.         |
 | `filters` | `array`  | An array of patterns to ignore during spell checking.                  |
 | `ignore`  | `string` | A relative path (from `StylesPath`) to a personal vocabulary file consisting of one word per line to ignore. |
 
-`spelling` implements spell checking based on Hunspell-compatible dictionaries. By default, Vale includes [en_US-web](https://github.com/errata-ai/en_US-web)—an up-to-date, actively maintained dictionary. However, you may also specify your own via the `dic` and `aff` keys (the fully-qualified paths are required; e.g., `/usr/share/hunspell/en_US.dic`).
+`spelling` implements spell checking based on Hunspell-compatible dictionaries. By default, Vale includes [en_US-web](https://github.com/errata-ai/en_US-web)—an up-to-date, actively maintained dictionary. However, you may also specify your own via the `dic` and `aff` keys (the fully qualified paths are required; for example, `/usr/share/hunspell/en_US.dic`).
 
 `spelling` also accepts an `ignore` file, which consists of one word per line to be ignored during spell checking. You may further customize the spell-checking experience by defining *filters*:
 

@@ -57,7 +57,7 @@ To open the Projects page, click the **Preferences...** option from the context 
 ## Step 4: Using the clipboard
 
 The **Check Clipboard as...** option allows you to use your Vale Server
-configuration anywhere that supports copy-and-paste (e.g., web
+configuration anywhere that supports copy-and-paste (for example, web
 browsers, email clients, content management systems, etc).
 
 To check your content, simply copy it to your clipboard and choose

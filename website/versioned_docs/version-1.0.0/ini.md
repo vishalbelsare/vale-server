@@ -87,7 +87,7 @@ BasedOnStyles = Joblint, write-good
 ```
 
 `BasedOnStyles` (syntax-specific) specifies [styles](/vale/styles) that should
-have all of their rules enabled.
+have all their rules enabled.
 
 ---
 
@@ -116,7 +116,7 @@ selectively enable or disable Vale Server from within your Markdown, HTML, or
 reStructuredText documents.
 
 :::warning Heads up!
-Vale currently does not support in-text configuration in AsciiDoc documents.
+Vale currently doesn't support in-text configuration in AsciiDoc documents.
 :::
 
 Markdown and HTML use HTML-style comments:
