@@ -1,6 +1,7 @@
 ---
-id: ini
+id: version-1.2.0-ini
 title: Configuration
+original_id: ini
 ---
 
 ## Overview
