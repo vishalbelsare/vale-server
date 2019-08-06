@@ -18,7 +18,7 @@ And then click the **Preferences...** option from the context menu.
 
 ![Preferences (General)](assets/ui/macOS/prefs-general.png)
 
-- **License key**: The license key you received with your purchase. The number of times this license key can be activated is equal to `quantity (the amount you chose at checkout) * 2 (the numbers of support platforms)`.
+- **License key**: The license key you received with your purchase. The number of times this license key can be activated is equal to `quantity (the amount you chose at checkout) * 2`.
 
 - **Notify me about style updates**: If checked, you'll receive a desktop notification (on application start) if there are any available updates to your styles.
 

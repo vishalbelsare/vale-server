@@ -1,6 +1,7 @@
 ---
-id: usage
+id: version-1.1.0-usage
 title: Usage
+original_id: usage
 ---
 
 This page provides a step-by-step guide to getting up and running with Vale Server.
