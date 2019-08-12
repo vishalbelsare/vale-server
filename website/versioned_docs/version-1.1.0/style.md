@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-style
+id: version-1.1.0-style
 title: Styles 101
 original_id: style
 ---

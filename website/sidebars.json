@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Guides": ["about", "style", "format", "ini"],
+    "Guides": ["about", "style", "format", "ini", "vale"],
     "Tutorial": ["install", "ui", "usage"],
     "Clients": ["atom", "chrome", "gdocs", "st3", "vscode"]
   },

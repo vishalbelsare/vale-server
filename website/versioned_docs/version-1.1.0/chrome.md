@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-chrome
+id: version-1.1.0-chrome
 title: Google Chrome
 original_id: chrome
 ---

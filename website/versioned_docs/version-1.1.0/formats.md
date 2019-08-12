@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-format
+id: version-1.1.0-format
 title: Formats & Scoping
 original_id: format
 ---

@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-gdocs
+id: version-1.1.0-gdocs
 title: Google Docs
 original_id: gdocs
 ---

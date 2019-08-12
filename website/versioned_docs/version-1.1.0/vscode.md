@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-vscode
+id: version-1.1.0-vscode
 title: Visual Studio Code
 original_id: vscode
 ---

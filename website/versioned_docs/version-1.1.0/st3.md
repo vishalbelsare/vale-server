@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-st3
+id: version-1.1.0-st3
 title: Sublime Text
 original_id: st3
 ---

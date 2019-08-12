@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-install
+id: version-1.1.0-install
 title: Installation
 sidebar_label: Installation
 original_id: install

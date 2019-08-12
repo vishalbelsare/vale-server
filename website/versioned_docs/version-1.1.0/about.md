@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-about
+id: version-1.1.0-about
 title: Why Vale Server?
 original_id: about
 ---

@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-atom
+id: version-1.1.0-atom
 title: Atom
 original_id: atom
 ---
