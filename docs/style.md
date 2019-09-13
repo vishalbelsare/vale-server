@@ -425,3 +425,14 @@ ignore:
 ```
 
 <!-- vale 18F.Clarity = YES -->
+
+## Default Style
+
+Vale Server comes with a single built-in style named `Vale` that implements four rules, as described in the table below.
+
+| Rule              | Scope  | Level   | Description                                                         |
+|-------------------|--------|---------|---------------------------------------------------------------------|
+| `Vale.Spelling`   | `text` | `error` | Spell checks text while respecting the active project's vocabulary. |
+| `Vale.Repetition` | `text` | `error` | Looks for instances of repeated words such as "the the" or "this this."            |
+| `Vale.Terms`      | `text` | `error` | Enforces the current project's *Preferred* [vocabulary terms](ui#vocabularies).                    |
+| `Vale.Avoid`      | `text` | `error` | Enforces the current project's *Do not use* vocabulary [vocabulary terms](ui#vocabularies).                    |

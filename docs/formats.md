@@ -16,25 +16,49 @@ Here are a few examples:
 - `heading.md` matches all Markdown headings; and
 - `text.html` matches all HTML scopes.
 
-The table below summarizes all available scopes.
+The type of file you're working with determines what scopes are available. The supported types are `markup`, `code`, and `text`.
 
-|   Format   |                             Scopes                                                       |
-|:----------:|------------------------------------------------------------------------------------------|
-|   markup   | `heading`, `table.header`, `table.cell`, `list`, `paragraph`, `sentence`, `link`, `alt`, `blockquote`, `summary`  |
-|    code    | `comment.line`, `comment.block`                                                          |
-| plain text | `text`                                                                                   |
+## Available Scopes
 
-## Markdown
+### `markup`
+
+|      Scope     |                                                              Description                                                              |
+|:--------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|
+| `heading`      | Matches all `<h{1,...}>` tags. You can specify an exact level by appending a tags&mdash;for example, `heading.h1` matches all `h1` tags. |
+| `table.header` | Matches all `<th>` tags.                                                                                                                |
+| `table.cell`   | Matches all `<td>` tags.                                                                                                                |
+| `list`         | Matches all `<li>` tags.                                                                                                                |
+| `paragraph`    | Matches all paragraphs (segments of text separated by two newlines).                                                                   |
+| `sentence`     | Matches all sentences.                                                                                                                |
+| `link`         | Matches all `<a>` tags.                                                                                                                 |
+| `alt`          | Matches all `alt` attributes.                                                                                                         |
+| `blockquote`   | Matches all `<blockquote>` tags.                                                                                                        |
+| `summary`      | Matches all body text (excluding list items, headings, and table cells).                                                               |
+| `code`         | Matches all `<code>` tags.                                                                                                            |
+| `strong`       | Matches all `<strong>` and `<b>` tags.                                                                                                |
+| `emphasis`     | Matches all `<em>` and `<i>` tags                                                                                                     |
+
+### `code`
+
+There are two `code` scopes: `comment.line` and `comment.block`.
+
+### `text`
+
+Any format not listed below is considered to be `text` and has no special scoping rules applied.
+
+## Formats
+
+### Markdown [`markup`]
 
 Vale Server has built-in support for GitHub-Flavored Markdown. By default, it
 ignores indented blocks, fenced blocks, and code spans.
 
-## HTML
+### HTML [`markup`]
 
 Vale Server has built-in support for HTML. By default, it ignores `script`,
 `style`, `pre`, `code`, and `tt` tags.
 
-## reStructuredText
+### reStructuredText [`markup`]
 
 Vale Server supports reStructuredText through the external program
 [`rst2html`][p4]. You can get `rst2html` by installing either [Sphinx][p5] or
@@ -42,22 +66,34 @@ Vale Server supports reStructuredText through the external program
 
 By default, literal blocks, inline literals, and `code-block`s are ignored.
 
-## AsciiDoc
+### AsciiDoc [`markup`]
 
 Vale Server supports AsciiDoc through the external program [Asciidoctor][p7].
 
 By default, listing blocks and inline literals are ignored.
 
-## Microsoft Word (`.docx`)
+### DITA [`markup`]
 
-:::important Note
-An official Microsoft Word add-in is in development and will be released soon!
+:::important
+You'll need to manually add the `dita-ot-X.X.X/bin` directory to your `$PATH`.
 :::
 
-Vale Server currently supports `.docx` documents through its [Google Docs
-add-on](gdocs).
+Vale supports DITA through the [DITA Open Toolkit](https://www.dita-ot.org/).
 
-## Source Code
+By default, `script`, `style`, `pre`, `code`, and `tt` tags are ignored.
+
+### XML [`markup`]
+
+Vale supports XML through the external program [`xsltproc`](http://xmlsoft.org/XSLT/xsltproc.html).
+
+In order for Vale to understand your XML, you need to provide a version 1.0 XSL Transformation (XSLT) for converting to HTML:
+
+```ini
+[*.xml]
+Transform = docbook-xsl-snapshot/html/docbook.xsl
+```
+
+### Source Code [`code`]
 
 <!-- vale 18F.UnexpandedAcronyms = NO -->
 
