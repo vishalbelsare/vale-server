@@ -1,5 +1,6 @@
 asciidoctor
 backreferences
+clojure
 docutils
 flesch
 kincaid

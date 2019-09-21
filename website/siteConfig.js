@@ -52,6 +52,7 @@ const siteConfig = {
     // { blog: true, label: 'Blog' },
     // Determines search bar position among links
     { search: true },
+    { href: '/vale-server/api/index.html', label: 'API' },
     // Links to href destination
     { href: 'https://github.com/errata-ai/vale-server', label: 'GitHub' }
   ],
@@ -99,7 +100,8 @@ const siteConfig = {
     'https://cdn.headwayapp.co/widget.js'
   ],
 
-  stylesheets: [
+  separateCss: [
+    'static/css/api'
   ],
 
   // On page navigation for the current documentation page.

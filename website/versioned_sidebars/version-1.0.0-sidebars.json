@@ -1,0 +1,29 @@
+{
+  "version-1.0.0-docs": {
+    "Guides": [
+      "version-1.0.0-about",
+      "version-1.0.0-style",
+      "version-1.0.0-format",
+      "version-1.0.0-ini",
+      "version-1.0.0-vale"
+    ],
+    "Tutorial": [
+      "version-1.0.0-install",
+      "version-1.0.0-ui",
+      "version-1.0.0-usage"
+    ],
+    "Clients": [
+      "version-1.0.0-atom",
+      "version-1.0.0-chrome",
+      "version-1.0.0-gdocs",
+      "version-1.0.0-st3",
+      "version-1.0.0-vscode"
+    ]
+  },
+  "version-1.0.0-docs-other": {
+    "First Category": [
+      "version-1.0.0-doc4",
+      "version-1.0.0-doc5"
+    ]
+  }
+}
