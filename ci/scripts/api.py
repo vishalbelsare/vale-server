@@ -2,7 +2,7 @@
 
 An implementation of SSG-like OAS3 spec generation.
 
-See
+See https://gist.github.com/jdkato/156944741f134dca3d0a18dafcfa9803.
 """
 import os
 import pathlib
