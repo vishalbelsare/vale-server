@@ -30,17 +30,11 @@
         "title": "Installation",
         "sidebar_label": "Installation"
       },
-      "msword": {
-        "title": "Microsoft Word"
-      },
       "st3": {
         "title": "Sublime Text"
       },
       "style": {
         "title": "Styles 101"
-      },
-      "tutorial": {
-        "title": "Tutorial"
       },
       "usage": {
         "title": "Usage"

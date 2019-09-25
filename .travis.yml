@@ -20,7 +20,7 @@ install:
 
   # Dependencies of our API docs:
   - pyenv global 3.7.1
-  - pip3 install --user pyyaml
+  - pip3 install --user oyaml
   - pip3 install --user python-frontmatter
 
 script:

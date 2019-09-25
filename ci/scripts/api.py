@@ -1,10 +1,24 @@
-"""
+"""api.py
+
+An implementation of SSG-like OAS3 spec generation.
+
+See
 """
 import os
 import pathlib
 
 import frontmatter
-import yaml
+import oyaml as yaml
+
+
+def str_presenter(dumper, data):
+    """Format multi-line strings using `|-`.
+    """
+    if len(data.splitlines()) > 1:
+        return dumper.represent_scalar(
+            "tag:yaml.org,2002:str", data, style="|")
+    return dumper.represent_scalar("tag:yaml.org,2002:str", data)
+
 
 def extract_meta(f_obj):
     """Create a `description` field from a file's contents.
@@ -34,7 +48,6 @@ def generate(root):
                 params[param.name.split(".")[0]] = extract_meta(p)
         data["components"]["parameters"] = params
 
-
         # Endpoints:
         endpoints = {}
         for ep in (root / "src" / "endpoints").iterdir():
@@ -53,9 +66,14 @@ def generate(root):
         data["paths"] = endpoints
 
         # Write our OAS3-compliant specification.
-        print("Successfully compiled OAS3-compliant specification.")
-        compiled.write_text(yaml.dump(data))
+        compiled.write_text(yaml.dump(
+            data,
+            allow_unicode=True,
+            default_flow_style=False
+        ))
+        print("Successfully compiled an OAS3-compliant specification.")
 
 
 if __name__ == "__main__":
+    yaml.add_representer(str, str_presenter)
     generate(pathlib.Path("website/static/api"))
