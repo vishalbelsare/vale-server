@@ -80,7 +80,7 @@ To use the `LanguageTool` style add-on, follow the installation instructions bel
 
 4. Double-click `languagetool.jar` from the newly-unzipped folder and then select `File -> "Hide to System Tray"`:
 
-    <img src="/vale-server/docs/assets/LTmac.png">
+    ![A screenshot of LanguageTool's macOS desktop app.](assets/LTmac.png)
 
 You'll now have access to a `LanguageTool` style that can be used in your project configurations.
 
