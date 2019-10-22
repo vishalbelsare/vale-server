@@ -60,28 +60,9 @@ There are a number of third-party styles that be installed through the [Dashboar
 - [The Google Developer Documentation Style Guide](https://developers.google.com/style/);
 - [The Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/welcome/);
 - [`proselint`](https://github.com/amperser/proselint/blob/master/README.md);
-- [`write-good`](https://github.com/btford/write-good/blob/master/README.md); and
-- [`Joblint`](https://github.com/rowanmanning/joblint/blob/master/README.md).
-
-### `LanguageTool` (add-on)
-
-[LanguageTool](https://github.com/languagetool-org/languagetool) is a free and open-source grammar checker with over 2,400 rules for English.
-
-Vale Server offers seamless compatibility with LanguageTool's standalone desktop application. This allows you to combine LanguageTool's grammar-checking abilities with Vale Server's [markup support](format) (which LanguageTool doesn't support on its own).
-
-To use the `LanguageTool` style add-on, follow the installation instructions below:
-
-1. Install [Java 8+ from the Oracle website](https://java.com/download).
-
-2. Download the [LanguageTool desktop application](https://languagetool.org/#standalone).
-
-3. Unzip the desktop application (if needed, unzipping instructions are available for [Windows](https://support.microsoft.com/en-us/help/14200/windows-compress-uncompress-zip-files) and [macOS](https://support.apple.com/guide/mac-help/compress-uncompress-files-folders-mac-mchlp2528/mac)).
-
-4. Double-click `languagetool.jar` from the newly-unzipped folder and then select `File -> "Hide to System Tray"`:
-
-    ![A screenshot of LanguageTool's macOS desktop app.](assets/LTmac.png)
-
-You'll now have access to a `LanguageTool` style that can be used in your project configurations.
+- [`write-good`](https://github.com/btford/write-good/blob/master/README.md);
+- [`Joblint`](https://github.com/rowanmanning/joblint/blob/master/README.md); and
+- [LanguageTool](https://github.com/languagetool-org/languagetool).
 
 ## Creating your own styles
 
