@@ -450,7 +450,7 @@ Rule actions are currently only supported in **Atom**, **Visual Studio Code**, a
 :::
 
 :::warning Heads up!
-Rule actions are not available in trial builds.
+Rule actions aren't available in trial builds.
 :::
 
 In addition to implementing your own rules via the available checks, you can also assign an "action" to a rule. The goal of an action is to provide a list of possible solutions for a given rule.
