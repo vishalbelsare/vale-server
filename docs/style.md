@@ -62,7 +62,7 @@ There are a number of third-party styles that be installed through the [Dashboar
 - [`proselint`](https://github.com/amperser/proselint/blob/master/README.md);
 - [`write-good`](https://github.com/btford/write-good/blob/master/README.md);
 - [`Joblint`](https://github.com/rowanmanning/joblint/blob/master/README.md); and
-- [LanguageTool](https://github.com/languagetool-org/languagetool).
+- [LanguageTool](https://github.com/languagetool-org/languagetool) (not available in trial builds).
 
 ## Creating your own styles
 
@@ -446,6 +446,10 @@ ignore:
 
 :::warning Heads up!
 Rule actions are currently only supported in **Atom**, **Visual Studio Code**, and **Sublime Text 3**. Support for other clients is on the way!
+:::
+
+:::warning Heads up!
+Rule actions are not available in trial builds.
 :::
 
 In addition to implementing your own rules via the available checks, you can also assign an "action" to a rule. The goal of an action is to provide a list of possible solutions for a given rule.
