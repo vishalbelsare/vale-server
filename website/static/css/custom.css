@@ -1,5 +1,9 @@
 /* General */
 
+a {
+  color: #0366d6;
+}
+
 .hljs {
     display: block;
     background: #f6f8fa;

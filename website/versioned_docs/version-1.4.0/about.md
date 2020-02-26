@@ -1,6 +1,7 @@
 ---
-id: about
+id: version-1.4.0-about
 title: Why Vale Server?
+original_id: about
 ---
 
 The field of "automated writing aids" is getting to be a crowded space: there's certainly no shortage of software claiming to offer "human-level" detection of spelling and grammar mistakes.

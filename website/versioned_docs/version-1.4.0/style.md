@@ -1,6 +1,7 @@
 ---
-id: style
+id: version-1.4.0-style
 title: Styles 101
+original_id: style
 ---
 
 :::tip Have a style you'd like to see implemented?
