@@ -1,5 +1,13 @@
 /* General */
 
+caption {
+  padding-bottom: 5px;
+}
+
+th {
+  text-align: center;
+}
+
 a {
   color: #0366d6;
 }

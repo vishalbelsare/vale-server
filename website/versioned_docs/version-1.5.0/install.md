@@ -1,7 +1,8 @@
 ---
-id: install
+id: version-1.5.0-install
 title: Installation
 sidebar_label: Installation
+original_id: install
 ---
 
 Vale Server is a commercial desktop application available on macOS and Windows.
@@ -16,11 +17,11 @@ See the Vale Server [homepage](https://errata.ai/vale-server/) to learn more.
 Vale Server requires at least macOS Sierra 10.12.
 :::
 
-Double-click `ValeServer-1.x-osx.dmg` (where `1.x` will be the latest version) to open the installer and then follow the on-screen instructions:
+Double-click `ValeServer-1.x-osx.dmg` (where `1.x` will be the latest version) and then drag the application into your `/Applications` folder:
 
 ![Vale Server installer (macOS)](assets/ui/macOS/installer.png)
 
-After installation, Vale Server will automatically launch in the background (`http://localhost:7777` by default) and you will see its icon in your menu
+After starting the application, Vale Server will launch in the background (`http://localhost:7777` by default) and you will see its icon in your menu
 bar:
 
 ![Vale Server menu icon](assets/ui/macOS/menu.png)

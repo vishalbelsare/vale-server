@@ -3,7 +3,7 @@
    <version>1.5.0</version>
    <platformFileList>
        <platformFile>
-           <filename>ValeServer-1.5-win.exe</filename>
+           <filename>ValeServer-1.5-windows.exe</filename>
            <platform>windows</platform>
        </platformFile>
        <platformFile>
