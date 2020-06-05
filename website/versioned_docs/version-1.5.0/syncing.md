@@ -24,6 +24,10 @@ many popular file-sharing services to sync a single `StylesPath` across a team o
 
 ## Set up
 
+:::important
+Vale Server requires that all paths (on both macOS and Windows) use a forward slash (`/`).
+:::
+
 Vale Server works well with file-sharing services that support local
 folders such as Dropbox, Google Drive, and Microsoft OneDrive.
 
