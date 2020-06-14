@@ -1,0 +1,155 @@
+---
+id: gui
+title: User Interface
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import AdaptiveImg from '@site/src/components/AdaptiveImg';
+
+Vale Server's user interface (UI) consists of two parts: a native desktop application and a web-based dashboard.
+
+## Preferences
+
+To access the native application, click on its icon in the menu bar (macOS)
+or taskbar (Windows) and select <b>Preferences...</b>:
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="win"
+  values={[
+    {label: 'Windows', value: 'win'},
+    {label: 'macOS', value: 'mac'},
+  ]}>
+
+  <TabItem value="win">
+    <img
+      alt="A screenshot of Vale Server's 'Preferences...' menu option."
+      src={useBaseUrl('img/vale-server/win/preferences.png')}
+      className="xs-img"
+    />
+  </TabItem>
+
+  <TabItem value="mac">
+    <AdaptiveImg
+      alt="A screenshot of Vale Server's 'Preferences...' menu option."
+      src={useBaseUrl('img/vale-server/mac/preferences')}
+      format=".png"
+      size="sm">
+    </AdaptiveImg>
+  </TabItem>
+
+</Tabs>
+
+### General
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="win"
+  values={[
+    {label: 'Windows', value: 'win'},
+    {label: 'macOS', value: 'mac'},
+  ]}>
+
+  <TabItem value="win">
+    <img
+      alt="A screenshot of Vale Server's 'General' settings page."
+      src={useBaseUrl('img/vale-server/win/general.png')}
+      className="md-img"
+    />
+  </TabItem>
+
+  <TabItem value="mac">
+    <AdaptiveImg
+      alt="A screenshot of Vale Server's 'General' settings page."
+      src={useBaseUrl('img/vale-server/mac/general')}
+      format=".png"
+      size="md">
+    </AdaptiveImg>
+  </TabItem>
+
+</Tabs>
+
+- **Automatically check for updates**: If checked, you'll receive a desktop notification (on application start) if there are any new releases of Vale Server available.
+
+- **Notify me about style updates**: If checked, you'll receive a desktop notification (on application start) if there are any available updates to your styles.
+
+- **Compatibility Mode**: If checked, supported clients (VS Code, Atom, and Sublime Text) will check documents according to their associated Vale configuration files whenever possible. You can further customize this functionality through local overrides in your active project:
+
+  - Any multi-value entry in your [project's](#projects) `.vale.ini` (for example, `BasedOnStyles`) will be combined with the remote entry.
+  - Any single-value entry in your project's `.vale.ini` (for example, `MinAlertLevel`) will override the remote entry altogether.
+
+### Projects
+
+Projects allow you to manage multiple Vale configuration files in one place.
+Each project has a name (the left panel) and an associated configuration file
+(the right panel):
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="win"
+  values={[
+    {label: 'Windows', value: 'win'},
+    {label: 'macOS', value: 'mac'},
+  ]}>
+
+  <TabItem value="win">
+    <img
+      alt="A screenshot of Vale Server's 'Projects' settings page."
+      src={useBaseUrl('img/vale-server/win/projects.png')}
+      className="md-img"
+    />
+  </TabItem>
+
+  <TabItem value="mac">
+    <AdaptiveImg
+      alt="A screenshot of Vale Server's 'Projects' settings page."
+      src={useBaseUrl('img/vale-server/mac/projects')}
+      format=".png"
+      size="md">
+    </AdaptiveImg>
+  </TabItem>
+
+</Tabs>
+
+To create a new project, click "Add" and then double-click the "Untitled n"
+entry to give it a name. You can then edit the configuration file on the right
+to customize the project. To remove a project, click its name and then click
+the "Remove" button.
+
+After you've created and configured your projects, you can switch between them
+by choosing **Select Project** from the menu bar (macOS) or taskbar (Windows):
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="win"
+  values={[
+    {label: 'Windows', value: 'win'},
+    {label: 'macOS', value: 'mac'},
+  ]}>
+
+  <TabItem value="win">
+    <img
+      alt="A screenshot of Vale Server's 'Select Project...' menu option."
+      src={useBaseUrl('img/vale-server/win/preferences.png')}
+      className="xs-img"
+    />
+  </TabItem>
+
+  <TabItem value="mac">
+    <AdaptiveImg
+      alt="A screenshot of Vale Server's 'Select Project...' menu option."
+      src={useBaseUrl('img/vale-server/mac/select-project')}
+      format=".png"
+      size="sm">
+    </AdaptiveImg>
+  </TabItem>
+
+</Tabs>
+
+### Styles
+
+### Advanced
+
+## Dashboard

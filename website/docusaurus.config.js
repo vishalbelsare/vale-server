@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'My Site',
+  title: 'Vale Server',
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -37,7 +37,6 @@ module.exports = {
         {to: 'blog', label: 'Blog', position: 'left'},
 
         // TODO:
-        {href: 'https://course.spacy.io/en/', label: 'Course', position: 'left'},
         {href: 'https://lab.benthos.dev', label: 'Studio', position: 'left'},
 
         {href: '/api/index.html', label: 'API', position: 'left'},

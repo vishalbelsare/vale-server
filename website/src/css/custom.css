@@ -71,6 +71,10 @@ html[data-theme="dark"] {
   no-repeat;
 }
 
+img {
+  padding-bottom: 15px;
+}
+
 span.code {
     background-color: var(--ifm-code-background);
     border-radius: var(--ifm-code-border-radius);
@@ -79,6 +83,13 @@ span.code {
     font-size: var(--ifm-code-font-size);
     margin: 0;
     padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+}
+
+.xs-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
 }
 
 .sm-img {

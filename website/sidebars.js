@@ -4,6 +4,7 @@ module.exports = {
         'about',
         'install',
         'gui',
+        'usage',
         'cli'
     ],
     Concepts: [

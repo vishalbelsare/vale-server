@@ -18,7 +18,21 @@ import AdaptiveImg from '@site/src/components/AdaptiveImg';
     {label: 'macOS', value: 'mac'},
   ]}>
 
-  <TabItem value="win">This is an apple 🍎</TabItem>
+  <TabItem value="win">
+    <p>Download <span className="code">ValeServer-1.x-windows.exe</span> (where <span className="code">1.x</span> will be the latest version) and follow the on-screen instructions:</p>
+    <img
+      alt="A screenshot of Vale Server's InstallBuilder installer."
+      src={useBaseUrl('img/vale-server/win/installer-light.png')}
+      className="md-img"
+    />
+    <p>After installation, Vale Server will automatically launch in the background (<span className="code">http://localhost:7777</span> by default) and you will see its icon in your taskbar:</p>
+    <img
+      alt="A screenshot of Vale Server's context menu."
+      src={useBaseUrl('img/vale-server/win/menu-light.png')}
+      className="sm-img"
+    />
+    <p>Right-clicking this icon will open a menu that allows you to configure the server.</p>
+  </TabItem>
 
   <TabItem value="mac">
     <div className="admonition admonition-important alert alert--info">
@@ -61,7 +75,27 @@ Usage of Vale Server requires a license key, which you can get from the [main we
     {label: 'macOS', value: 'mac'},
   ]}>
 
-  <TabItem value="win">This is an apple 🍎</TabItem>
+  <TabItem value="win">
+    <p>To activate Vale Server on Windows, navigate to the application's context menu from the taskbar and select <b>Enter License...</b>:</p>
+    <img
+      alt="A screenshot of Vale Server's 'Enter License' option."
+      src={useBaseUrl('img/vale-server/win/enter-license.png')}
+      className="sm-img"
+    />
+    <p>You'll then be prompted to enter the license key that you either received with your purchase receipt (paid) or via email (trial):</p>
+    <img
+      alt="A screenshot of Vale Server's 'Enter License' dialog."
+      src={useBaseUrl('img/vale-server/win/license-input-light.png')}
+      className="sm-img"
+    />
+    <p>If your license is successfully validated, you'll see the following notice appear:</p>
+    <img
+      alt="A screenshot of Vale Server's 'license approved' dialog."
+      src={useBaseUrl('img/vale-server/win/license-dialog.png')}
+      className="sm-img"
+    />
+    <p>Otherwise, you'll see a message dialog indicating what went wrong.</p>
+  </TabItem>
 
   <TabItem value="mac">
     <p>To activate Vale Server on macOS, navigate to the application's context menu from the menu bar and select <b>Enter License...</b>:</p>
