@@ -21,12 +21,13 @@ module.exports = {
       indexName: 'vale-server',
       algoliaOptions: {},
     },
+    /*
     announcementBar: {
       id: 'support_us', // Any value that will identify this message.
       content: '⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a>! ⭐️',
       backgroundColor: '#337eee', // Defaults to `#fff`.
       textColor: '#fff', // Defaults to `#000`.
-    },
+    },*/
     navbar: {
       title: 'Vale Server',
       logo: {
@@ -35,10 +36,6 @@ module.exports = {
       },
       links: [
         {to: 'blog', label: 'Blog', position: 'left'},
-
-        // TODO:
-        {href: 'https://lab.benthos.dev', label: 'Studio', position: 'left'},
-
         {href: '/api/index.html', label: 'API', position: 'left'},
 
         {

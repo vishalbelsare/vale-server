@@ -10,6 +10,7 @@ module.exports = {
     Concepts: [
         'concepts/styles',
         'concepts/scoping',
+        'concepts/vocab',
         'concepts/config'
     ],
     Clients: [

@@ -71,10 +71,6 @@ html[data-theme="dark"] {
   no-repeat;
 }
 
-img {
-  padding-bottom: 15px;
-}
-
 span.code {
     background-color: var(--ifm-code-background);
     border-radius: var(--ifm-code-border-radius);
