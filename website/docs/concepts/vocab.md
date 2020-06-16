@@ -1,5 +1,5 @@
 ---
-id: Vocab
+id: vocab
 title: Vocabularies
 ---
 
