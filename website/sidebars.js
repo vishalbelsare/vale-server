@@ -4,10 +4,10 @@ module.exports = {
         'about',
         'install',
         'gui',
-        'usage',
-        'cli'
+        'usage'
     ],
     Concepts: [
+        'concepts/cli',
         'concepts/styles',
         'concepts/scoping',
         'concepts/vocab',

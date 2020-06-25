@@ -1,45 +1,34 @@
-import React, { Component } from 'react'
-import Terminal from 'react-console-emulator'
+import React, { Component } from 'react';
+import {Terminal} from 'termy-the-terminal';
+import './index.css';
 
-const commands = {
-  echo: {
-    description: 'Echo a passed string.',
-    fn: function () {
-        console.log(arguments)
-        return `${Array.from(arguments).join(' ')}`
-    }
+const exampleFileSystem = {
+  home: {
+    type: 'FOLDER',
+    children: {
+      user: {
+        type: 'FOLDER',
+        children: null,
+      },
+      file1: {
+        type: 'FILE',
+        content: 'Contents of file 1',
+        extension: 'txt',
+      },
+    },
   },
-  ls: {
-    description: 'List directory contents.',
-    fn: function (dir) {
-        if (dir === 'styles') {
-            return `<b>/write-good</b>  <b>/Microsoft</b>`
-        } else {
-            return `.vale.ini README.md <b>/styles</b>`
-        }
-    }
+  docs: {
+    type: 'FOLDER',
+    children: null,
   },
-  vale: {
-    description: 'List directory contents.',
-    fn: function (arg) {
-        return "NAME: \n vale - A command-line linter for prose."
-    }
-  },
-}
+};
 
 export default class ValeCLI extends Component {
   render () {
     return (
-      <Terminal
-        dangerMode
-        commands={commands}
-        welcomeMessage={'Welcome to the React terminal!'}
-        promptLabel={'$'}
-        style={{ backgroundColor: '#032f62' }} // #3380f3
-        promptLabelStyle={{ color: '#FFFFFF' }} // Prompt label colour
-        messageStyle={{ color: 'rgba(255,255,255,0.7)' }}
-        inputStyle={{ color: '#FFFFFF' }} // Prompt text colour
-      />
-    )
+    <div id="terminal-container">
+      <Terminal fileSystem={exampleFileSystem} inputPrompt="$>" />
+    </div>
+    );
   }
 }
