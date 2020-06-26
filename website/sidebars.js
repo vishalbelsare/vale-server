@@ -4,13 +4,12 @@ module.exports = {
         'about',
         'install',
         'gui',
-        'usage'
+        'usage',
+        'cli'
     ],
     Concepts: [
-        'concepts/cli',
         'concepts/styles',
         'concepts/scoping',
-        'concepts/vocab',
         'concepts/config'
     ],
     Clients: [
@@ -25,9 +24,6 @@ module.exports = {
     ],
     Integrations: [
         'integrations/gh-action'
-    ],
-    Guides: [
-        'guides/openapi'
     ]
   },
 };

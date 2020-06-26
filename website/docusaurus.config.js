@@ -9,11 +9,17 @@ module.exports = {
 
   plugins: [
   ],
+  scripts: [
+  ],
+  stylesheets: [
+  ],
 
   themeConfig: {
+    disableDarkMode: true,
     prism: {
       theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('./src/plugins/prism_themes/monokai'),
+      darkTheme: require('prism-react-renderer/themes/vsDark'),
+      additionalLanguages: ['ini'],
     },
     // TODO:
     algolia: {

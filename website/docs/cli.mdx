@@ -1,15 +1,20 @@
 ---
 id: cli
-title: Vale
+title: Command Line
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import AdaptiveImg from '@site/src/components/AdaptiveImg';
 
-[![Build Status](https://img.shields.io/travis/errata-ai/vale/master.svg?style=flat-square&amp;logo=travis)](https://travis-ci.org/errata-ai/vale) [![Go Report Card](https://goreportcard.com/badge/github.com/gojp/goreportcard?style=flat-square&logo=go&logoColor=white)](https://goreportcard.com/report/github.com/errata-ai/vale) ![GitHub All Releases](https://img.shields.io/github/downloads/errata-ai/vale/total?logo=GitHub&style=flat-square) ![Docker Pulls](https://img.shields.io/docker/pulls/jdkato/vale?color=lgreen&logo=docker&logoColor=white&style=flat-square)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gojp/goreportcard?style=flat-square&logo=go&logoColor=white)](https://goreportcard.com/report/github.com/errata-ai/vale) ![GitHub All Releases](https://img.shields.io/github/downloads/errata-ai/vale/total?logo=GitHub&style=flat-square) ![Docker Pulls](https://img.shields.io/docker/pulls/jdkato/vale?color=lgreen&logo=docker&logoColor=white&style=flat-square)
 
-Vale Server is built on top of Vale, a command-line tool that brings code-like
-linting to prose.
+Vale Server is built on top of [Vale](https://github.com/errata-ai/vale), a
+command-line tool that brings code-like linting to prose. Every release
+of Vale Server ships with Vale and uses it to power most of its linting
+features.
+
+Vale can also be installed and used as a completely standalone tool, which is
+the use case that this page will focus on covering.
 
 <AdaptiveImg
     alt="A screenshot of Vale's output."
@@ -46,13 +51,75 @@ You have a few options to choose from for installing Vale:
 
 - Download an executable from the [releases page](https://github.com/errata-ai/vale/releases);
 
-- Pull the [latest Docker image](https://hub.docker.com/r/jdkato/vale); or
+- pull the [latest Docker image](https://hub.docker.com/r/jdkato/vale); or
 
-- Use one of the available [package managers](https://repology.org/project/vale/versions):
+- use one of the supported [package managers](https://repology.org/project/vale/versions):
 
     [![Packaging status](https://repology.org/badge/vertical-allrepos/vale.svg)](https://repology.org/project/vale/versions)
 
 ## Tutorial
+
+The [`vale-boilerplate`](https://github.com/errata-ai/vale-boilerplate)
+repository provides a starting point for getting Vale set up. If you clone or
+download this repository and run Vale from its root, you'll see the following
+results:
+
+```shell
+$ vale .
+
+ README.md
+ 13:20   warning  'extremely' is a weasel word!  write-good.Weasel
+ 15:120  warning  'However' is too wordy.        write-good.TooWordy
+ 27:6    warning  'is' is repeated!              write-good.Illusions
+
+✖ 0 errors, 3 warnings and 0 suggestions in 2 files.
+```
+
+The basic directory stucture that you'll need to include in your own projects
+is as follows:
+
+```text
+.
+├── .vale.ini
+├── README.md
+└── styles
+    └── write-good
+```
+
+The first file you'll need to create is called `.vale.ini`:
+
+```ini title=".vale.ini"
+StylesPath = styles
+
+[*.md]
+BasedOnStyles = write-good
+```
+
+This the central point of configuration for Vale&mdash;it specifies *what* and
+*how* to lint, as well as where to look for other Vale-related files. Vale will
+start looking for this file in the same directory as the file that's being
+linted. If it can't find one, it'll search up to 6 levels up the directory
+tree (see [`--config`](cli#--config) to override this behavior). After 6
+levels, it'll look for a global configuration file in the OS equivalent of
+`$HOME` (see the table below).
+
+If more than one configuration file is present, the closest one to the active
+file takes precedence. See the dedicated [Configuration](/concepts/config)
+section for more information.
+
+| OS | Search Locations |
+| :--- | :--- |
+| Windows | `$HOME`, `%UserProfile%`, or `%HomeDrive%%HomePath%` |
+| macOS | `$HOME` |
+| Linux | `$HOME` |
+
+The next step is to create your
+[`StylesPath`](/concepts/styles) (`/styles` above), which serves as the on-disk
+location for all Vale-related files.
+
+The final step is to provide content to lint (`README.md` above). Vale works on
+both single files and entire directories, and supports
+[multiple file types](/concepts/scoping).
 
 ## Reference
 
@@ -115,7 +182,7 @@ tokens:
 
 Where `existence` could be any of the available extension points.
 
-### `tag` (<span class="badge badge--secondary">v2.3.0</span>)
+### `tag` (<span className="badge badge--secondary">v2.3.0</span>)
 
 Assign part-of-speech tags to the given sentence.
 
