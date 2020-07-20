@@ -1,0 +1,125 @@
+---
+id: install
+title: Getting Started
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import AdaptiveImg from '@site/src/components/AdaptiveImg';
+
+## Installation
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="win"
+  values={[
+    {label: 'Windows', value: 'win'},
+    {label: 'macOS', value: 'mac'},
+  ]}>
+
+  <TabItem value="win">
+    <p>Download <span className="code">ValeServer-1.x-windows.exe</span> (where <span className="code">1.x</span> will be the latest version) and follow the on-screen instructions:</p>
+    <img
+      alt="A screenshot of Vale Server's InstallBuilder installer."
+      src={useBaseUrl('img/vale-server/win/installer-light.png')}
+      className="md-img"
+    />
+    <p>After installation, Vale Server will automatically launch in the background (<span className="code">http://localhost:7777</span> by default) and you will see its icon in your taskbar:</p>
+    <img
+      alt="A screenshot of Vale Server's context menu."
+      src={useBaseUrl('img/vale-server/win/menu-light.png')}
+      className="sm-img"
+    />
+    <p>Right-clicking this icon will open a menu that allows you to configure the server.</p>
+  </TabItem>
+
+  <TabItem value="mac">
+    <div className="admonition admonition-important alert alert--info">
+        <div className="admonition-heading">
+            <h5><span className="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fillRule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>
+                important
+            </h5>
+        </div>
+        <div className="admonition-content">
+            <p>Vale Server requires at least macOS Sierra 10.12.</p>
+        </div>
+    </div>
+    <p>Double-click <span className="code">ValeServer-1.x-osx.dmg</span> (where <span className="code">1.x</span> will be the latest version) to open the installer and then drag the application into your <span className="code">/Applications</span> folder:</p>
+    <AdaptiveImg
+      alt="A screenshot of Vale Server's DMG installer."
+      src={useBaseUrl('img/vale-server/mac/installer')}
+      format=".png"
+      size="md">
+    </AdaptiveImg>
+    <p>After installation, Vale Server will automatically launch in the background (<span className="code">http://localhost:7777</span> by default) and you will see its icon in your menu bar:</p>
+    <AdaptiveImg
+      alt="A screenshot of Vale Server's context menu."
+      src={useBaseUrl('img/vale-server/mac/menu')}
+      format=".png"
+      size="sm">
+    </AdaptiveImg>
+  </TabItem>
+
+</Tabs>
+
+## Activation
+
+Usage of Vale Server requires a license key, which you can get from the [main website](https://errata.ai/vale-server/#puchase).
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="win"
+  values={[
+    {label: 'Windows', value: 'win'},
+    {label: 'macOS', value: 'mac'},
+  ]}>
+
+  <TabItem value="win">
+    <p>To activate Vale Server on Windows, navigate to the application's context menu from the taskbar and select <b>Enter License...</b>:</p>
+    <img
+      alt="A screenshot of Vale Server's 'Enter License' option."
+      src={useBaseUrl('img/vale-server/win/enter-license.png')}
+      className="sm-img"
+    />
+    <p>You'll then be prompted to enter the license key that you either received with your purchase receipt (paid) or via email (trial):</p>
+    <img
+      alt="A screenshot of Vale Server's 'Enter License' dialog."
+      src={useBaseUrl('img/vale-server/win/license-input-light.png')}
+      className="sm-img"
+    />
+    <p>If your license is successfully validated, you'll see the following notice appear:</p>
+    <img
+      alt="A screenshot of Vale Server's 'license approved' dialog."
+      src={useBaseUrl('img/vale-server/win/license-dialog.png')}
+      className="sm-img"
+    />
+    <p>Otherwise, you'll see a message dialog indicating what went wrong.</p>
+  </TabItem>
+
+  <TabItem value="mac">
+    <p>To activate Vale Server on macOS, navigate to the application's context menu from the menu bar and select <b>Enter License...</b>:</p>
+    <AdaptiveImg
+      alt="A screenshot of Vale Server's 'Enter License' option."
+      src={useBaseUrl('img/vale-server/mac/enter-license')}
+      format=".png"
+      size="sm">
+    </AdaptiveImg>
+    <p>You'll then be prompted to enter the license key that you either received with your purchase receipt (paid) or via email (trial):</p>
+    <AdaptiveImg
+      alt="A screenshot of Vale Server's 'Enter License' dialog."
+      src={useBaseUrl('img/vale-server/mac/license-input')}
+      format=".png"
+      size="md">
+    </AdaptiveImg>
+    <p>If your license is successfully validated, you'll see the following notice appear:</p>
+    <AdaptiveImg
+      alt="A screenshot of Vale Server's 'license approved' dialog."
+      src={useBaseUrl('img/vale-server/mac/key-dialog')}
+      format=".png"
+      size="md">
+    </AdaptiveImg>
+    <p>Otherwise, you'll see a message dialog indicating what went wrong.</p>
+  </TabItem>
+
+</Tabs>
