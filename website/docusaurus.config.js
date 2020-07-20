@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Vale Server',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'A cross-platform desktop app for Vale',
+  url: 'https://nervous-almeida-4ca728.netlify.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'errata-ai', // Usually your GitHub org/user name.
