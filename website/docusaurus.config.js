@@ -15,7 +15,6 @@ module.exports = {
   ],
 
   themeConfig: {
-    disableDarkMode: true,
     prism: {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/vsDark'),
@@ -35,7 +34,7 @@ module.exports = {
       textColor: '#fff', // Defaults to `#000`.
     },*/
     navbar: {
-      title: 'Vale Server',
+      title: 'Docs',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',

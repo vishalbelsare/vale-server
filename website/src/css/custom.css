@@ -1,9 +1,56 @@
 /* stylelint-disable docusaurus/copyright-header */
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+
+.hero {
+  padding-bottom: 0 !important;
+}
+
+.card {
+    margin: 1rem 0;
+    padding: .5rem;
+    border: 1px solid #dbdbdb;
+}
+.card {
+    background-color: var(--ifm-card-background-color);
+    border-radius: var(--ifm-card-border-radius);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+    box-shadow: var(--ifm-global-shadow-lw);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.card__body:not(:last-child),
+.card__footer:not(:last-child),
+.card__header:not(:last-child) {
+    padding-bottom: 0;
+}
+.card__header {
+    color: var(--ifm-color-primary-light);
+}
+.card__body,
+.card__footer,
+.card__header {
+    padding: var(--ifm-card-vertical-spacing) var(--ifm-card-horizontal-spacing);
+}
+.card__body,
+.card__footer,
+.card__header {
+  padding: var(--ifm-card-vertical-spacing) var(--ifm-card-horizontal-spacing);
+}
+
+.main section {
+    padding: 5rem 0;
+}
+@media screen and (max-width: 996px) {
+    .main section {
+        padding: 2.5rem 0;
+    }
+}
 
 figure figcaption {
   color: var(--ifm-menu-color);
