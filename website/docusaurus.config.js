@@ -53,6 +53,7 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      /*
       links: [
         {
           title: 'Docs',
@@ -97,7 +98,7 @@ module.exports = {
             },
           ],
         },
-      ],
+      ],*/
       copyright: `Copyright © ${new Date().getFullYear()} errata.ai`,
     },
   },
