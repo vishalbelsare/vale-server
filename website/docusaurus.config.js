@@ -1,6 +1,6 @@
 module.exports = {
   title: 'errata.ai',
-  tagline: 'A cross-platform desktop app for Vale',
+  tagline: 'Innovative tools for collaborative writing',
   url: 'https://nervous-almeida-4ca728.netlify.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -34,7 +34,7 @@ module.exports = {
       textColor: '#fff', // Defaults to `#000`.
     },*/
     navbar: {
-      title: 'Docs',
+      title: 'errata.ai',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
