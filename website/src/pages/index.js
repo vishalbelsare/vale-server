@@ -1,9 +1,14 @@
 import React from 'react';
 import clsx from 'clsx';
+
 import Layout from '@theme/Layout';
+
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+
+import Products from '@site/src/components/Products';
+
 import styles from './styles.module.css';
 
 const features = [
@@ -59,7 +64,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero', styles.heroBanner)}>
         <div className="container">
@@ -68,6 +73,8 @@ function Home() {
         </div>
       </header>
       <main>
+        <Products />
+        {/*
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
@@ -78,7 +85,7 @@ function Home() {
               </div>
             </div>
           </section>
-        )}
+                )}*/}
       </main>
     </Layout>
   );

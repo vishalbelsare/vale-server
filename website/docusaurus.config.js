@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vale Server',
+  title: 'errata.ai',
   tagline: 'A cross-platform desktop app for Vale',
   url: 'https://nervous-almeida-4ca728.netlify.app',
   baseUrl: '/',
@@ -41,7 +41,9 @@ module.exports = {
       },
       links: [
         {to: 'blog', label: 'Blog', position: 'left'},
-        {href: '/api/index.html', label: 'API', position: 'left'},
+        {to: 'blog', label: 'Sponsor', position: 'left'},
+
+        // {href: '/api/index.html', label: 'API', position: 'left'},
 
         {
           href: 'https://github.com/errata-ai',
@@ -52,19 +54,17 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
-      /*
       links: [
         {
-          title: 'Docs',
+          title: 'About',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Home',
+              to: 'https://errata.ai',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Blog',
+              to: 'Blog',
             },
           ],
         },
@@ -72,16 +72,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/errata-ai',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Slack',
+              href: 'https://writethedocs.slack.com/archives/CBWQQ5E57',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Open Collective',
+              href: 'https://opencollective.com/vale',
             },
           ],
         },
@@ -89,16 +89,12 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
+              label: 'Become a Sponsor',
               to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
             },
           ],
         },
-      ],*/
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} errata.ai`,
     },
   },
