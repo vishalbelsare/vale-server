@@ -34,7 +34,7 @@ module.exports = {
       textColor: '#fff', // Defaults to `#000`.
     },*/
     navbar: {
-      title: 'errata.ai',
+      title: 'errata.ai | Docs',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
