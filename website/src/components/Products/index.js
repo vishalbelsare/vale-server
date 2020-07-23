@@ -6,24 +6,27 @@ import styles from './styles.module.css';
 const data = [
   {
     title: <>Vale</>,
+    link: '/vale/about',
     description: (
       <>A syntax-aware, command-line linter for prose built with speed and extensibility in mind.</>
     ),
   },
   {
     title: <>Vale Server</>,
+    link: '/vale-server/install',
     description: <>A cross-platform desktop application that brings your editorial style guide to life.</>,
   },
   {
     title: <>Static School</>,
+    link: 'https://staticschool.com',
     description: <>Discover, explore, and compare static site generators and related Jamstack tools.</>,
   },
 ];
 
-function Feature({title, description}) {
+function Feature({title, link, description}) {
   return (
     <div className={clsx('col col--4', styles.feature)}>
-      <a href="/foo" className="card">
+      <a href={link} className="card">
         <div className="card__header">
           <h3>{title}</h3>
         </div>

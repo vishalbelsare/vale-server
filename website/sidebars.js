@@ -1,29 +1,29 @@
 module.exports = {
-  someSidebar: {
+  'vale-server': {
     Introduction: [
-        'about',
-        'install',
-        'gui',
-        'usage',
-        'cli'
+        'vale-server/install',
+        'vale-server/gui',
+        'vale-server/usage'
     ],
     Concepts: [
-        'concepts/styles',
-        'concepts/scoping',
-        'concepts/config'
+        'vale-server/concepts/styles',
+        'vale-server/concepts/scoping',
+        'vale-server/concepts/config'
     ],
     Clients: [
-        'clients/atom',
-        'clients/chrome',
-        'clients/gdocs',
-        'clients/sublime',
-        'clients/vscode'
+        'vale-server/clients/atom',
+        'vale-server/clients/chrome',
+        'vale-server/clients/gdocs',
+        'vale-server/clients/sublime',
+        'vale-server/clients/vscode'
     ],
     'Add-ons': [
-        'add-ons/lt',
-    ],
-    Integrations: [
-        'integrations/gh-action'
+        'vale-server/add-ons/lt',
     ]
+  },
+  vale: {
+      Hmm: [
+          'vale/about'
+      ]
   },
 };

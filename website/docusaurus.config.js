@@ -34,12 +34,30 @@ module.exports = {
       textColor: '#fff', // Defaults to `#000`.
     },*/
     navbar: {
+      hideOnScroll: true,
       title: 'errata.ai | Docs',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       links: [
+        {
+          label: 'Products',
+          position: 'left', // or 'right'
+          items: [{
+              label: 'Vale',
+              to: '/vale/about',
+            },
+            {
+              label: 'Vale Server',
+              to: '/vale-server/install',
+            },
+            {
+              label: 'Static School',
+              href: 'https://staticschool.com/',
+            },
+          ],
+        },
         {to: 'blog', label: 'Blog', position: 'left'},
         {to: 'blog', label: 'Sponsor', position: 'left'},
 
@@ -105,7 +123,7 @@ module.exports = {
         docs: {
           routeBasePath: '/',
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'about',
+          // homePageId: 'about',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
