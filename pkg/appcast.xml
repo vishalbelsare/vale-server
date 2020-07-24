@@ -3,10 +3,17 @@
     <channel>
         <title>Vale Server</title>
         <item>
+            <title>1.6.0</title>
+            <pubDate>Thu, 23 Jul 2020 13:37:57 -0700</pubDate>
+            <sparkle:releaseNotesLink>https://raw.githubusercontent.com/errata-ai/vale-server/master/pkg/changelog.html</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/errata-ai/errata.ai/releases/download/v1.0.0/ValeServer-1.6-osx.dmg" sparkle:version="1.6.0" sparkle:shortVersionString="1.6.0" length="42156658" type="application/octet-stream" sparkle:edSignature="+j4gjqfiu4e2MUVvhoB3mQ/tdTH5MutUQ4ZPElcvE917GsGWNYBqubqeGcauskdTuybUFjMM0hf9rMLX0GDtDA=="/>
+        </item>
+        <item>
             <title>1.5.0</title>
             <pubDate>Wed, 03 Jun 2020 20:44:53 -0700</pubDate>
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/errata-ai/errata.ai/releases/download/v1.0.0/ValeServer-1.5-osx.dmg" sparkle:version="1.5.0" sparkle:shortVersionString="1.5.0" sparkle:edSignature="EoOIGxVqbunJk/VvkUM3aRtWjZZHI/p82L3IFyelaT4p/3hC7+maID2uBK+hYfBtOXv5Whe6WVwdR8io+0fVBg==" length="36852771" type="application/octet-stream"/>
+            <enclosure url="https://github.com/errata-ai/errata.ai/releases/download/v1.0.0/ValeServer-1.5-osx.dmg" sparkle:version="1.5.0" sparkle:shortVersionString="1.5.0" length="36852771" type="application/octet-stream" sparkle:edSignature="EoOIGxVqbunJk/VvkUM3aRtWjZZHI/p82L3IFyelaT4p/3hC7+maID2uBK+hYfBtOXv5Whe6WVwdR8io+0fVBg==" />
         </item>
     </channel>
 </rss>
