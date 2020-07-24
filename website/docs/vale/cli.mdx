@@ -1,0 +1,200 @@
+---
+id: cli
+title: Usage
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import AdaptiveImg from '@site/src/components/AdaptiveImg';
+
+At its core, Vale is designed to be used as a command-line tool. The available commands and options
+are discussed below.
+
+### `ls-config`
+
+Print the current configuration options \(as JSON\) to `stdout`.
+
+```bash
+$ vale ls-config
+{
+  "BlockIgnores": {},
+  "Checks": null,
+  "Formats": {},
+  "GBaseStyles": null,
+  "GChecks": {},
+  "IgnoredClasses": null,
+  "IgnoredScopes": null,
+  "MinAlertLevel": 0,
+  "Path": "...",
+  "Project": "",
+  "RuleToLevel": {},
+  "SBaseStyles": {
+    "*.md": [
+      "Vale"
+    ]
+  },
+  "SChecks": {
+    "*.md": {}
+  },
+  "SkippedScopes": null,
+  "Stylesheets": {},
+  "StylesPath": "...",
+  "TokenIgnores": {},
+  "WordTemplate": "",
+  "SphinxBuild": "",
+  "SphinxAuto": ""
+}
+```
+
+(See [Configuration](/concepts/config) for more information about the available options.)
+
+### `new-rule`
+
+Generate a template for the given extension point.
+
+```bash
+$ vale new-rule existence
+extends: existence
+message: Consider removing '%s'
+level: warning
+code: false
+ignorecase: true
+tokens:
+    - appears to be
+    - arguably
+```
+
+Where `existence` could be any of the available extension points.
+
+### `tag` (<span className="badge badge--secondary">v2.3.0</span>)
+
+Assign part-of-speech tags to the given sentence.
+
+```bash
+$ vale tag "Lebron James plays basketball in Los Angeles."
+lebron/NNP james/NNP plays/VBZ basketball/NN in/IN los/NNP angeles/NNP
+```
+
+### `--help`
+
+The `--help` option prints Vale's CLI usage information to `stdout`.
+
+```bash
+$ vale -h
+...
+```
+
+### `--glob`
+
+The `--glob` option specifies the type of files Vale will search. It accepts
+the [standard GNU/Linux syntax](https://github.com/gobwas/glob). Additionally,
+any pattern prefixed with an `!` will be negated. For example,
+
+```bash
+# Exclude `.txt` files
+$ vale --glob='!*.txt' directory
+...
+# Only search `.md` and `.rst` files
+$ vale --glob='*.{md,rst}' directory
+...
+```
+
+This option takes precedence over any patterns defined in your
+[configuration file](/concepts/config).
+
+### `--config`
+
+The `--config` option specifies the location of a configuration file. This
+will take precedence over the [default search process]().
+
+```bash
+$ vale --config='some/file/path/.vale.ini'
+```
+
+### `--output`
+
+The `--output` option specifies the format that Vale will use to report its
+alerts.
+
+```bash
+# "line", "JSON", or "CLI" (the default)
+$ vale --output=JSON directory
+```
+
+### `--ext`
+
+The `--ext` option allows you to assign a format \(e.g., `.md`\) to text passed
+via `stdin` \(which will default to `.txt`\).
+
+```bash
+$ vale --ext='.md' '# this is a heading'
+```
+
+### `--no-wrap`
+
+The `--no-wrap` option disables word wrapping when using the `CLI` output
+format. By default, `CLI` output will be wrapped to fit your console.
+
+```bash
+$ vale --no-wrap directory
+```
+
+### `--no-exit`
+
+The `--no-exit` option instructs Vale to always return an exit code of `0`,
+even if errors were found. This is useful if you don't want CI builds to fail
+on Vale-related errors.
+
+```text
+$ vale --no-exit directory
+```
+
+### `--sort`
+
+The `--sort` option instructs Vale to sort its output by file path. For large
+directories, this can have a noticeable impact on performance.
+
+```bash
+$ vale --sort directory
+```
+
+### `--ignore-syntax`
+
+The `--ignore-syntax` option will cause Vale to _parse_ all files as plain
+text. Note, though, that this doesn't change what files Vale will _search_.
+
+This will often boost performance significantly, but only `text`-scoped rules
+will work.
+
+```text
+$ vale --ignore-syntax directory
+```
+
+### `--version`
+
+The `--version` option prints Vale's version.
+
+```text
+$ vale --version
+...
+```
+
+### `--debug`
+
+The `--debug` option instructs Vale to print debugging information to `stdout`.
+
+```text
+$ vale --debug test.md
+...
+```
+
+### `--minAlertLevel`
+
+The `--minAlertLevel` option sets the minimum alert level to display. This
+takes precedence over the value set in a configuration file.
+
+```bash
+$ vale --minAlertLevel LEVEL
+```
+
+Where `LEVEL` is `suggestion`, `warning`, or `error`.
+

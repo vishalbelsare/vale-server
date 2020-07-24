@@ -22,8 +22,44 @@ module.exports = {
     ]
   },
   vale: {
-      Hmm: [
-          'vale/about'
+      Introduction: [
+          'vale/about',
+          'vale/install',
+          'vale/cli'
+      ],
+      Concepts: [
+          'vale/styles',
+          'vale/scoping',
+          'vale/config'
+      ],
+      Guides: [
+          {
+              type: 'link',
+              label: 'Introducing Vale, an NLP-powered linter for prose',
+              href: 'https://medium.com/@jdkato/introducing-vale-an-nlp-powered-linter-for-prose-63c4de31be00'
+          },
+          {
+              type: 'link',
+              label: 'The Vale Workflow',
+              href: 'https://medium.com/@jdkato/the-vale-workflow-3b709fa39212'
+          },
+          {
+              type: 'link',
+              label: 'Vale & The OpenAPI Specification',
+              href: 'https://medium.com/@jdkato/vale-the-openapi-specification-8a7cfae135fb'
+          }
+      ],
+      Resources: [
+          {
+              type: 'link',
+              label: 'Official Style Library',
+              href: 'https://github.com/errata-ai/styles'
+          },
+          {
+              type: 'link',
+              label: 'testthedocs/vale-styles',
+              href: 'https://github.com/testthedocs/vale-styles'
+          }
       ]
   },
 };
