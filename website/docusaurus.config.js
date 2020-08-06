@@ -21,6 +21,7 @@ module.exports = {
       additionalLanguages: ['ini'],
     },
     algolia: {
+      appId: 'QC8IDT28I1',
       apiKey: 'ef156b9092bed0329c71589d5b21433b',
       indexName: 'errata'
     },

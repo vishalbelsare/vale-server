@@ -22,5 +22,8 @@
         "lvl4": "[class^='docItemContainer_'] h4",
         "lvl5": "[class^='docItemContainer_'] h5",
         "text": "[class^='docItemContainer_'] p, [class^='docItemContainer_'] li"
-    }
+    },
+    "selectors_exclude": [
+        ".hash-link"
+    ]
 }
