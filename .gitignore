@@ -1,5 +1,7 @@
 ci/styles/Microsoft
 
+.env
+
 # Logs
 logs
 *.log

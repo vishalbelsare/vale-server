@@ -20,11 +20,9 @@ module.exports = {
       darkTheme: require('prism-react-renderer/themes/vsDark'),
       additionalLanguages: ['ini'],
     },
-    // TODO:
     algolia: {
-      apiKey: '89b9b22abccaf5955a5427eecb4b22e5',
-      indexName: 'vale-server',
-      algoliaOptions: {},
+      apiKey: 'ef156b9092bed0329c71589d5b21433b',
+      indexName: 'errata'
     },
     /*
     announcementBar: {
@@ -59,7 +57,6 @@ module.exports = {
           ],
         },
         {to: 'blog', label: 'Blog', position: 'left'},
-        {to: 'blog', label: 'Sponsor', position: 'left'},
 
         // {href: '/api/index.html', label: 'API', position: 'left'},
 
@@ -108,7 +105,7 @@ module.exports = {
           items: [
             {
               label: 'Become a Sponsor',
-              to: 'blog',
+              to: 'https://opencollective.com/vale',
             },
           ],
         },
@@ -137,7 +134,7 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
+        }
       },
     ],
   ],
