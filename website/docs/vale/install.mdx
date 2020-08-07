@@ -10,8 +10,9 @@ import AdaptiveImg from '@site/src/components/AdaptiveImg';
 
 Vale offers multiple options for installation, each of which best suits a particular use case. The
 quickest way to get started, though, is by using either
-[Homebrew](https://formulae.brew.sh/formula/vale#default) (macOS and Linux) or
-[Chocolatey](https://chocolatey.org/packages/vale) (Windows):
+[Homebrew](https://formulae.brew.sh/formula/vale#default) (macOS and Linux),
+[Chocolatey](https://chocolatey.org/packages/vale) (Windows), or
+[Docker](https://hub.docker.com/r/jdkato/vale) (any):
 
 :::info Heads up!
 If you're using Vale with a markup format other than **Markdown** or **HTML**, you'll also need to
@@ -24,6 +25,7 @@ install a [parser](/vale/scoping#formats).
     { label: 'macOS', value: 'mac', },
     { label: 'Windows', value: 'win', },
     { label: 'Linux', value: 'linux', },
+    { label: 'Docker', value: 'docker', },
   ]
 }>
 <TabItem value="mac">
@@ -47,21 +49,25 @@ $ brew install vale
 ```
 Or use another [package manager](https://repology.org/project/vale/versions).
 </TabItem>
+
+<TabItem value="docker">
+
+```bash
+$ docker pull jdkato/vale
+```
+</TabItem>
 </Tabs>
 
-## Remote, collaborative use
+You can also download and manually install an executable from the
+[releases page](https://github.com/errata-ai/vale/releases).
 
-One of Vale's strengths is its ability to help a company, project, or organization maintain consistency \(capitalization styles, word choice, brand terminology, spelling, etc.\) across multiple writers.
-
-The benefits of these installation methods are that every writer has access to the same Vale configuration without having to install and configure the tool themselves.
-
-### Using Vale with GitHub
+## Using Vale with GitHub
 
 ![Example Vale output using GitHub&apos;s annotations UI](https://user-images.githubusercontent.com/8785025/67726924-bf3e6180-f9a4-11e9-9c32-2233756731b9.png)
 
 If you want to lint the contents of a GitHub repository, the recommended approach is to use Vale's [official GitHub Action](https://github.com/errata-ai/vale-action).
 
-### Using Vale with a continuous integration \(CI\) service
+## Using Vale with a continuous integration \(CI\) service
 
 If you want to use Vale with a CI service such as Travis CI, CircleCI, or Jenkins, the recommended approach is to use Vale's [`GoDownloader`](https://github.com/goreleaser/godownloader) script \(Vale will be installed to `/bin/vale`\):
 
@@ -72,28 +78,3 @@ $ vale -v
 ```
 
 where `vX.Y.Z` is your version of choice from the [releases page](https://github.com/errata-ai/vale/releases). This will ensure that your CI builds are consistent and allow you to update versions on an opt-in basis.
-
-## Local use by a single writer
-
-Vale can also be used locally by a single writer through the command line or a third-party integration.
-
-### Using Vale with a text editor \(or another third-party application\)
-
-Vale has a commercial desktop application, [Vale Server](https://errata.ai/vale-server/), that integrates with [many third-party applications](https://errata-ai.github.io/vale-server/docs/usage#step-5-using-a-client-application) \(including Atom, Sublime Text, VS Code, and Google Docs\) and allows writers to easily create and switch between multiple local Vale configurations.
-
-<AdaptiveImg
-    alt="A screenshot of Vale Server's VS Code extension."
-    src={useBaseUrl('img/vale-server/demos/vscode')}
-    caption="Example output from Vale Server's VS Code extension, one of multiple available clients."
-    format=".png">
-</AdaptiveImg>
-
-### Using Vale from the command line
-
-Vale can be installed for local usage. To install the CLI, use one of the following options:
-
-* Download an executable from the [releases page](https://github.com/errata-ai/vale/releases).
-* Pull the [latest Docker image](https://hub.docker.com/r/jdkato/vale).
-* Use one of the available [package managers](https://repology.org/project/vale/versions):
-
-    ![](https://repology.org/badge/vertical-allrepos/vale.svg)
