@@ -29,8 +29,21 @@ module.exports = {
       ],
       Concepts: [
           'vale/styles',
+          'vale/vocab',
           'vale/scoping',
           'vale/config'
+      ],
+      Integrations: [
+          {
+              type: 'link',
+              label: 'GitHub Actions',
+              href: 'https://github.com/errata-ai/vale-action'
+          },
+          {
+              type: 'link',
+              label: 'Visual Studio Code',
+              href: 'https://github.com/errata-ai/vale-vscode'
+          },
       ],
       Guides: [
           {

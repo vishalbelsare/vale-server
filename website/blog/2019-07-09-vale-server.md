@@ -37,17 +37,20 @@ That said, Vale Server is still 100% compatible with the old StylesPath workflow
 ### Projects
 
 Vale Server (as discussed in the previous post) introduces a new project-management system. Consider the following scenario:
+
 > You’re working for an organization that adheres to the [Microsoft Writing Style Guide](https://github.com/errata-ai/Microsoft), so you’ve installed the style and added it to your configuration file.
-> Over time, you add your own organization’s terminology to various rules and exception lists (e.g., [*Acronyms.yml](https://github.com/errata-ai/Microsoft/blob/master/Microsoft/Acronyms.yml)* and [*Headings.yml](https://github.com/errata-ai/Microsoft/blob/master/Microsoft/Headings.yml)*).
+>
+> Over time, you add your own organization’s terminology to various rules and exception lists (e.g., [Acronyms.yml](https://github.com/errata-ai/Microsoft/blob/master/Microsoft/Acronyms.yml) and [Headings.yml](https://github.com/errata-ai/Microsoft/blob/master/Microsoft/Headings.yml)).
+>
 > A few weeks later, a new version of the style is released with a few bug fixes and enhancements. What do you do now? You either have to overwrite your changes altogether or slowly migrate each customized rule individually.
 
 ![Vale Server’s project-based vocabulary dashboard.](https://cdn-images-1.medium.com/max/3992/1*dHt8G3gB-4M_TT2xdsyn9w.png)
 
-Projects make this process *much* easier. Each project is a single folder (stored at `<StylesPath>/Vocab/<Project name>/`) that consists of two text files—accept.txt and reject.txt—that contain one word or phrase per line (similar to how [ignore](https://errata-ai.github.io/vale/styles/#spelling) files currently work).
+Projects make this process *much* easier. Each project is a single folder (stored at `<StylesPath>/Vocab/<Project name>/`) that consists of two text files&mdash;`accept.txt` and `reject.txt`&mdash;that contain one word or phrase per line (similar to how [ignore](https://errata-ai.github.io/vale/styles/#spelling) files currently work).
 
-* All entries in accept.txt are automatically added to a case-insensitive substitution rule (`Vocab.Terms`), ensuring that any occurrences of these words or phrases exactly match their corresponding entry in accept.txt. Each term is automatically added to every exception list in all inherited styles—meaning that you now only need to update your project’s vocabulary to customize third-party styles.
+* All entries in accept.txt are automatically added to a case-insensitive substitution rule (`Vocab.Terms`), ensuring that any occurrences of these words or phrases exactly match their corresponding entry in `accept.txt`. Each term is automatically added to every exception list in all inherited styles—meaning that you now only need to update your project’s vocabulary to customize third-party styles.
 
-* Entries in reject.txt are automatically added to an existence rule (Vocab.Avoid) that will flag all occurrences as errors.
+* Entries in reject.txt are automatically added to an existence rule (`Vocab.Avoid`) that will flag all occurrences as errors.
 
 Additionally, instead of having to add your customizations to the text files themselves, you can manage different project-based [*vocabularies](https://errata-ai.github.io/vale-server/docs/ui#vocabularies) *through the dashboard (shown above).
 
