@@ -1,80 +1,62 @@
 ---
 id: about
-title: Quick Start
+title: About
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import AdaptiveImg from '@site/src/components/AdaptiveImg';
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/gojp/goreportcard?style=flat-square&logo=go&logoColor=white)](https://goreportcard.com/report/github.com/errata-ai/vale) ![GitHub All Releases](https://img.shields.io/github/downloads/errata-ai/vale/total?logo=GitHub&style=flat-square) ![Docker Pulls](https://img.shields.io/docker/pulls/jdkato/vale?color=lgreen&logo=docker&logoColor=white&style=flat-square)
 
-![Example Vale output using a custom style \(18F\)](https://user-images.githubusercontent.com/8785025/71751520-ab91fa00-2e30-11ea-9e67-6e2babb5d0ee.png)
+<AdaptiveImg
+    alt="A screenshot of Vale Server's VS Code extension."
+    src={useBaseUrl('img/vale/vale')}
+    format=".png">
+</AdaptiveImg>
 
-**Vale** is a cross-platform \(macOS, Windows, and Linux\), command-line [linter](https://en.wikipedia.org/wiki/Lint_%28software%29) for prose built with speed and extensibility in mind. Its key features include:
+**Vale** is a cross-platform \(macOS, Windows, and Linux\), command-line
+[linter](https://en.wikipedia.org/wiki/Lint_%28software%29) for prose built with speed and
+extensibility in mind. Its key features include:
 
-* [Markup support](getting-started/markup.md): Vale supports HTML, Markdown, AsciiDoc, reStructuredText, XML, and DITA—allowing it to avoid most syntax-related false positives.
-* [Extensibility](getting-started/styles.md): Unlike most writing-related software, Vale's primary purpose isn't to provide its own advice; it's designed to enforce an existing style guide through its YAML-based extension system.
-* [Performance](https://gist.github.com/jdkato/02bb9db72cf6d36c7a52d8b075bdb5df#file-perf-md): Vale typically takes less than 1 second to lint most files, making it fast enough to be included in test suites for large \(&gt; 1,000 files\) repositories.
+* [Usability](/vale/scoping): Vale supports HTML, Markdown, AsciiDoc, reStructuredText, XML, and
+  DITA&mdash;allowing it to "just work" on *real-world* content.
 
-No matter if you're working with a small in-house standard or a large editorial style guide, Vale will help you maintain consistent and error-free writing.
+* [Extensibility](/vale/styles): Unlike most writing-related software, Vale's primary purpose isn't
+  to provide its own advice; it's designed to enforce an existing style guide through its
+  YAML-based extension system.
 
-## Installation
+* [Portability](/vale/config): Vale uses a plain-text configuration (INI and YAML) that makes it
+  possible to share configurations across platforms, applications, and users.
 
-:::info Heads up!
-If you're using Vale with a markup format other than **Markdown** or **HTML**, you'll also need to install a [parser](getting-started/markup.md#formats).
-:::
+No matter if you're working with a small in-house standard or a large editorial style guide, Vale
+will help you maintain consistent and error-free writing.
 
-<Tabs
-  defaultValue="mac"
-  values={[
-    { label: 'macOS', value: 'mac', },
-    { label: 'Windows', value: 'win', },
-    { label: 'Linux', value: 'linux', },
-  ]
-}>
-<TabItem value="mac">
+## Case Studies
 
-```shell
-# See https://formulae.brew.sh/formula/vale#default
-$ brew install vale
-```
+Check out how other projects and organizations are currently using Vale ...
 
-</TabItem>
-<TabItem value="win">
+- [Linode](https://www.linode.com/blog/linode/docs-as-code-at-linode/): Read about how Linode uses
+  Vale to help maintain their library of over 1,400 guides and tutorials. [[`.vale.ini`](https://github.com/linode/docs/blob/develop/.vale.ini), [`StylesPath`](https://github.com/linode/docs/tree/develop/ci/vale)]
 
-```bash
-# See https://chocolatey.org/packages/vale
-> choco install vale
-```
+- [GitLab](https://docs.gitlab.com/ee/development/documentation/#vale): Learn about how GitLab uses
+  Vale in a CI pipeline to help maintain their documentation standards. [[`.vale.ini`](https://gitlab.com/gitlab-org/gitlab/blob/master/.vale.ini), [`StylesPath`](https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/.vale/gitlab)]
 
-</TabItem>
-<TabItem value="linux">
+- [Homebrew](https://brew.sh/): See how Homebrew uses Vale to help enforce a custom
+  style guide for their documenation. [[`.vale.ini`](https://github.com/Homebrew/brew/blob/master/.vale.ini), [`StylesPath`](https://github.com/Homebrew/brew/tree/master/docs/vale-styles/Homebrew)]
 
-```bash
-# See https://docs.brew.sh/Homebrew-on-Linux
-$ brew install vale
-```
-Or use another [package manager](https://repology.org/project/vale/versions).
-</TabItem>
-</Tabs>
+## Funding
 
-See the dedicated [Installation section](getting-started/installation.md) for more detailed instructions and options.
+If you'd like to support the continued development and support of Vale, you may contribute
+financially by doing any of the following:
 
-## Usage
+- Purchasing a license (Individual or Enterprise) for [Vale Server](https://errata.ai/vale-server/),
+  a cross-platform desktop application for Vale that introduces a number of style-management
+  features and integration options.
 
-Download or clone [Vale's example repository](https://github.com/errata-ai/vale-boilerplate) and follow the command-line steps below:
+- Making a recurring pledge or a one-time donation through the
+  [Open Source Collective [501(c)(6)]](https://opencollective.com/vale).
 
-```bash
-$ cd vale-boilerplate
-# Check your version of Vale:
-$ vale -h
-# Run Vale on the sample content:
-$ vale README.md
-
- README.md
- 13:20   warning  'extremely' is a weasel word!  write-good.Weasel
- 15:120  warning  'However' is too wordy.        write-good.TooWordy
- 27:6    warning  'is' is repeated!              write-good.Illusions
-
-✖ 0 errors, 3 warnings and 0 suggestions in 1 file.
-```
+Both of these options allow me ([@jdkato](https://github.com/jdkato)) to dedicate more time to
+*maintaining* (e.g., bug fixes, feature requests, support questions, and documentation
+improvements) Vale and its collection of open-source and permissively-licensed
+[styles](https://github.com/errata-ai/styles), integrations, and extensions.

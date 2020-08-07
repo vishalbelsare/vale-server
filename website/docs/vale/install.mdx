@@ -3,10 +3,51 @@ id: install
 title: Installation
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import AdaptiveImg from '@site/src/components/AdaptiveImg';
 
-Vale offers multiple options for installation, each of which best suits a particular use case.
+Vale offers multiple options for installation, each of which best suits a particular use case. The
+quickest way to get started, though, is by using either
+[Homebrew](https://formulae.brew.sh/formula/vale#default) (macOS and Linux) or
+[Chocolatey](https://chocolatey.org/packages/vale) (Windows):
+
+:::info Heads up!
+If you're using Vale with a markup format other than **Markdown** or **HTML**, you'll also need to
+install a [parser](/vale/scoping#formats).
+:::
+
+<Tabs
+  defaultValue="mac"
+  values={[
+    { label: 'macOS', value: 'mac', },
+    { label: 'Windows', value: 'win', },
+    { label: 'Linux', value: 'linux', },
+  ]
+}>
+<TabItem value="mac">
+
+```shell
+$ brew install vale
+```
+
+</TabItem>
+<TabItem value="win">
+
+```bash
+> choco install vale
+```
+
+</TabItem>
+<TabItem value="linux">
+
+```bash
+$ brew install vale
+```
+Or use another [package manager](https://repology.org/project/vale/versions).
+</TabItem>
+</Tabs>
 
 ## Remote, collaborative use
 

@@ -3,11 +3,167 @@ id: cli
 title: Usage
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import AdaptiveImg from '@site/src/components/AdaptiveImg';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-At its core, Vale is designed to be used as a command-line tool. The available commands and options
-are discussed below.
+In order to familiarize ourselves with the typical Vale workflow, we'll be
+referencing a [sample repository](https://github.com/errata-ai/vale-boilerplate)
+that contains the required components of a Vale configuration.
+
+:::info Heads up!
+If you're on Windows, we recommend using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
+instead of the default Command Prompt (which doesn't support all of Vale's features,
+as shown below):
+
+<Tabs
+  defaultValue="tty"
+  values={[
+    { label: 'Windows Terminal', value: 'tty', },
+    { label: 'Command Prompt', value: 'cmd', }
+  ]
+}>
+<TabItem value="tty">
+
+![Windows Terminal](https://user-images.githubusercontent.com/8785025/84603334-7f988d00-ae42-11ea-98b1-3136f7353b5b.png)
+
+</TabItem>
+<TabItem value="cmd">
+
+![Command Prompt](https://user-images.githubusercontent.com/8785025/84603307-3a745b00-ae42-11ea-908a-f823fff1e5a7.png)
+
+</TabItem>
+</Tabs>
+:::
+
+If you'd like to follow along locally, download or clone sample repository and
+copy the terminal session below:
+
+```bash
+$ cd vale-boilerplate
+# Check your version of Vale:
+$ vale -h
+# Run Vale on the sample content:
+$ vale README.md
+
+ README.md
+ 13:20   warning  'extremely' is a weasel word!  write-good.Weasel
+ 15:120  warning  'However' is too wordy.        write-good.TooWordy
+ 27:6    warning  'is' is repeated!              write-good.Illusions
+
+✖ 0 errors, 3 warnings and 0 suggestions in 1 file.
+```
+
+## `StylesPath`
+
+The first component we're going to discuss is our `StylesPath` (the `/styles`
+directory):
+
+```console
+$ tree styles
+├───Microsoft
+├───Vocab
+│   ├───Blog
+│   └───Marketing
+└───write-good
+```
+
+This where you'll store all of your Vale-related files (with the exception of
+`.vale.ini`, discussed below).
+
+### Styles
+
+In the example above, the `Microsoft` and `write-good` top-level directories
+are both [*styles*](/vale/styles). These are collections of individual writing
+rules packaged together to enforce guidelines from a third-party organization
+or tool.
+
+In practice, you'll typically come across two types of styles:
+
+- `prose -> YAML`: These styles take *written* guidelines (such as those
+  from the
+  [*Microsoft Writing Style Guide*](https://github.com/errata-ai/Microsoft))
+  and convert them into a collection of Vale-compatiable YAML files. The
+  benefits of this process are that the style becomes both machine-readable and
+  machine-enforceable.
+
+- `code -> YAML`: These styles take guidelines enforced by a
+  language-dependent tool (such as JavaScript's
+  [`write-good`](https://github.com/errata-ai/write-good)) and convert them
+  into a collection of Vale-compatiable YAML files. The benefits of this
+  process often include [improved support for markup](/vale/scoping) and easier
+  installation and usage (Vale is a standalone, cross-platform
+  binary&mdash;meaning you don't have to worry about configuring a programming
+  language and its dependencies).
+
+The dedicated [styles](/vale/styles) section explains how you can create your
+own custom style. You can also browse our [collection of pre-made, open-source
+styles](https://github.com/errata-ai/styles).
+
+### Vocab
+
+The [`Vocab` directory](/vale/vocab) is a special directory design to
+supplement your styles. Each of its child directories&mdash;in this case,
+`Blog` and `Marketing`&mdash;contain two files: `accept.txt` and `reject.txt`.
+
+These files allow you to control rule "exceptions" (such as what is considered
+a spelling error) without having to modify the style's source itself.
+
+## `.vale.ini`
+
+The `.vale.ini` file is where you'll control the majority of Vale's behavior,
+including what files to lint and how to lint them:
+
+```ini title=".vale.ini"
+# Example Vale config file (`.vale.ini` or `_vale.ini`)
+
+# Core settings
+StylesPath = "ci/vale/styles"
+
+# The minimum alert level to display (suggestion, warning, or error).
+#
+# CI builds will only fail on error-level alerts.
+MinAlertLevel = warning
+
+# The "formats" section allows you to associate an "unknown" format
+# with one of Vale's supported formats.
+[formats]
+mdx = md
+
+# Global settings (applied to every syntax)
+[*]
+# List of styles to load
+BasedOnStyles = write-good, Joblint
+# Style.Rule = {YES, NO} to enable or disable a specific rule
+vale.Editorializing = YES
+# You can also change the level associated with a rule
+vale.Hedging = error
+
+# Syntax-specific settings
+# These overwrite any conflicting global settings
+[*.{md,txt}]
+vale.Editorializing = NO
+```
+
+See the dedicated [configuration](/vale/config) section for more information.
+
+## `README.md`
+
+In the sample repository, `README.md` represents the content we want to lint.
+And while you probably have a lot more content than a single Markdown file,
+this example demonstrates one of Vale's most useful features: its support for
+different [markup languages](/vale/scoping).
+
+In practice, this means that you can use Vale on "real-world" markup (that
+contains front matter, source code, tables, lists, etc.) and Vale will be able
+to both intelligently *apply rules to* and *completely ignore* certain sections
+of text.
+
+
+
+## CLI Reference
+
+At its core, Vale is designed to be used as a command-line tool. The available
+commands and options are discussed below.
 
 ### `ls-config`
 

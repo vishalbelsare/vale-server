@@ -25,15 +25,8 @@ module.exports = {
       apiKey: 'ef156b9092bed0329c71589d5b21433b',
       indexName: 'errata'
     },
-    /*
-    announcementBar: {
-      id: 'support_us', // Any value that will identify this message.
-      content: '⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a>! ⭐️',
-      backgroundColor: '#337eee', // Defaults to `#fff`.
-      textColor: '#fff', // Defaults to `#000`.
-    },*/
     navbar: {
-      hideOnScroll: true,
+      hideOnScroll: false,
       title: 'errata.ai | Docs',
       logo: {
         alt: 'My Site Logo',
@@ -125,13 +118,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/errata-ai/vale-server/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/errata-ai/vale-server/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
