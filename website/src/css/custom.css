@@ -6,16 +6,8 @@
  * work well for content-centric websites.
  */
 
-.main-wrapper {
-   background-color: var(--ifm-hero-background-color);
-}
-.footer {
-  background-color: var(--ifm-hero-background-color);
-  border: 1px solid var(--ifm-color-emphasis-100);
-}
-
- /* You can override the default Infima variables here. */
- /*
+/* You can override the default Infima variables here. */
+/*
 :root {
   --ifm-color-primary: var(--ifm-color-info);
   --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -26,6 +18,14 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
 }*/
+
+.main-wrapper {
+   background-color: var(--ifm-hero-background-color);
+}
+.footer {
+  background-color: var(--ifm-hero-background-color);
+  border: 1px solid var(--ifm-color-emphasis-100);
+}
 
 a.card {
   text-decoration: none !important;

@@ -3,7 +3,8 @@ id: config
 title: Configuration
 ---
 
-The `.vale.ini` file is where you'll control the majority of Vale's behavior, including what files to lint and how to lint them.
+The `.vale.ini` file is where you'll control the majority of Vale's behavior,
+including what files to lint and how to lint them.
 
 ```ini title=".vale.ini"
 # Example Vale config file (`.vale.ini` or `_vale.ini`)
@@ -36,14 +37,36 @@ vale.Hedging = error
 vale.Editorializing = NO
 ```
 
+:::info Heads up!
+You can override the default search process by  manually specifying a path using
+the [`--config`](/vale/cli#--config) option.
+
+For example, if you'd like to use the XDG standard, you can reference the
+relevant environment variable:
+
+```bash
+$ vale --config "$XDG_CONFIG_HOME/vale/vale.ini"
+```
+
+:::
+
+Vale expects its configuration to be in a file named `.vale.ini` or `_vale.ini`.
+It'll start looking for this file in the same directory as the file that's
+being linted. If it can't find one, it'll search up to 6 levels up the
+directory tree. After 6 levels, it'll look for a global configuration file in the OS equivalent of `$HOME` \(see below\).
+
+| OS | Search Locations |
+| :--- | :--- |
+| Windows | `$HOME`, `%UserProfile%`, or `%HomeDrive%%HomePath%` |
+| macOS | `$HOME` |
+| Linux | `$HOME` |
+
+If more than one configuration file is present, the closest one takes precedence.
+
+
 ## Core
 
 ### `StylesPath`
-
-:::info Heads up!
-Vale Server requires that all paths (on both macOS and Windows) use a forward slash (/) and be *absolute* file paths.
-:::
-
 
 ```ini
 # Here's an example of a relative path:
