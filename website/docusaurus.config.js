@@ -21,9 +21,8 @@ module.exports = {
       additionalLanguages: ['ini'],
     },
     algolia: {
-      appId: 'QC8IDT28I1',
-      apiKey: 'ef156b9092bed0329c71589d5b21433b',
-      indexName: 'errata'
+      apiKey: '12bdf8cd642ab554d424ff89eed88ce9',
+      indexName: 'errata_ai'
     },
     navbar: {
       hideOnScroll: false,
