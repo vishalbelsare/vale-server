@@ -17,7 +17,7 @@ module.exports = {
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
+      darkTheme: require('./src/plugins/prism_themes/github'),
       additionalLanguages: ['ini'],
     },
     algolia: {
@@ -31,7 +31,7 @@ module.exports = {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
-      links: [
+      items: [
         {
           label: 'Products',
           position: 'left', // or 'right'

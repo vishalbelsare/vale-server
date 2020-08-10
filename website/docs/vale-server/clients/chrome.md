@@ -37,7 +37,7 @@ Clicking on the extension's icon will bring up an alert panel that shows all sug
 
 ## Configuration
 
-:::info Heads Up!
+:::note Heads Up!
 In-text makers (highlighting around words) are currently only available for `<textarea>` elements&mdash;they aren't supported in `[contenteditable]` elements such as WYSIWYG editors.
 :::
 

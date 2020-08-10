@@ -40,7 +40,7 @@ vale.Editorializing = NO
 
 ### `StylesPath`
 
-:::info Heads up!
+:::note Heads up!
 Vale Server requires that all paths (on both macOS and Windows) use a forward slash (/) and be *absolute* file paths.
 :::
 
