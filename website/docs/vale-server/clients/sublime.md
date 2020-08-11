@@ -9,7 +9,7 @@ The Vale Server client for Sublime Text 3 is [open source](https://github.com/er
 
 ## Installation
 
-After you have Vale Server [installed and running](/install), you can install the Atom package through the built-in [package manager][pck-ctrl]:
+After you have Vale Server [installed and running](/vale-server/install), you can install the Atom package through the built-in [package manager][pck-ctrl]:
 
 1. Bring up the Command Palette
    (<kbd>Command-Shift-P</kbd> on macOS and <kbd>Ctrl-Shift-P</kbd> on Linux/Windows).

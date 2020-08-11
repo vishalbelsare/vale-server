@@ -9,7 +9,7 @@ The Vale Server client for Atom is [open source](https://github.com/errata-ai/va
 
 ## Installation
 
-After you have Vale Server [installed and running](/install), you can install the Atom package through the built-in package manager:
+After you have Vale Server [installed and running](/vale-server/install), you can install the Atom package through the built-in package manager:
 
 ![Screenshot of the Atom package's install page](/img/clients/atom/install.png)
 

@@ -125,7 +125,7 @@ If this is defined, Vale will re-build your site prior to linting any content --
 BasedOnStyles = Joblint, write-good
 ```
 
-`BasedOnStyles` specifies [styles](/concepts/styles) that should have all of their rules enabled.
+`BasedOnStyles` specifies [styles](/vale-server/concepts/styles) that should have all of their rules enabled.
 
 ### `BlockIgnores`
 
@@ -133,7 +133,7 @@ BasedOnStyles = Joblint, write-good
 BlockIgnores = (?s) *({< file [^>]* >}.*?{</ ?file >})
 ```
 
-`BlockIgnores` allow you to exclude certain block-level sections of text that don't have an associated HTML tag that could be used with `SkippedScopes`. See [Non-Standard Markup](/concepts/scoping#non-standard-markup) for more information.
+`BlockIgnores` allow you to exclude certain block-level sections of text that don't have an associated HTML tag that could be used with `SkippedScopes`. See [Non-Standard Markup](/vale-server/concepts/scoping#non-standard-markup) for more information.
 
 ### `TokenIgnores`
 
@@ -141,7 +141,7 @@ BlockIgnores = (?s) *({< file [^>]* >}.*?{</ ?file >})
 TokenIgnores = (\$+[^\n$]+\$+)
 ```
 
-`TokenIgnores` allow you to exclude certain inline-level sections of text that don't have an associated HTML tag that could be used with `IgnoredScopes`. See [Non-Standard Markup](/concepts/scoping#non-standard-markup) for more information.
+`TokenIgnores` allow you to exclude certain inline-level sections of text that don't have an associated HTML tag that could be used with `IgnoredScopes`. See [Non-Standard Markup](/vale-server/concepts/scoping#non-standard-markup) for more information.
 
 ### `Transform` (<span className="badge badge--secondary">v2.0.0</span>)
 
@@ -149,5 +149,5 @@ TokenIgnores = (\$+[^\n$]+\$+)
 Transform = docbook-xsl-snapshot/html/docbook.xsl
 ```
 
-`Transform` specifies a version 1.0 XSL Transformation \(XSLT\) for converting to HTML. See [Formats\#XML](concepts/scoping#xml-markup) for more information.
+`Transform` specifies a version 1.0 XSL Transformation \(XSLT\) for converting to HTML. See [Formats\#XML](/vale-server/concepts/scoping#xml-markup) for more information.
 

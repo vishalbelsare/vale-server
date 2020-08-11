@@ -9,7 +9,7 @@ The Vale Server client for Visual Studio Code is [open source](https://github.co
 
 ## Installation
 
-After you have Vale Server [installed and running](/install), you can install the VS Code exntension through the built-in exntension manager:
+After you have Vale Server [installed and running](/vale-server/install), you can install the VS Code extension through the built-in extension manager:
 
 ![](/img/clients/vscode/install.png)
 

@@ -11,7 +11,7 @@ Compared to Vale Server, LanguageTool is *slow* and so you'll likely see a decre
 
 Since Vale Server focuses (primarily) on writing style rather than grammatical correctness, integrating with LanguageTool provides a nice balance of functionality: Vale Server will enforce your style guide while LanguageTool checks your grammar.
 
-Additionally, by using this add-on, you also get to take advantage of Vale Server's [understanding of markup](format)&mdash;which LanguageTool lacks altogether on its own.
+Additionally, by using this add-on, you also get to take advantage of Vale Server's [understanding of markup](/vale-server/concepts/scoping)&mdash;which LanguageTool lacks altogether on its own.
 
 ### Installation
 
