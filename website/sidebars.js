@@ -68,11 +68,6 @@ module.exports = {
               type: 'link',
               label: 'Official Style Library',
               href: 'https://github.com/errata-ai/styles'
-          },
-          {
-              type: 'link',
-              label: 'testthedocs/vale-styles',
-              href: 'https://github.com/testthedocs/vale-styles'
           }
       ]
   },
