@@ -29,7 +29,7 @@ module.exports = {
       title: 'errata.ai | Docs',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo-alt.svg',
       },
       items: [
         {
