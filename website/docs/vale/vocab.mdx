@@ -37,7 +37,7 @@ work).
   themselves).
 
 * Entries in `reject.txt` are automatically added to an existence rule
-  (`Vocab.Avoid`) that will flag all occurrences as errors.
+  (`Vale.Avoid`) that will flag all occurrences as errors.
 
 This also means that your exceptions can be developed independent of a style,
 allowing you to use the same exceptions with multiple styles or switch styles
@@ -54,7 +54,7 @@ MinAlertLevel = suggestion
 
 [*]
 # Automatically respects all custom exceptions
-BasedOnStyles = Microsoft
+BasedOnStyles = Vale, Microsoft
 ```
 
 See [Configuration](/vale/config) for more information.
