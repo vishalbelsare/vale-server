@@ -28,10 +28,10 @@ exceptions:
 
 > According to Wikipedia, the World Health Organization \(WHO\) is a specialized agency of the United Nations that is concerned with international public health. We can now use WHO because it has been defined, but we can't use DAFB because people may not know what it represents. We can use DAFB when it's presented as code, though.
 
-Running `vale` on the above text with our example rule yields the following:
+Using the above text with our example rule yields the following:
 
 ```bash
-test.md:1:224:vale.UnexpandedAcronyms:'DAFB' has no definition
+test.md:1:224:style.UnexpandedAcronyms:'DAFB' has no definition
 ```
 
 `conditional` also takes an optional `exceptions` list. Any token listed as an exception won't be flagged.

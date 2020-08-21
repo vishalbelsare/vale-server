@@ -20,7 +20,7 @@ level: error
 
 #### Choosing a dictionary
 
-By default, Vale includes a custom, open-source
+By default, `spelling` includes a custom, open-source
 [dictionary for American English](https://github.com/errata-ai/en_US-web).
 However, you may also provide your own by using the `dic` and `aff` keys:
 
@@ -77,8 +77,8 @@ the current [`StylesPath`](styles).
    # key or set it to false, custom filters (see below) are
    # added on top of the built-in ones.
    #
-   # By default, Vale includes filters for acronyms,
-   # abbreviations, and numbers.
+   # By default, filters for acronyms, abbreviations, and
+   # numbers are included.
    custom: true
    # A "filter" is a regular expression specifying words
    # to ignore during spell checking.
