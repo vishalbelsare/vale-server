@@ -33,8 +33,7 @@ aff: path/to/my/file.aff
 dic: path/to/my/file.dic
 ```
 
-The values for both `aff` and `dic` may be absolute file paths or relative to
-the current [`StylesPath`](styles).
+The values for both `aff` and `dic` may be absolute file paths or relative to the current `StylesPath`.
 
 #### Ignoring non-dictionary words
 
@@ -66,7 +65,7 @@ the current [`StylesPath`](styles).
    ```
 
 2. Using *filters*: You can also customize the spell-checking experience by
-   defining *filters*, which are [Go-compatible](styles#extension-points)
+   defining *filters*, which are Go-compatible
    regular expressions to applied to individual words:
 
    ```yaml
