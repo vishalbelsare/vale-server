@@ -3,7 +3,7 @@ id: vocab
 title: Vocab
 ---
 
-`Vocab` directories were introduced in Vale `v2.3.0` to solve a common style
+`Vocab` directories were introduced in Vale `v2.3` to solve a common style
 inheritance problem. Consider, for example, the following scenario:
 
 > You're working for an organization that adheres to the
@@ -20,26 +20,29 @@ inheritance problem. Consider, for example, the following scenario:
 > enhancements. What do you do now? You either have to overwrite your changes altogether
 > or slowly migrate each customized rule individually.
 
-`v2.3.0` makes this process *much* easier. Each `Vocab` is a single folder
-(stored at `<StylesPath>/Vocab/<name>/`) that consists of two text
-files&mdash;`accept.txt` and `reject.txt`&mdash;that contain one word or phrase
-per line (similar to how
-[ignore](https://errata-ai.github.io/vale/styles/#spelling) files currently
-work).
+Vocabularies make this process *much* easier. Each `Vocab` is a single folder
+(stored at `<StylesPath>/Vocab/<name>/`) that consists of two plain-text
+files&mdash;`accept.txt` and `reject.txt`&mdash;that contain one word, phrase,
+or regular expression per line.
 
-* All entries in `accept.txt` are automatically added to a case-insensitive
-  substitution rule (`Vale.Terms`), ensuring that any occurrences of these
-  words or phrases exactly match their corresponding entry in `accept.txt`.
+The effects of using a custom `Vocab` are as follows:
 
-  Each term is automatically added to every exception list in all inherited
-  styles&mdash;meaning that you now only need to update your project's
-  *vocabulary* to customize third-party styles (rather than the styles
-  themselves).
+* Entries in `accept.txt` are added to every exception list in all styles
+  listed in `BasedOnStyles`&mdash;meaning that you now only need to update your
+  project's *vocabulary* to customize third-party styles (rather than the
+  styles themselves).
+
+  `capitalization`- and `conditional`-based rules take the entries as-is
+  (case-sensitive), while `spelling`-based rules are always case-insensitive.
+
+* Entries in `accept.txt` are automatically added to a substitution rule
+  (`Vale.Terms`), ensuring that any occurrences of these words or phrases
+  exactly match their corresponding entry in `accept.txt`.
 
 * Entries in `reject.txt` are automatically added to an existence rule
   (`Vale.Avoid`) that will flag all occurrences as errors.
 
-This also means that your exceptions can be developed independent of a style,
+This means that your exceptions can be developed independent of a style,
 allowing you to use the same exceptions with multiple styles or switch styles
 without having to re-implement them:
 
@@ -53,43 +56,46 @@ Vocab = Some-Name
 MinAlertLevel = suggestion
 
 [*]
-# Automatically respects all custom exceptions
-BasedOnStyles = Vale, Microsoft
+# Automatically respects all custom exceptions.
+#
+# The built-in 'Vale' style is required for using
+# `Vale.Terms`, `Vale.Avoid`, or `Vale.Spelling`.
+BasedOnStyles = Vale, MyStyle
 ```
 
 See [Configuration](/vale/config) for more information.
 
-## Directory Structure
+## Folder structure
 
 `Vocab` entries are stored in `<StylesPath>/Vocab/<name>/` and are then
 referenced by `<name>` in `.vale.ini`. For example, consider the following
-directory structure:
+folder structure:
 
 ```bash
 $ tree styles
-├───Microsoft
+├───MyStyle
 ├───Vocab
 │   ├───Blog
 │   └───Marketing
-└───write-good
+└───MyOtherStyle
 ```
 
-Here, our `StylesPath` (`/styles`) contains two styles (`Microsoft` and
-`write-good`) and two vocabularies (`Blog` and `Marketing`). You can then
-simply reference these entries by their directory name:
+Here, our `StylesPath` (`/styles`) contains two styles (`MyStyle` and
+`MyOtherStyle`) and two vocabularies (`Blog` and `Marketing`). You can then
+simply reference these entries by their folder name:
 
 ```ini title=".vale.ini"
 StylesPath = styles
 
 Vocab = Blog
 
-[*.md]
-BasedOnStyles = write-good
+[*]
+BasedOnStyles = Vale, MyStyle
 ```
 
-## File Format
+## File format
 
-Both `accept.txt` and `reject.txt` are simple, plain-text files that take one
+Both `accept.txt` and `reject.txt` are plain-text files that take one
 entry per line:
 
 ```text
@@ -98,4 +104,29 @@ first
 third
 ```
 
-The entries are case-sensitive and may also be regular expressions.
+The entries are case-sensitive (except for rules extending `spelling`, as
+mentioned above) and may also be regular expressions.
+
+## Relation to ignore files
+
+The functionality of vocabularies is similar to the existing concept of
+[*ignore* files](styles#ignoring-non-dictionary-words). The major differences
+are that vocabularies apply to multiple extension points (rather than just
+`spelling`), support regular expressions, and have built-in rules associated
+with them (`Vale.Terms` and `Vale.Avoid`).
+
+In general, this means that ignore files are for style *creators* while
+vocabularies are for style *users*:
+
+* If you're developing or maintaining a style, you may still want to include a
+  custom `spelling` rule&mdash;`MyStyle.Spelling`&mdash;that packages its own
+  ignore files.
+
+* As a user of styles, vocabularies should be able to replace the use of ignore
+  files completely.
+
+  For example, if you were using `Vale.Spelling` with a `<StylesPath>/vocab.txt`
+  file prior to `v2.3`, you can simply copy the contents of `vocab.txt` into
+  `<StylesPath>/Vocab/<MyVocab>/accept.txt` and it'll work the same (you may
+  also want to disable `Vale.Terms` and `Vale.Avoid` to replicate the exact
+  experience).
