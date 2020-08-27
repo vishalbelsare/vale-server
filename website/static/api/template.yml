@@ -11,7 +11,7 @@ tags:
 
 externalDocs:
   description: Vale Server user documentation
-  url: https://errata-ai.github.io/vale-server/docs/about.html
+  url: https://docs.errata.ai/vale-server/install
 
 components:
   schemas:

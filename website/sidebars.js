@@ -9,8 +9,10 @@ module.exports = {
         'vale-server/concepts/styles',
         'vale-server/concepts/scoping',
         'vale-server/concepts/config',
-        'vale-server/concepts/syncing',
-        'vale-server/concepts/languages'
+        'vale-server/concepts/syncing'
+    ],
+    Guides: [
+        'vale-server/guides/languages'
     ],
     Clients: [
         'vale-server/clients/atom',
@@ -21,6 +23,18 @@ module.exports = {
     ],
     'Add-ons': [
         'vale-server/add-ons/lt',
+    ],
+    Resources: [
+        {
+            type: 'link',
+            label: 'API Explorer',
+            href: '/api/index.html'
+        },
+        {
+            type: 'link',
+            label: 'Official Style Library',
+            href: 'https://github.com/errata-ai/styles'
+        }
     ]
   },
   vale: {

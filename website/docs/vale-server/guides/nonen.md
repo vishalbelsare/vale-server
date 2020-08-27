@@ -1,6 +1,6 @@
 ---
 id: languages
-title: Languages
+title: Non-English Text
 ---
 
 Vale Server's extensibility and flexibility isn't just limited to creating
