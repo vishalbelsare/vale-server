@@ -69,6 +69,11 @@ module.exports = {
               type: 'link',
               label: 'Official Style Library',
               href: 'https://github.com/errata-ai/styles'
+          },
+          {
+              type: 'link',
+              label: 'Community Styles',
+              href: 'https://github.com/topics/vale-linter-style'
           }
       ]
   },
