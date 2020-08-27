@@ -9,7 +9,8 @@ module.exports = {
         'vale-server/concepts/styles',
         'vale-server/concepts/scoping',
         'vale-server/concepts/config',
-        'vale-server/concepts/syncing'
+        'vale-server/concepts/syncing',
+        'vale-server/concepts/languages'
     ],
     Clients: [
         'vale-server/clients/atom',
