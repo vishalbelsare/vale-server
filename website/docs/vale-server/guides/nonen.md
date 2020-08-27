@@ -48,6 +48,6 @@ their own Hunspell-compatible dictionary.
 
 ## Other extension points
 
-[`occurrence`](/vale-server/concepts/styles#occurrence), [`repetiton`](style#repetition), and
+[`occurrence`](/vale-server/concepts/styles#occurrence), [`repetiton`](/vale-server/concepts/styles#repetition), and
 [`conditional`](/vale-server/concepts/styles#conditional) should all work out-of-the-box with most
 languages.
