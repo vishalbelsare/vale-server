@@ -28,7 +28,7 @@ module.exports = {
         {
             type: 'link',
             label: 'API Explorer',
-            href: '/api/index.html'
+            href: 'https://docs.errata.ai/api/index.html'
         },
         {
             type: 'link',
