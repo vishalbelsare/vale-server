@@ -27,12 +27,17 @@ module.exports = {
     Resources: [
         {
             type: 'link',
+            label: 'Changelog',
+            href: 'https://headwayapp.co/errata-ai-release-notes'
+        },
+        {
+            type: 'link',
             label: 'API Explorer',
             href: 'https://docs.errata.ai/api/index.html'
         },
         {
             type: 'link',
-            label: 'Official Style Library',
+            label: 'Style Library',
             href: 'https://github.com/errata-ai/styles'
         }
     ]
@@ -81,7 +86,7 @@ module.exports = {
       Resources: [
           {
               type: 'link',
-              label: 'Official Style Library',
+              label: 'Style Library',
               href: 'https://github.com/errata-ai/styles'
           },
           {
