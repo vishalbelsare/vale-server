@@ -1,5 +1,5 @@
 ---
-id: lt
+id: languagetool
 title: LanguageTool
 ---
 

@@ -1,5 +1,5 @@
 ---
-id: sublime
+id: sublime-text
 title: Sublime Text
 ---
 

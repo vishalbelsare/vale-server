@@ -17,12 +17,12 @@ module.exports = {
     Clients: [
         'vale-server/clients/atom',
         'vale-server/clients/chrome',
-        'vale-server/clients/gdocs',
-        'vale-server/clients/sublime',
+        'vale-server/clients/google-docs',
+        'vale-server/clients/sublime-text',
         'vale-server/clients/vscode'
     ],
     'Add-ons': [
-        'vale-server/add-ons/lt',
+        'vale-server/add-ons/languagetool',
     ],
     Resources: [
         {

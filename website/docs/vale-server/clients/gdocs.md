@@ -1,5 +1,5 @@
 ---
-id: gdocs
+id: google-docs
 title: Google Docs
 ---
 
