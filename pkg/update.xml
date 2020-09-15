@@ -1,9 +1,9 @@
 <installerInformation>
-   <versionId>170</versionId>
-   <version>1.7.0</version>
+   <versionId>180</versionId>
+   <version>1.8.0</version>
    <platformFileList>
        <platformFile>
-           <filename>ValeServer-1.7-windows.exe</filename>
+           <filename>ValeServer-1.8-windows.exe</filename>
            <platform>windows</platform>
        </platformFile>
    </platformFileList>
