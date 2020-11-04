@@ -24,7 +24,7 @@ StylesPath = "ci/vale/styles"
 MinAlertLevel = suggestion
 ```
 
-`MinAlertLevel` specifies the minimum alert severity that Vale will report. The options are "suggestion," "warning," or "error" \(defaults to "suggestion"\).
+`MinAlertLevel` specifies the minimum alert severity that Vale will report. The options are "suggestion", "warning", or "error" \(defaults to "warning"\).
 
 ### `IgnoredScopes`
 

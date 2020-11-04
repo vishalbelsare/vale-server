@@ -13,3 +13,4 @@
 | `code` | Matches all `<code>` tags. |
 | `strong` | Matches all `<strong>` and `<b>` tags. |
 | `emphasis` | Matches all `<em>` and `<i>` tags |
+| `raw` | Uses the raw, unprocessed markup source instead of a specific scope. |
