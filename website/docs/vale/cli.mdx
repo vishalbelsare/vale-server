@@ -3,8 +3,8 @@ id: cli
 title: Usage
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 In order to familiarize ourselves with the typical Vale workflow, we'll be
 referencing a [sample repository](https://github.com/errata-ai/vale-boilerplate)
@@ -24,16 +24,19 @@ as shown below):
 }>
 <TabItem value="tty">
 
+
 ![Windows Terminal](https://user-images.githubusercontent.com/8785025/84603334-7f988d00-ae42-11ea-98b1-3136f7353b5b.png)
 
 </TabItem>
 <TabItem value="cmd">
+
 
 ![Command Prompt](https://user-images.githubusercontent.com/8785025/84603307-3a745b00-ae42-11ea-908a-f823fff1e5a7.png)
 
 </TabItem>
 </Tabs>
 :::
+
 
 If you'd like to follow along locally, download or clone sample repository and
 copy the terminal session below:
@@ -73,15 +76,15 @@ This where you'll store all of your Vale-related files (with the exception of
 ### Styles
 
 In the example above, the `Microsoft` and `write-good` top-level directories
-are both [*styles*](/vale/styles). These are collections of individual writing
+are both [_styles_](/vale/styles). These are collections of individual writing
 rules packaged together to enforce guidelines from a third-party organization
 or tool.
 
 In practice, you'll typically come across two types of styles:
 
-- `prose -> YAML`: These styles take *written* guidelines (such as those
+- `prose -> YAML`: These styles take _written_ guidelines (such as those
   from the
-  [*Microsoft Writing Style Guide*](https://github.com/errata-ai/Microsoft))
+  [_Microsoft Writing Style Guide_](https://github.com/errata-ai/Microsoft))
   and convert them into a collection of Vale-compatiable YAML files. The
   benefits of this process are that the style becomes both machine-readable and
   machine-enforceable.
@@ -135,7 +138,7 @@ different [markup languages](/vale/scoping).
 
 In practice, this means that you can use Vale on "real-world" markup (that
 contains front matter, source code, tables, lists, etc.) and Vale will be able
-to both intelligently *apply rules to* and *completely ignore* certain sections
+to both intelligently _apply rules to_ and _completely ignore_ certain sections
 of text.
 
 ## CLI reference
@@ -238,7 +241,7 @@ This option takes precedence over any patterns defined in your
 ### `--config`
 
 The `--config` option specifies the location of a configuration file. This
-will take precedence over the [default search process]().
+will take precedence over the [default search process](/vale/config).
 
 ```bash
 $ vale --config='some/file/path/.vale.ini'
@@ -252,6 +255,160 @@ alerts.
 ```bash
 # "line", "JSON", or "CLI" (the default)
 $ vale --output=JSON directory
+```
+
+In addition to the 3 provided output styles, Vale also supports custom output
+styles powered by Go's [`text/template`](https://golang.org/pkg/text/template/)
+package.
+
+To use a custom format, pass the path to a template file through the `--output`
+option:
+
+```bash
+$ vale --output='path/to/my/template.tmpl` test.md
+```
+
+Template files have access to all of the
+[sprig template functions](http://masterminds.github.io/sprig/), in addition to
+a few Vale-specific functions:
+
+- `red`, `blue`, `yellow`, & `underline`, which perform the text decoration
+  used in Vale's default output style.
+
+- `newTable`, `addRow`, and `renderTable`, which are utilities for consistent
+  alignment.
+
+Templates are passed a slice of Files of the form:
+
+```go
+type ProcessedFile struct {
+    Alerts []core.Alert
+    Path   string
+}
+```
+
+Where `core.Alert` has the same information as Vale's `--output=JSON` object.
+
+#### Template functions
+
+##### `red`
+
+**Syntax**
+
+```
+red STRING
+```
+
+Returns the given `STRING` with an ANSI-formatted red foreground color.
+
+##### `blue`
+
+**Syntax**
+
+```
+blue STRING
+```
+
+Returns the given `STRING` with an ANSI-formatted blue foreground color.
+
+##### `yellow`
+
+**Syntax**
+
+```
+yellow STRING
+```
+
+Returns the given `STRING` with an ANSI-formatted yellow foreground color.
+
+##### `underline`
+
+**Syntax**
+
+```
+underline string
+```
+
+Returns the given `string` with an ANSI-formatted underline.
+
+##### `newTable`
+
+**Syntax**
+
+```
+newTable bool
+```
+
+Creates a new [`tablewriter`](https://github.com/olekukonko/tablewriter#ascii-table-writer)
+struct. `newTable` accepts one boolean value representing
+[`SetAutoWrapText`](https://godoc.org/github.com/olekukonko/tablewriter#Table.SetAutoWrapText).
+
+##### `addRow`
+
+**Syntax**
+
+```
+addRow table []string
+```
+
+Appends the given row to the given table (created with `newTable`).
+
+##### `renderTable`
+
+**Syntax**
+
+```
+renderTable table
+```
+
+Prints the table-formatted output to `stdout`.
+
+#### Template examples
+
+The following example re-implements Vale's default output style using a
+template.
+
+```
+{{- /* Keep track of our various counts */ -}}
+
+{{- $e := 0 -}}
+{{- $w := 0 -}}
+{{- $s := 0 -}}
+{{- $f := 0 -}}
+
+{{- /* Range over the linted files */ -}}
+
+{{- range .Files}}
+{{$table := newTable true}}
+
+{{- $f = add1 $f -}}
+{{- .Path | underline | indent 1 -}}
+
+{{- /* Range over the file's alerts */ -}}
+
+{{- range .Alerts -}}
+
+{{- $error := "" -}}
+{{- if eq .Severity "error" -}}
+    {{- $error = .Severity | red -}}
+    {{- $e = add1 $e  -}}
+{{- else if eq .Severity "warning" -}}
+    {{- $error = .Severity | yellow -}}
+    {{- $w = add1 $w -}}
+{{- else -}}
+    {{- $error = .Severity | blue -}}
+    {{- $s = add1 $s -}}
+{{- end}}
+
+{{- $loc := printf "%d:%d" .Line (index .Span 0) -}}
+{{- $row := list $loc $error .Message .Check | toStrings -}}
+
+{{- $table = addRow $table $row -}}
+{{end -}}
+
+{{- $table = renderTable $table -}}
+{{end}}
+{{- $e}} {{"errors" | red}}, {{$w}} {{"warnings" | yellow}} and {{$s}} {{"suggestions" | blue}} in {{$f}} {{$f | int | plural "file" "files"}}.
 ```
 
 ### `--ext`
@@ -331,4 +488,3 @@ $ vale --minAlertLevel LEVEL
 ```
 
 Where `LEVEL` is `suggestion`, `warning`, or `error`.
-
