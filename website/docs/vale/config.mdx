@@ -3,8 +3,8 @@ id: config
 title: Configuration
 ---
 
-import Core from '../common/options/core.md';
-import Syntax from '../common/options/syntax.md';
+import Core from "../common/options/core.md";
+import Syntax from "../common/options/syntax.md";
 
 The `.vale.ini` file is where you'll control the majority of Vale's behavior,
 including what files to lint and how to lint them.
@@ -52,7 +52,7 @@ In the example above, we're telling Vale to treat MDX files as Markdown files.
 ## Search process
 
 :::note Heads up!
-You can override the default search process by  manually specifying a path using
+You can override the default search process by manually specifying a path using
 the [`--config`](/vale/cli#--config) option.
 
 For example, if you'd like to use the XDG standard, you can reference the
@@ -69,23 +69,10 @@ It'll start looking for this file in the same folder as the file that's
 being linted. If it can't find one, it'll search up to 6 levels up the
 file tree. After 6 levels, it'll look for a global configuration file in the OS equivalent of `$HOME` \(see below\).
 
-| OS | Search Locations |
-| :--- | :--- |
+| OS      | Search Locations                                     |
+| :------ | :--------------------------------------------------- |
 | Windows | `$HOME`, `%UserProfile%`, or `%HomeDrive%%HomePath%` |
-| macOS | `$HOME` |
-| Linux | `$HOME` |
+| macOS   | `$HOME`                                              |
+| Linux   | `$HOME`                                              |
 
 If more than one configuration file is present, the closest one takes precedence.
-
-## Examples
-
-Check out how other projects and organizations are currently using Vale and its
-configuration files:
-
-|        Project / Organization       |                                                                             Configuration                                                                            |                             Related documentation / press                            |
-|:-----------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-| [GitLab](https://about.gitlab.com/) | [`.vale.ini`](https://gitlab.com/gitlab-org/gitlab/blob/master/.vale.ini), [`StylesPath`](https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/.vale/gitlab) | [`documentation/#vale`](https://docs.gitlab.com/ee/development/documentation/#vale)        |
-| [Linode](https://www.linode.com/)   | [`.vale.ini`](https://github.com/linode/docs/blob/develop/.vale.ini), [`StylesPath`](https://github.com/linode/docs/tree/develop/ci/vale)                      | [Docs as Code at Linode](https://www.linode.com/blog/linode/docs-as-code-at-linode/)       |
-| [Homebrew](https://brew.sh/)        | [`.vale.ini`](https://github.com/Homebrew/brew/blob/master/.vale.ini), [`StylesPath`](https://github.com/Homebrew/brew/tree/master/docs/vale-styles/Homebrew)  | [Prose Style Guidelines](https://docs.brew.sh/Prose-Style-Guidelines.html)       |
-
-
