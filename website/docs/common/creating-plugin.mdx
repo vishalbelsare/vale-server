@@ -1,0 +1,50 @@
+# Creating a plugin that uses Vale
+
+
+Vale can provide JSON output that extensions can use, how you get this output can depend on if you use Vale server or CLI.
+
+
+
+```shell
+vale --output JSON {path/file}
+```
+
+_http://localhost:7777/file_ with a `file` and `path` query
+
+
+```json
+{
+  "index.md": [
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Check": "write-good.Passive",
+      "Description": "",
+      "Line": 6,
+      "Link": "",
+      "Message": "'was created' may be passive voice. Use active voice if you can.",
+      "Severity": "warning",
+      "Span": [
+        59,
+        69
+      ],
+      "Match": "was created"
+    },
+    …
+  ]
+}
+```
+
+The top of the JSON is the file name, then an array of check objects that contain the following information.
+
+- `Action`: An action or change to the text that Vale server can take with a rule, containing a `Name` for the action, and `Params` passed to the action.
+- `Check`: The rule set and rule triggered.
+- `Description`:
+- `Line`: The line that contains the error.
+- `Link`: Link to explanation of style guide rule
+- `Message`: Help text output by the rule
+- `Severity`: The error level.
+- `Span`: The start and finish characters on the line.
+- `Match`: The text matched.
