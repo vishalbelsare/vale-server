@@ -36,6 +36,11 @@ module.exports = {
         label: "Style Library",
         href: "https://github.com/errata-ai/styles",
       },
+      {
+        type: "link",
+        label: "Vale Studio",
+        href: "https://vale-studio.errata.ai",
+      },
     ],
   },
   vale: {
@@ -80,8 +85,8 @@ module.exports = {
       },
       {
         type: "link",
-        label: "Community Styles",
-        href: "https://github.com/topics/vale-linter-style",
+        label: "Vale Studio",
+        href: "https://vale-studio.errata.ai",
       },
     ],
   },

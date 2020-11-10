@@ -4,19 +4,21 @@ module.exports = {
   url: "https://nervous-almeida-4ca728.netlify.app",
   baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "errata-ai", // Usually your GitHub org/user name.
-  projectName: "vale-server", // Usually your repo name.
+  organizationName: "errata-ai",
+  projectName: "vale-server",
 
   plugins: [],
   scripts: [],
   stylesheets: [],
 
   themeConfig: {
-    /*announcementBar: {
+    announcementBar: {
       id: "supportus",
+      backgroundColor: "#e1e4e8",
+      isCloseable: false,
       content:
-        '⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a>! ⭐️',
-    },*/
+        '⭐️ Check out the new <a target="_blank" rel="noopener noreferrer" href="https://vale-studio.errata.ai">online rule editor</a> for Vale and Vale Server! ⭐️',
+    },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("./src/plugins/prism_themes/github"),
