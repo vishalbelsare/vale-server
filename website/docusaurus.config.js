@@ -37,20 +37,20 @@ module.exports = {
       },
       items: [
         {
-          label: "Products",
+          label: "Software",
           position: "left", // or 'right'
           items: [
             {
               label: "Vale",
-              to: "/vale/about",
+              to: "/vale/about/",
             },
             {
               label: "Vale Server",
-              to: "/vale-server/install",
+              to: "/vale-server/install/",
             },
             {
               label: "Static School",
-              href: "https://staticschool.com/",
+              to: "https://staticschool.com/",
             },
           ],
         },
