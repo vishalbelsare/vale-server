@@ -248,9 +248,9 @@ alerts.
 $ vale --output=JSON directory
 ```
 
-In addition to the 3 provided output styles, Vale also supports custom output
-styles powered by Go's [`text/template`](https://golang.org/pkg/text/template/)
-package.
+In addition to the 3 provided output styles, Vale also supports (as of `v2.6`)
+custom output styles powered by Go's
+[`text/template`](https://golang.org/pkg/text/template/) package.
 
 To use a custom format, pass the path to a template file through the `--output`
 option:
@@ -269,12 +269,17 @@ a few Vale-specific functions:
 - `newTable`, `addRow`, and `renderTable`, which are utilities for consistent
   alignment.
 
-Templates are passed a slice of Files of the form:
+Templates have access to the following data struture:
 
 ```go
 type ProcessedFile struct {
-    Alerts []core.Alert
-    Path   string
+	Alerts []core.Alert
+	Path   string
+}
+
+type Data struct {
+	Files       []ProcessedFile
+	LintedTotal int
 }
 ```
 
