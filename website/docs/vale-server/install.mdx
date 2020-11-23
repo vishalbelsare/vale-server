@@ -7,19 +7,44 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import AdaptiveImg from '@site/src/components/AdaptiveImg';
+import ThemedImage from '@theme/ThemedImage';
 
-Vale Server is a cross-platform (Windows and macOS) desktop application that
+## Overview
+
+[**Vale Server**](https://errata.ai/vale-server/) is a cross-platform (Windows and macOS) desktop application that
 helps enforce writing style guides. It's built on top of, and offers a high
 degree of compatibility with, the [Vale command-line tool](/vale/about).
 
-<AdaptiveImg
-    alt="A screenshot of Vale Server's VS Code extension."
-    src={useBaseUrl('img/vale-server/demos/vscode')}
-    caption="Example output from Vale Server's VS Code extension, one of multiple available clients."
-    format=".png">
-</AdaptiveImg>
+<ThemedImage
+  alt="Docusaurus themed image"
+  className="mockup"
+  sources={{
+    light: useBaseUrl('img/vale-server/demos/mockup-light.png'),
+    dark: useBaseUrl('img/vale-server/demos/mockup-dark.png'),
+  }}
+/>
+
+The application consists of two parts: a *server* (which manages Vale-related
+configuration details) and a *client* (which displays Vale's results).
+
+The server is embedded in the application itself and runs
+locally&mdash;meaning that your content is never transmitted, stored, or
+otherwise inspected.
+
+Clients are third-party applications that communicate with Vale Server through
+[its API](https://docs.errata.ai/api/index.html), allowing you to use your
+favorite tools with your server-managed configurations.
+
+Client implementations are currently available for
+[Visual Studio Code](/vale-server/clients/vscode),
+[Atom](/vale-server/clients/atom),
+[Sublime Text](/vale-server/clients/sublime-text),
+[Google Docs](/vale-server/clients/google-docs), and
+[Google Chrome](/vale-server/clients/chrome).
 
 ## Installation
+
+Vale Server supports macOS 10.12+ and Windows 10.
 
 <Tabs
   groupId="operating-systems"
@@ -46,16 +71,6 @@ degree of compatibility with, the [Vale command-line tool](/vale/about).
   </TabItem>
 
   <TabItem value="mac">
-    <div className="admonition admonition-important alert alert--info">
-        <div className="admonition-heading">
-            <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>
-                important
-            </h5>
-        </div>
-        <div className="admonition-content">
-            <p>Vale Server requires at least macOS Sierra 10.12.</p>
-        </div>
-    </div>
     <p>Double-click <span className="code">ValeServer-1.x-osx.dmg</span> (where <span className="code">1.x</span> will be the latest version) to open the installer and then drag the application into your <span className="code">/Applications</span> folder:</p>
     <AdaptiveImg
       alt="A screenshot of Vale Server's DMG installer."
@@ -63,7 +78,7 @@ degree of compatibility with, the [Vale command-line tool](/vale/about).
       format=".png"
       size="md">
     </AdaptiveImg>
-    <p>After installation, Vale Server will automatically launch in the background (<span className="code">http://localhost:7777</span> by default) and you will see its icon in your menu bar:</p>
+    <p>After starting the application, Vale Server will automatically launch in the background (<span className="code">http://localhost:7777</span> by default) and you will see its icon in your menu bar:</p>
     <AdaptiveImg
       alt="A screenshot of Vale Server's context menu."
       src={useBaseUrl('img/vale-server/mac/menu')}

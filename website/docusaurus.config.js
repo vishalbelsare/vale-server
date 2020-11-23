@@ -1,7 +1,7 @@
 module.exports = {
   title: "errata.ai",
   tagline: "Innovative tools for collaborative writing",
-  url: "https://nervous-almeida-4ca728.netlify.app",
+  url: "https://docs.errata.ai",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "errata-ai",
@@ -29,11 +29,10 @@ module.exports = {
       indexName: "errata_ai",
     },
     navbar: {
-      hideOnScroll: false,
       title: "errata.ai | Docs",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo-alt.svg",
+        src: "img/logo.svg",
+        alt: "Logo",
       },
       items: [
         {
@@ -131,7 +130,9 @@ module.exports = {
             "https://github.com/errata-ai/vale-server/edit/master/website/blog/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: [
+            require.resolve("./src/css/custom.css")
+          ]
         },
       },
     ],

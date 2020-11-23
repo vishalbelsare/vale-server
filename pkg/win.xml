@@ -8,7 +8,7 @@
       <sparkle:releaseNotesLink>https://docs.errata.ai/changelog.html</sparkle:releaseNotesLink>
       <pubDate>Tue, 15 Sep 2012 18:11:12 +0200</pubDate>
       <enclosure url="https://github.com/errata-ai/errata.ai/releases/download/v1.0.0/ValeServer-1.9-windows.exe"
-                 sparkle:version="1.10.0"
+                 sparkle:version="1.9.0"
                  sparkle:dsaSignature="MEYCIQCsPWdk7k1xoGH0dCNDJa2yWIFFbYyUQ+nktAFDy1JYsgIhAK4CSbdLdm9VZMLZNN5IuvgYnNcpDqg+MjYysKd197GJ"
                  type="application/octet-stream"/>
     </item>

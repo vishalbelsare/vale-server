@@ -5,7 +5,7 @@ title: Google Docs
 
 ## Installation
 
-:::caution Heads up!
+:::info Heads up!
 The Google Docs add-on currently *doesn't* support the Safari web browser.
 :::
 

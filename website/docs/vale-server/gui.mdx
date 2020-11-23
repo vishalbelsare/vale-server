@@ -8,7 +8,8 @@ import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import AdaptiveImg from '@site/src/components/AdaptiveImg';
 
-Vale Server's user interface (UI) consists of two parts: a native desktop application and a web-based dashboard.
+Vale Server's user interface (UI) consists of two parts: a native desktop
+application and a web-based dashboard.
 
 ## Preferences
 
@@ -41,44 +42,6 @@ then select <b>Preferences...</b>:
   </TabItem>
 
 </Tabs>
-
-### General
-
-<Tabs
-  groupId="operating-systems"
-  defaultValue="win"
-  values={[
-    {label: 'Windows', value: 'win'},
-    {label: 'macOS', value: 'mac'},
-  ]}>
-
-  <TabItem value="win">
-    <img
-      alt="A screenshot of Vale Server's 'General' settings page."
-      src={useBaseUrl('img/vale-server/win/general.png')}
-      className="md-img"
-    />
-  </TabItem>
-
-  <TabItem value="mac">
-    <AdaptiveImg
-      alt="A screenshot of Vale Server's 'General' settings page."
-      src={useBaseUrl('img/vale-server/mac/general')}
-      format=".png"
-      size="md">
-    </AdaptiveImg>
-  </TabItem>
-
-</Tabs>
-
-- **Automatically check for updates**: If checked, you'll receive a desktop notification (on application start) if there are any new releases of Vale Server available.
-
-- **Notify me about style updates**: If checked, you'll receive a desktop notification (on application start) if there are any available updates to your styles.
-
-- **Compatibility Mode**: If checked, supported clients (VS Code, Atom, and Sublime Text) will check documents according to their associated Vale configuration files whenever possible. You can further customize this functionality through local overrides in your active project:
-
-  - Any multi-value entry in your [project's](#projects) `.vale.ini` (for example, `BasedOnStyles`) will be combined with the remote entry.
-  - Any single-value entry in your project's `.vale.ini` (for example, `MinAlertLevel`) will override the remote entry altogether.
 
 ### Projects
 
@@ -260,9 +223,9 @@ menu and then navigate to the `/Vocab/<vocab name>` directory.
 
 ### Styles
 
-The Styles page of the dashboard allows you to browse, install, and update
-third-party styles. These styles are open-source and maintained by the community of
-Vale Server users.
+The Styles page allows you to browse, install, and update third-party styles.
+These styles are open-source and maintained by the community of Vale Server
+users.
 
 <img
     alt="A screenshot of the dashboard's Styles page."
@@ -272,18 +235,29 @@ Vale Server users.
 
 See the [dedicated repository](https://github.com/errata-ai/styles) to learn more.
 
-### Studio
+### Summary
 
-With Vale Server, you can easily develop and test individual rules for a new or
-existing style.
+The summary page allows you to generate a status report for a local folder
+based on a custom grading scheme.
 
 <img
-    alt="A screenshot of the dashboard's Studio page."
-    src={useBaseUrl('img/vale-server/web/studio.png')}
+    alt="A screenshot of the dashboard's Styles page."
+    src={useBaseUrl('img/vale-server/web/summary.png')}
     className="md-img"
 />
 
+For each Vale alert level&mdash;`suggestion`, `warning`, and `error`&mdash;you
+can specify a `count` (the number allowed occurrences) and a `scheme`.
 
-The "Run" button will execute the rule (left-hand panel) on the provided text
-(right-hand panel). The "regex101" button will create a new regex101 session
-using the compiled rule.
+<img
+    alt="A screenshot of the dashboard's Styles page."
+    src={useBaseUrl('img/vale-server/web/grading.png')}
+    className="md-img"
+/>
+
+You can choose either `strict` or `sliding` as the grading scheme for your
+report.
+
+`strict` will cause any file that has more than `count` number of alerts
+(for any level) to fail. `sliding` will assign a grade based on far above or
+below `count` each alert level is for the particular file.
