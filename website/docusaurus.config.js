@@ -32,6 +32,7 @@ module.exports = {
       title: "errata.ai | Docs",
       logo: {
         src: "img/logo.svg",
+        srcDark: "img/logo.svg",
         alt: "Logo",
       },
       items: [
@@ -130,9 +131,7 @@ module.exports = {
             "https://github.com/errata-ai/vale-server/edit/master/website/blog/",
         },
         theme: {
-          customCss: [
-            require.resolve("./src/css/custom.css")
-          ]
+          customCss: [require.resolve("./src/css/custom.css")],
         },
       },
     ],
