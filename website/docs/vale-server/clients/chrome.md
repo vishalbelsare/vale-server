@@ -1,6 +1,6 @@
 ---
 id: chrome
-title: Google Chrome
+title: Chrome
 ---
 
 ## Installation
