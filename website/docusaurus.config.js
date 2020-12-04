@@ -29,7 +29,7 @@ module.exports = {
       indexName: "errata_ai",
     },
     navbar: {
-      title: "errata.ai | Docs",
+      title: "Docs",
       logo: {
         src: "img/logo.svg",
         srcDark: "img/logo.svg",

@@ -250,19 +250,21 @@ html[data-theme="dark"] .menu__list .menu__list .menu__link {
 /* Light / Dark mode conversions */
 
 html[data-theme="dark"] {
-  --ifm-navbar-background-color: #18191a;
-  --ifm-color-emphasis-300: #282c34;
-  --ifm-background-surface-color: #18191a;
+  --ifm-navbar-background-color: #182431;
+  --ifm-color-emphasis-300: #283546;
+  --ifm-background-surface-color: #182431;
+  --ifm-color-emphasis-100: #283546;
+  --ifm-blockquote-color: #8a9bae;
 }
 
 html[data-theme="dark"] .main-wrapper {
-    background-color: #18191a !important;
-    background: #18191a;
+    background-color: #182431 !important;
+    background: #182431;
 }
 
 html[data-theme="dark"] .footer {
-    background-color: #18191a;
-    background: #18191a;
+    background-color: #182431;
+    background: #182431;
 }
 
 html[data-theme="light"] .admonition-icon svg {
