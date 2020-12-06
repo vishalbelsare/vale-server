@@ -25,6 +25,10 @@
   --ifm-color-primary-lightest: #80aaef;
 }
 
+img {
+  padding-bottom: 15px;
+}
+
 .alert--info {
   --ifm-alert-background-color: rgba(255, 229, 100, 0.3);
   --ifm-alert-border-color: #ffe564;
@@ -36,6 +40,7 @@
 
 .main-wrapper {
   background-color: var(--ifm-hero-background-color);
+  color: #333;
 }
 .footer {
   background-color: var(--ifm-hero-background-color);
@@ -258,13 +263,14 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="dark"] .main-wrapper {
-    background-color: #182431 !important;
-    background: #182431;
+  background-color: #182431 !important;
+  background: #182431;
+  color: #d7e8fb;
 }
 
 html[data-theme="dark"] .footer {
-    background-color: #182431;
-    background: #182431;
+  background-color: #182431;
+  background: #182431;
 }
 
 html[data-theme="light"] .admonition-icon svg {
