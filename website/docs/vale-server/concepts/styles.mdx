@@ -150,3 +150,123 @@ as described in the table below.
 
 Vale Server has a growing selection of pre-made styles available for download
 from its [style library](https://github.com/errata-ai/styles).
+
+## Actions
+
+:::info Heads Up!
+Rule actions are currently only supported in **Atom**, **Visual Studio Code**, and **Sublime Text 3**. Support for other clients is on the way!
+:::
+
+In addition to implementing your own rules via the available checks, you can also assign an "action" to a rule. The goal of an action is to provide a list of possible solutions for a given rule.
+
+An action consists of a `name` and an array of `params`, and can be added to any rule definition&mdash;for example, a `spelling` rule that uses the `suggest` action:
+
+```yaml
+extends: spelling
+message: "Did you really mean '%s'?"
+level: error
+action:
+  name: suggest
+  params:
+    - spellings
+ignore:
+  - vocab.txt
+```
+
+### `suggest`
+
+**Example Definition:**
+
+```yaml
+action:
+  name: suggest
+  params:
+    - spellings
+```
+
+**Param Summary:**
+
+|   NAME    |   PARAMETERS   |                              DESCRIPTION                               |
+|-----------|----------|------------------------------------------------------------------------|
+| `spellings`     | N/A | Returns an array of possible replacements for a misspelled word. |
+
+`suggest` takes a single parameter (one of the options in the able above) and returns an array of possible replacements.
+
+### `replace`
+
+:::info Heads Up!
+Rules that extend `substitution` will automatically populate the `params` array, so you can simply provide the name:
+
+```yaml
+action:
+  name: replace
+```
+:::
+
+**Example Definition:**
+
+```yaml
+action:
+  name: replace
+  params:
+    - option1
+    - option2
+    ...
+```
+
+`replace` returns an array of user-provided replacements.
+
+### `remove`
+
+**Example Definition:**
+
+```yaml
+action:
+  name: remove
+```
+
+`remove` will remove the matched text of any rule.
+
+### `convert`
+
+**Example Definition:**
+
+```yaml
+action:
+  name: convert
+  params:
+    - simple
+```
+
+**Param Summary:**
+
+|   NAME    |   PARAMETERS    |                              DESCRIPTION                               |
+|-----------|----------|------------------------------------------------------------------------|
+| `simple`     | N/A | Return the matched text as a lowercased, space-delimited string. |
+
+`convert` will convert the case of the matched text of any rule according to the parameter provided.
+
+### `edit`
+
+**Example Definition:**
+
+```yaml
+action:
+  name: edit
+  params:
+    - remove
+    - '.?!'
+```
+
+**Param Summary:**
+
+|   NAME    |   PARAMETERS   |                              DESCRIPTION                               |
+|-----------|----------|------------------------------------------------------------------------|
+| `replace`     | `string`, `string` | Replace the first parameter with the second. |
+| `trim`     | `string` | Trim the first parameter from the end of the matched text. |
+| `remove`     | `string` | Remove the first parameter from the both start and end of the matched text. |
+| `split`     | `string`, `int` | Split the matched text on the first parameter at the index of the second parameter. |
+
+`edit` will perform an in-place edit on the match string according to the provided parameters.
+
+
