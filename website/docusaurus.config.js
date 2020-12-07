@@ -56,6 +56,7 @@ module.exports = {
         },
         { to: "blog", label: "Blog", position: "left" },
 
+        // { href: "#", label: "Changelog", className: "changelog-selector" },
         // {href: '/api/index.html', label: 'API', position: 'left'},
 
         {
