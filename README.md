@@ -1,6 +1,6 @@
 # Vale Server [![Build Status](https://travis-ci.org/errata-ai/vale-server.svg?branch=master)](https://travis-ci.org/errata-ai/vale-server)
 
-Vale Server is a native desktop application available for **Windows** (10, 64-bit) and **macOS** (10.12+). It brings the speed and extensibility of [Vale](https://github.com/errata-ai/vale) to the desktop, eliminating the need to work with the low-level CLI.
+Vale Server is a native desktop application written in C++. It's available for **Windows 10**, **macOS** (10.12+), and most **Linux** distributions. It brings the speed and extensibility of [Vale](https://github.com/errata-ai/vale) to the desktop, eliminating the need to work with the low-level CLI while also allowing you to use your local Vale configurations on the web.
 
 <table>
     <tr>
