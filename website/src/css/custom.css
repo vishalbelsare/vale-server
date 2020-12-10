@@ -10,6 +10,14 @@
   padding-bottom: 25px;
 }
 
+.navbar__brand {
+  align-items: end !important;
+}
+
+.navbar__title {
+  padding-top: 4px;
+}
+
 /**
  * You can override the default Infima variables here.
  * Note: this is not a complete list of --ifm- variables.
