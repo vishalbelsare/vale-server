@@ -9,44 +9,20 @@ Go to the [installation page](https://chrome.google.com/webstore/detail/vale-ser
 
 ![](/img/clients/chrome/install.png)
 
-After installing, you'll need to refresh the extension:
-
-![](/img/clients/chrome/refresh.png)
-
-Then, to enable the extension for the current tab, click the extension's icon and then *ENABLE*:
-
-![](/img/clients/chrome/enable.png)
-
-The icon will turn from black to blue and you're ready to start writing:
-
-![](/img/clients/chrome/ready.png)
-
 ## Usage
 
-This extension supports two HTML elements: `<textarea>` and `[contenteditable]`.
-
-In `<textarea>` elements, you'll see in-text markers (unless disabled in your settings) and an indicator below the icon:
+This extension supports both `<textarea>` and `contenteditable` elements, and should work on most websites out-of-the-box.
 
 ![](/img/clients/chrome/text.png)
 
-In `[contenteditable]` elements (such as WYSIWYG editors), you'll only see the indicator below the icon.
-
-Clicking on the extension's icon will bring up an alert panel that shows all suggestions, warnings, and errors found:
-
-![](/img/clients/chrome/alerts.png)
+To use the extension, click its toolbar icon after editing some text on the
+current page.
 
 ## Configuration
 
-:::info Heads Up!
-In-text makers (highlighting around words) are currently only available for `<textarea>` elements&mdash;they aren't supported in `[contenteditable]` elements such as WYSIWYG editors.
-:::
-
-To open the settings page, click the extension's icon and then *OPTIONS*:
+To open the settings page, click the extension's icon and then *Options*:
 
 ![](/img/clients/chrome/config.png)
 
-## Uninstallation
-
-Go to the [installation page](https://chrome.google.com/webstore/detail/vale-server/goinboihbomchileeihgfnbohjdhfcoi) and click the *Remove from Chrome* button:
-
-![](/img/clients/chrome/uninstall.png)
+Here, you can assign certain markup formats to specific URLs&mdash;such as,
+for example, writing Markdown on GitHub.
