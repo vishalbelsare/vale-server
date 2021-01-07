@@ -60,20 +60,3 @@ WordTemplate = \b(?:%s)\b
 
 `WordTemplate` specifies what Vale will consider to be an individual word.
 
-### `SphinxBuildPath` (<span className="badge badge--secondary">v2.0</span>)
-
-```ini
-SphinxBuildPath = _build
-```
-
-`SphinxBuildPath` is the path to your `_build` folder \(relative to the configuration file\).
-
-### `SphinxAutoBuild` (<span className="badge badge--secondary">v2.0</span>)
-
-```ini
-SphinxAutoBuild = make html
-```
-
-`SphinxAutoBuild` is the command that builds your site \(`make html` is the default for Sphinx\).
-
-If this is defined, Vale will re-build your site prior to linting any content&mdash;making it possible to use Sphinx and Vale in lint-on-the-fly environments \(e.g., text editors\) at the cost of performance.
