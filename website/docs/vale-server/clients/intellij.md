@@ -1,8 +1,7 @@
-* * *
-
+---
 id: intellij
-
-## title: Intellij-based tools
+title: Intellij-based tools
+---
 
 There is no official plugin for using Vale with IntelliJ-based IDEs. If you are interested in developing one, [add your input to this issue](https://github.com/errata-ai/vale-server/issues/39).
 
