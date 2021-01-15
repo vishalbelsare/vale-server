@@ -1,6 +1,12 @@
+:::info Heads up!
+The `dic` and `aff` keys, while still supported, have been deprecated in favor
+of using the `dictionaries` key (introduced in `v2.8.0`).
+:::
+
 #### Example definition
 
 ```yaml
+# Uses the built-in dictionary and filters.
 extends: spelling
 message: "Did you really mean '%s'?"
 level: error
@@ -8,32 +14,34 @@ level: error
 
 #### Key summary
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `aff` | `string` | The path to a Hunspell-compatible `.aff` file. |
-| `custom` | `bool` | Turn off the default filters for acronyms, abbreviations, and numbers. |
-| `dic` | `string` | The  path to a Hunspell-compatible `.dic` file. |
-| `filters` | `array` | An array of patterns to ignore during spell checking. |
-| `ignore` | `string` | A relative path \(from `StylesPath`\) to a personal vocabulary file consisting of one word per line to ignore. |
+| Name           | Type     | Description                                                                                 |
+| :------------- | :------- | :------------------------------------------------------------------------------------------ |
+| `custom`       | `bool`   | Turn off the default filters for acronyms, abbreviations, and numbers.                      |
+| `filters`      | `array`  | An array of patterns to ignore during spell checking.                                       |
+| `ignore`       | `string` | A relative path \(from `StylesPath`\) to a file consisting of one word per line to ignore.  |
+| `dicpath`      | `string` | The location to look for `.dic` and `.aff` files.                                           |
+| `dictionaries` | `array`  | An array of dictionaries to load.                                                           |
 
 `spelling` implements spell checking based on Hunspell-compatible dictionaries.
 
 #### Choosing a dictionary
 
 By default, `spelling` includes a custom, open-source
-[dictionary for American English](https://github.com/errata-ai/en_US-web).
-However, you may also provide your own by using the `dic` and `aff` keys:
+[dictionary for American English](https://github.com/errata-ai/en_US-web). You
+may instead use the `dictionaries` key to list multiple custom dictionaries:
 
 ```yaml
 extends: spelling
-message: "Did you really mean '%s'?"
-level: error
-
-aff: path/to/my/file.aff
-dic: path/to/my/file.dic
+message: "'%s' is a typo!"
+dicpath: ../../fixtures/spelling/dics
+dictionaries:
+  - en_US
+  - en_medical
 ```
 
-The values for both `aff` and `dic` may be absolute file paths or relative to the current `StylesPath`.
+The `spelling` extension point will look for `en_US.{dic,aff}` and
+`en_medical.{dic,aff}` files in `$DICPATH`, which you can set through an
+environment variable or the `dicpath` key.
 
 #### Ignoring non-dictionary words
 
