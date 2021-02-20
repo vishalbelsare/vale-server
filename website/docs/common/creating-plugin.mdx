@@ -14,11 +14,11 @@ Look at how the VSCode extension uses the [`buildCommand`](https://github.com/er
 
 ## With Vale Server
 
-Your extension should call the Vale server _[/vale_ endpoint](https://docs.errata.ai/api/index.html#/Linting%20and%20Suggestions/LintText), which the user of your plugin needs to have installed.
+Your extension should call the Vale server [_/vale_ endpoint](https://docs.errata.ai/api/index.html#/Linting%20and%20Suggestions/LintText), which the user of your plugin needs to have installed.
 
 _<http://localhost:7777/vale>_ with the text to lint in the `text` parameter and `format` as the file extension of the file to check, including the leading ".".
 
-<!-- The VSCode extension does something similar, creating a [`postFile`](https://github.com/errata-ai/vale-vscode/blob/78cd80ff5bcc043f51aa22126997c4e86e5b13fd/src/features/vsUtils.ts#L212) method that handles creating the request and response to the endpoint, [that the extension calls](https://github.com/errata-ai/vale-vscode/blob/78cd80ff5bcc043f51aa22126997c4e86e5b13fd/src/features/vsProvider.ts#L47) when needed. -->
+The VSCode extension does something similar, creating a [`postString`](https://github.com/errata-ai/vale-vscode/blob/dbdb13bdf05c3ca8562a3f181c07fcb609ea9793/src/features/vsUtils.ts#L238) method that handles creating the request and response to the endpoint, [that the extension calls](https://github.com/errata-ai/vale-vscode/blob/78cd80ff5bcc043f51aa22126997c4e86e5b13fd/src/features/vsProvider.ts#L44) when needed.
 
 ## JSON output of checks
 
