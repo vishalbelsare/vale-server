@@ -46,6 +46,11 @@ module.exports = {
         label: "Vale Studio",
         href: "https://vale-studio.errata.ai",
       },
+      {
+        type: "link",
+        label: "Creating a plugin",
+        href: "common/creating-plugin",
+      },
     ],
   },
   vale: {
@@ -81,6 +86,11 @@ module.exports = {
         href:
           "https://medium.com/@jdkato/vale-the-openapi-specification-8a7cfae135fb",
       },
+      {
+        type: "link",
+        label: "Creating a plugin",
+        href: "common/creating-plugin",
+      }
     ],
     Resources: [
       {
@@ -92,7 +102,7 @@ module.exports = {
         type: "link",
         label: "Community Styles",
         href: "https://github.com/topics/vale-linter-style"
-      },    
+      },
       {
         type: "link",
         label: "Vale Studio",

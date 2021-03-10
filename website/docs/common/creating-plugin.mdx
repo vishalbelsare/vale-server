@@ -14,7 +14,7 @@ Look at how the VSCode extension uses the [`buildCommand`](https://github.com/er
 
 ## With Vale Server
 
-Your extension should call the Vale server [_/vale_ endpoint](https://docs.errata.ai/api/index.html#/Linting%20and%20Suggestions/LintText), which the user of your plugin needs to have installed.
+Your extension should call the Vale server [`/vale`](https://docs.errata.ai/api/index.html#/Linting%20and%20Suggestions/LintText) endpoint, which the user of your plugin needs to have installed.
 
 _<http://localhost:7777/vale>_ with the text to lint in the `text` parameter and `format` as the file extension of the file to check, including the leading ".".
 
@@ -44,7 +44,6 @@ Whether using Vale CLI or Server, the JSON output of the checks configured to ru
       ],
       "Match": "was created"
     },
-    …
   ]
 }
 ```
@@ -76,4 +75,5 @@ If the editor or IDE allows for user-configured settings for a plugin, then some
 -   Custom paths for the Vale CLI binary, configuration, or styles paths
 
 ## Vale server API reference
+
 You can find the full API reference for Vale server [in the OAS spec](https://docs.errata.ai/api/index.html#/Linting%20and%20Suggestions/LintText).
