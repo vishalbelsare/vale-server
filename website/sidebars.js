@@ -11,7 +11,10 @@ module.exports = {
       "vale-server/concepts/config",
       "vale-server/concepts/syncing",
     ],
-    Guides: ["vale-server/guides/languages"],
+    Guides: [
+      "vale-server/guides/languages",
+      "common/creating-plugin"
+    ],
     Clients: [
       "vale-server/clients/atom",
       "vale-server/clients/chrome",
@@ -45,12 +48,7 @@ module.exports = {
         type: "link",
         label: "Vale Studio",
         href: "https://vale-studio.errata.ai",
-      },
-      {
-        type: "link",
-        label: "Creating a plugin",
-        href: "common/creating-plugin",
-      },
+      }
     ],
   },
   vale: {
@@ -86,11 +84,7 @@ module.exports = {
         href:
           "https://medium.com/@jdkato/vale-the-openapi-specification-8a7cfae135fb",
       },
-      {
-        type: "link",
-        label: "Creating a plugin",
-        href: "common/creating-plugin",
-      }
+      "common/creating-plugin"
     ],
     Resources: [
       {
