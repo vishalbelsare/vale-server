@@ -13,7 +13,7 @@ module.exports = {
     ],
     Guides: [
       "vale-server/guides/languages",
-      "common/creating-plugin"
+      "common/plugins"
     ],
     Clients: [
       "vale-server/clients/atom",
@@ -84,7 +84,7 @@ module.exports = {
         href:
           "https://medium.com/@jdkato/vale-the-openapi-specification-8a7cfae135fb",
       },
-      "common/creating-plugin"
+      "common/plugins"
     ],
     Resources: [
       {

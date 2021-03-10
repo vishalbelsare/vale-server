@@ -1,4 +1,7 @@
-# Creating a plugin that uses Vale
+---
+id: plugins
+title: Creating a plugin
+---
 
 Vale can provide JSON output that extensions can use. How you get this output can depend on if you use Vale server or CLI.
 
