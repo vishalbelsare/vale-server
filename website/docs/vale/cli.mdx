@@ -183,22 +183,6 @@ $ vale ls-config
 
 (See [Configuration](/vale/config) for more information about the available options.)
 
-### `new-rule`
-
-Generate a template for the given extension point.
-
-```bash
-$ vale new-rule existence
-extends: existence
-message: Consider removing '%s'
-level: warning
-code: false
-ignorecase: true
-tokens:
-    - appears to be
-    - arguably
-```
-
 Where `existence` could be any of the available extension points.
 
 ### `--help`
