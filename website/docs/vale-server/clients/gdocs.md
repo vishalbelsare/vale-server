@@ -9,7 +9,7 @@ title: Google Docs
 The Google Docs add-on currently *doesn't* support the Safari web browser.
 :::
 
-Go to the [installation page](https://chrome.google.com/webstore/detail/vale/dajjahcjejjigdlhbbofcbafdgmjlnff?authuser=0) and click the *Free* button:
+Go to the [installation page](https://workspace.google.com/marketplace/app/vale/977109187872?hl=en) and click the *Free* button:
 
 ![](/img/clients/chrome/free.png)
 
