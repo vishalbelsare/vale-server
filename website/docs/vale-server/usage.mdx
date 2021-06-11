@@ -7,7 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 This page provides a step-by-step guide to getting up and running with Vale Server.
 
-## Step 1: Installing a style
+## Installing a style
 
 The first step you'll need to take before using Vale Server is to ensure that
 you have [styles](concepts/styles) available somewhere on your machine. You have a few
@@ -22,13 +22,13 @@ options for doing this:
 3. You can specify a custom `StylesPath` that already contains your styles in
    a [project](gui#projects) (see Step 2).
 
-## Step 2: Creating a project
+## Creating a project
 
 After you've installed a style (or styles), you need to create a
-project. Cick on the **Preferences...** option from the context
+project. Click on the **Preferences...** option from the context
 menu and follow the instructions on [creating a new project](gui#projects).
 
-## Step 3: Using a client application
+## Using a client application
 
 The final step is to install one of our third-party integrations. These allow
 you to see suggestions based on your active project while you write.
@@ -40,7 +40,6 @@ you to see suggestions based on your active project while you write.
          <th>Atom</th>
          <th>Chrome</th>
          <th>Google Docs</th>
-         <th>intellij-based tools</th>
          <th>Sublime Text</th>
          <th>VS Code</th>
       </tr>
@@ -71,14 +70,6 @@ you to see suggestions based on your active project while you write.
                height="64"/>
             </a>
          </td>
-         <td>
-            <a href="clients/intellij">
-              <img
-               alt="intellij logo."
-               src={useBaseUrl('img/logos/intellij.png')}
-               height="64"/>
-            </a>
-         </td>         
          <td align="center">
             <a href="clients/sublime-text">
               <img
@@ -98,3 +89,25 @@ you to see suggestions based on your active project while you write.
       </tr>
    </tbody>
 </table>
+
+## Choosing a mode
+
+Vale Server can run in one of three modes, as described below.
+
+1. `Server`: Vale Server will check documents solely based on the active
+    project's configuration.
+
+2. `Compatibility`: Vale Server will check documents according to their
+   associated local Vale configuration files while respecting the following
+   override rules:
+
+      - Any multi-value entry in your project's `.vale.ini` (for example,
+      `BasedOnStyles`) will be combined with the remote entry.
+
+      - Any single-value entry in your project's `.vale.ini` (for example,
+      `MinAlertLevel`) will override the remote entry altogether.
+
+3. `Command Line`: Vale Server will check documents solely based on the their
+   local Vale configurations.
+
+You can switch between modes through the context menu's `Select Mode` option.

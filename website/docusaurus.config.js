@@ -1,140 +1,148 @@
+const customFields = {
+  slackUrl: 'https://writethedocs.slack.com/archives/CBWQQ5E57',
+  githubOrg: 'https://github.com/errata-ai',
+  valeStudio: 'https://vale-studio.errata.ai/'
+}
+
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "errata.ai",
-  tagline: "Innovative tools for collaborative writing",
-  url: "https://docs.errata.ai",
-  baseUrl: "/",
-  favicon: "img/favicon.ico",
-  organizationName: "errata-ai",
-  projectName: "vale-server",
-
-  plugins: [],
-  scripts: [],
-  stylesheets: [],
-
+  title: 'docs.errata.ai',
+  tagline: 'NLP-powered tools for automated style guide enforcement, including Vale, Vale Server, and Vale Studio.',
+  url: 'https://your-docusaurus-test-site.com',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'errata-ai',
+  projectName: 'vale',
   themeConfig: {
+    hideableSidebar: true,
     announcementBar: {
-      id: "supportus",
-      backgroundColor: "#e1e4e8",
+      id: 'supportus',
+      backgroundColor: '#ffa48e',
       isCloseable: false,
       content:
-        '⭐️ Check out the new <a target="_blank" rel="noopener noreferrer" href="https://vale-studio.errata.ai">online rule editor</a> for Vale and Vale Server! ⭐️',
-    },
-    prism: {
-      theme: require("prism-react-renderer/themes/github"),
-      darkTheme: require("./src/plugins/prism_themes/github"),
-      additionalLanguages: ["ini"],
+        '⭐️ Check out the new <a target="_blank" rel="noopener noreferrer" href="https://vale-studio.errata.ai">online rule editor</a> for Vale and Vale Server! ⭐️'
     },
     algolia: {
-      apiKey: "12bdf8cd642ab554d424ff89eed88ce9",
-      indexName: "errata_ai",
+      apiKey: '12bdf8cd642ab554d424ff89eed88ce9',
+      indexName: 'errata_ai'
     },
     navbar: {
-      title: "Docs",
+      hideOnScroll: true,
+      title: 'docs.errata.ai',
       logo: {
-        src: "img/logo.svg",
-        srcDark: "img/logo.svg",
-        alt: "Logo",
+        alt: 'errata.ai logo',
+        src: 'img/logo.svg'
       },
       items: [
         {
-          label: "Software",
-          position: "left", // or 'right'
+          label: 'Docs',
+          position: 'left', // or 'right'
           items: [
             {
-              label: "Vale",
-              to: "/vale/about/",
+              label: 'Vale CLI',
+              to: '/vale/about/'
             },
             {
-              label: "Vale Server",
-              to: "/vale-server/install/",
+              label: 'Vale Server',
+              to: '/vale-server/install/'
             },
             {
-              label: "Static School",
-              to: "https://staticschool.com/",
-            },
-          ],
+              label: 'Vale Studio',
+              to: customFields.valeStudio
+            }
+          ]
         },
-        { to: "blog", label: "Blog", position: "left" },
-
-        // { href: "#", label: "Changelog", className: "changelog-selector" },
-        // {href: '/api/index.html', label: 'API', position: 'left'},
-
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: "https://github.com/errata-ai",
-          position: "right",
-          className: "header-github-link",
-          "aria-label": "GitHub repository",
+          to: '/community',
+          label: 'Community',
+          position: 'left'
         },
-      ],
+        {
+          href: 'https://github.com/errata-ai',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository'
+        },
+        {
+          href: customFields.slackUrl,
+          position: 'right',
+          className: 'header-slack-link',
+          'aria-label': 'Slack community'
+        }
+      ]
     },
     footer: {
+      style: 'dark',
       links: [
         {
-          title: "About",
+          title: 'Docs',
           items: [
             {
-              label: "Home",
-              to: "https://errata.ai",
+              label: 'Vale CLI',
+              to: '/vale/about'
             },
             {
-              label: "Blog",
-              to: "Blog",
+              label: 'Vale Server',
+              to: '/vale-server/install/'
             },
-          ],
+            {
+              label: 'Vale Studio',
+              to: 'https://vale-studio.errata.ai/'
+            }
+          ]
         },
         {
-          title: "Community",
+          title: 'Connect',
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/errata-ai",
+              label: 'GitHub',
+              href: customFields.githubOrg
             },
             {
-              label: "Slack",
-              href: "https://writethedocs.slack.com/archives/CBWQQ5E57",
-            },
-            {
-              label: "Open Collective",
-              href: "https://opencollective.com/vale",
-            },
-          ],
+              label: 'Slack',
+              href: customFields.slackUrl
+            }
+          ]
         },
         {
-          title: "More",
+          title: 'More',
           items: [
             {
-              label: "Become a Sponsor",
-              to: "https://opencollective.com/vale",
-            },
-          ],
-        },
+              label: 'Sponsor',
+              to: 'https://opencollective.com/vale'
+            }
+          ]
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} errata.ai`,
-    },
+      copyright: `Copyright © ${new Date().getFullYear()} errata.ai`
+    }
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
         docs: {
-          routeBasePath: "/",
-          // It is recommended to set document id as docs home page (`docs/` path).
-          // homePageId: 'about',
-          sidebarPath: require.resolve("./sidebars.js"),
+          id: 'docs',
+          path: './docs',
+          routeBasePath: '/',
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/errata-ai/vale-server/edit/master/website/",
+            'https://github.com/errata-ai/vale-server/edit/master/website/'
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/errata-ai/vale-server/edit/master/website/blog/",
+            'https://github.com/errata-ai/vale-server/edit/master/website/blog/'
         },
         theme: {
-          customCss: [require.resolve("./src/css/custom.css")],
-        },
-      },
-    ],
-  ],
-};
+          customCss: require.resolve('./src/css/_global.css')
+        }
+      }
+    ]
+  ]
+}

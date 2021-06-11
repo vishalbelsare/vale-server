@@ -2,4 +2,16 @@
   from = "https://nervous-almeida-4ca728.netlify.app/*"
   to = "https://docs.errata.ai/:splat"
   status = 301
-  force = true #COMMENT: ensure that we always redirect
+  force = true
+
+[[redirects]]
+  from = "/vale/*"
+  to = "/docs/vale/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vale-server/*"
+  to = "/docs/vale-server/:splat"
+  status = 301
+  force = true
