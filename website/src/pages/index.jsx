@@ -71,12 +71,6 @@ const images = [
   {
     original: '/img/previews/st.png',
   },
-  {
-    original: '/img/previews/code.png',
-  },
-  {
-    original: '/img/previews/atom.png',
-  },
 ];
 
 const Top = () => {
@@ -104,11 +98,12 @@ const Top = () => {
             seCss["section__subtitle--accent"],
           )}
         >
-          {siteConfig.tagline}
+          NLP-powered tools for automated style guide enforcement,
+          including <b>Vale</b>, <b>Vale Server</b>, and <b>Vale Studio</b>.
         </p>
 
         <div className={clsx(juCss.jumbotron__cta)}>
-          <ImageGallery items={images} fullscreen={false} />
+          <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showPlayButton={false} />
         </div>
       </div>
     </section>
@@ -227,7 +222,7 @@ const Cards = () => (
             Both Vale CLI and Vale Server operate entirely offline&mdash;meaning
             your content is never sent to a remote server for processing.
           </p>
-          <a href="#" className={feCss.feature__footer}>
+          <a href="/privacy" className={feCss.feature__footer}>
             Learn more ›
           </a>
         </div>

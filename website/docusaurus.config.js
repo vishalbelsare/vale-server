@@ -1,7 +1,8 @@
 const customFields = {
   slackUrl: 'https://writethedocs.slack.com/archives/CBWQQ5E57',
   githubOrg: 'https://github.com/errata-ai',
-  valeStudio: 'https://vale-studio.errata.ai/'
+  valeStudio: 'https://vale-studio.errata.ai/',
+  collectiveUrl: 'https://opencollective.com/vale'
 }
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -22,7 +23,7 @@ module.exports = {
       backgroundColor: '#ffa48e',
       isCloseable: false,
       content:
-        '⭐️ Check out the new <a target="_blank" rel="noopener noreferrer" href="https://vale-studio.errata.ai">online rule editor</a> for Vale and Vale Server! ⭐️'
+        'Enjoying our open-source software? Please consider <a target="_blank" rel="noopener noreferrer" href="https://opencollective.com/vale">becoming a sponsor</a> to support continued development. ❤️'
     },
     algolia: {
       apiKey: '12bdf8cd642ab554d424ff89eed88ce9',
@@ -71,6 +72,12 @@ module.exports = {
           position: 'right',
           className: 'header-slack-link',
           'aria-label': 'Slack community'
+        },
+        {
+          href: customFields.collectiveUrl,
+          position: 'right',
+          className: 'header-oc-link',
+          'aria-label': 'Open Collective'
         }
       ]
     },
@@ -104,6 +111,10 @@ module.exports = {
             {
               label: 'Slack',
               href: customFields.slackUrl
+            },
+            {
+              label: 'Open Collective',
+              href: customFields.collectiveUrl
             }
           ]
         },
@@ -111,13 +122,17 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Sponsor',
-              to: 'https://opencollective.com/vale'
+              label: 'Privacy',
+              to: '/privacy'
+            },
+            {
+              label: 'Benchmarks',
+              to: 'https://github.com/errata-ai/vale#benchmarks'
             }
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} errata.ai`
+      copyright: `<a href="https://errata.ai/">Copyright © ${new Date().getFullYear()} errata.ai</a>`
     }
   },
   presets: [
@@ -129,13 +144,11 @@ module.exports = {
           path: './docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/errata-ai/vale-server/edit/master/website/'
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://github.com/errata-ai/vale-server/edit/master/website/blog/'
         },
