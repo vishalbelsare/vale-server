@@ -3,6 +3,13 @@
     <channel>
         <title>Vale Server</title>
         <item>
+            <title>1.12.0</title>
+            <pubDate>Mon, 05 Jul 2021 12:25:15 -0700</pubDate>
+            <sparkle:releaseNotesLink>https://docs.errata.ai/changelog.html</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/errata-ai/errata.ai/releases/download/v1.0.0/Vale-Server-1.12.0-macos.dmg" sparkle:version="1.12.0" sparkle:shortVersionString="1.12.0" length="26327415" type="application/octet-stream" sparkle:edSignature="BjX6qmWt5qgEJlI3gdVZOJKiYDpV0mBylFcFbSJ/Q0zYI2ZbnDdidR66hoAMGIm2vtplKuMj5EOT6pHJm/gkDQ=="/>
+        </item>
+        <item>
             <title>1.11.0</title>
             <pubDate>Tue, 22 Dec 2020 18:50:40 -0800</pubDate>
             <sparkle:releaseNotesLink>https://docs.errata.ai/changelog.html</sparkle:releaseNotesLink>
