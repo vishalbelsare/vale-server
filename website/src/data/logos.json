@@ -88,5 +88,10 @@
       "img": "/img/logos/oxygen.png",
       "alt": "Oxygen XML",
       "url": "https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/vale-linter-addon.html"
+   },
+   {
+      "img": "/img/logos/beyond-code.png",
+      "alt": "Beyond Code",
+      "url": "https://github.com/beyondcode/laravel-prose-linter"
    }
 ]

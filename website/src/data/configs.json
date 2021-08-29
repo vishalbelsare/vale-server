@@ -117,5 +117,12 @@
         "info": "A Vale Validation add-on for the Oxygen XML editor.",
         "org": "https://github.com/oxygenxml",
         "name": "Oxygen XML"
+    },
+    {
+        "website": "https://beyondco.de/",
+        "source": "https://github.com/beyondcode/laravel-prose-linter",
+        "info": "Syntax-aware proofreading for your Laravel application.",
+        "org": "https://github.com/beyondcode",
+        "name": "Beyond Code"
     }
 ]
