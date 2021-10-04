@@ -58,14 +58,6 @@ rules.
 
 ## Extension points
 
-:::info Heads up!
-Vale Server uses Go's [regexp package](https://golang.org/pkg/regexp/syntax/) to
-evaluate all patterns in rule definitions. This means that lookarounds and
-backreferences aren't supported.
-
-This shouldn't be a limitation, though, [as Vale Server offers its own ways](https://medium.com/@jdkato/rule-authoring-101-ca066233970c?source=friends_link&sk=85ff5198b7548b326d6aaab43aca40f9) to achieve same behavior.
-:::
-
 The building blocks of styles are rules (YAML files ending in `.yml`), which utilize extension points to perform specific tasks.
 
 The basic structure of a rule consists of a small header \(shown below\) followed by extension-specific arguments.
