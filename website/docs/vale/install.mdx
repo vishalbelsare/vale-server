@@ -69,6 +69,19 @@ If you want to lint the contents of a GitHub repository, the recommended approac
 
 ## Using Vale with a continuous integration \(CI\) service
 
+:::caution
+
+The [`GoDownloader`](https://github.com/goreleaser/godownloader/issues/207)
+project has been deprecated.
+
+We now recommend that you use the official [GitHub CLI tool][https://cli.github.com/] instead:
+
+```bash
+$ gh release download --repo 'errata-ai/vale' -p 'vale_2.11.2_Linux_64-bit.tar.gz'
+```
+
+:::
+
 If you want to use Vale with a CI service such as Travis CI, CircleCI, or Jenkins, the recommended approach is to use Vale's [`GoDownloader`](https://github.com/goreleaser/godownloader) script \(Vale will be installed to `/bin/vale`\):
 
 ```bash
