@@ -74,7 +74,9 @@ official [GitHub CLI tool][1] to download the version of your choice from the
 [releases page][2]
 
 ```bash
-gh release download --repo 'errata-ai/vale' -p 'vale_2.11.2_Linux_64-bit.tar.gz'
+$ gh release download --repo 'errata-ai/vale' -p 'vale_2.11.2_Linux_64-bit.tar.gz'
+$ tar -xf 'vale_2.11.2_Linux_64-bit.tar.gz'
+$ ./vale -v
 ```
 
 This will ensure that your CI builds are consistent and allow you to update
