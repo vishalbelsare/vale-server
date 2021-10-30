@@ -19,6 +19,7 @@ swap:
 | `ignorecase` | `bool` | Makes all matches case-insensitive. |
 | `nonword` | `bool` | Removes the default word boundaries \(`\b`\). |
 | `swap` | `map` | A sequence of `observed: expected` pairs. |
+| `exceptions` | `array` | An array of strings to be ignored. |
 
 `substitution` associates a string with a preferred form. If we want to suggest the use of "plenty" instead of "abundance," for example, we'd write:
 

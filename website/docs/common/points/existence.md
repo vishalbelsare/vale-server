@@ -20,6 +20,7 @@ tokens:
 | `nonword` | `bool` | Removes the default word boundaries \(`\b`\). |
 | `raw` | `array` | A list of tokens to be concatenated into a pattern. |
 | `tokens` | `array` | A list of tokens to be transformed into a non-capturing group. |
+| `exceptions` | `array` | An array of strings to be ignored. |
 
 The most general extension point is `existence`. As its name implies, it looks for the "existence" of particular tokens.
 

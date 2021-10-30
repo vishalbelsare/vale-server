@@ -58,6 +58,17 @@ rules.
 
 ## Extension points
 
+:::info Heads up!
+As if v2.10.0, you can specify an array of scopes to match against:
+
+```yaml
+scope:
+  - heading.h1
+  - heading.h2
+  - heading.h3
+```
+:::
+
 The building blocks of styles are rules (YAML files ending in `.yml`), which utilize extension points to perform specific tasks.
 
 The basic structure of a rule consists of a small header \(shown below\) followed by extension-specific arguments.
