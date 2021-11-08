@@ -90,6 +90,43 @@ third
 The entries are case-sensitive (except for rules extending `spelling`, as
 mentioned above) and may also be regular expressions.
 
+## Case sensitivity
+
+An important factor in successfully implementing a custom `Vocab` is
+understanding how Vale handles case sensitivity.
+
+While most spell-checking tools ignore case altogether, Vale's `Vocab` files
+are case-aware by default. This means that, for example, a vocabulary
+consisting of
+
+```text
+MongoDB
+```
+
+will enforce the *exact* use of "MongoDB": "mongoDB," "MongoDb," etc., will all
+result in errors. There are two ways around this.
+
+First, you can indicate that a given entry should be case-insensitive by
+providing an appropriate regular expression:
+
+```text
+(?i)MongoDB
+[Oo]bservability
+```
+
+The entry, `(?i)MongoDB`, marks the entire pattern as case-insensitive while
+the second, `[Oo]bservability`, provides two acceptable options.
+
+Second, you can disable `Vale.Terms` and just use `Vale.Spelling`:
+
+```ini
+BasedOnStyles = Vale
+
+Vale.Terms = NO
+```
+
+This will provide a more traditional spell-checking experience.
+
 ## Relation to ignore files
 
 The functionality of vocabularies is similar to the existing concept of
