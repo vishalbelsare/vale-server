@@ -1,0 +1,2094 @@
+{
+  "test.md": [
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 8,
+      "Link": "",
+      "Message": "Did you really mean 'transpilers'?",
+      "Severity": "error",
+      "Span": [
+        332,
+        342
+      ],
+      "Match": "transpilers"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 8,
+      "Link": "",
+      "Message": "Did you really mean 'transpiler'?",
+      "Severity": "error",
+      "Span": [
+        528,
+        537
+      ],
+      "Match": "transpiler"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 136,
+      "Link": "",
+      "Message": "Did you really mean 'footguns'?",
+      "Severity": "error",
+      "Span": [
+        126,
+        133
+      ],
+      "Match": "footguns"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 158,
+      "Link": "",
+      "Message": "Did you really mean 'redeclares'?",
+      "Severity": "error",
+      "Span": [
+        92,
+        101
+      ],
+      "Match": "redeclares"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 220,
+      "Link": "",
+      "Message": "Did you really mean 'optimizable'?",
+      "Severity": "error",
+      "Span": [
+        63,
+        73
+      ],
+      "Match": "optimizable"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 283,
+      "Link": "",
+      "Message": "Did you really mean 'iterable'?",
+      "Severity": "error",
+      "Span": [
+        57,
+        64
+      ],
+      "Match": "iterable"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 386,
+      "Link": "",
+      "Message": "Did you really mean 'falsy'?",
+      "Severity": "error",
+      "Span": [
+        191,
+        195
+      ],
+      "Match": "falsy"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 392,
+      "Link": "",
+      "Message": "Did you really mean 'falsy'?",
+      "Severity": "error",
+      "Span": [
+        25,
+        29
+      ],
+      "Match": "falsy"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 428,
+      "Link": "",
+      "Message": "Did you really mean 'righthand'?",
+      "Severity": "error",
+      "Span": [
+        87,
+        95
+      ],
+      "Match": "righthand"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 534,
+      "Link": "",
+      "Message": "Did you really mean 'Destructuring'?",
+      "Severity": "error",
+      "Span": [
+        4,
+        16
+      ],
+      "Match": "Destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 536,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        48,
+        60
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 570,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        157,
+        169
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 570,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        193,
+        205
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 570,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        220,
+        232
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 580,
+      "Link": "",
+      "Message": "Did you really mean 'righthand'?",
+      "Severity": "error",
+      "Span": [
+        70,
+        78
+      ],
+      "Match": "righthand"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 582,
+      "Link": "",
+      "Message": "Did you really mean 'Destructuring'?",
+      "Severity": "error",
+      "Span": [
+        1,
+        13
+      ],
+      "Match": "Destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 582,
+      "Link": "",
+      "Message": "Did you really mean 'lefthand'?",
+      "Severity": "error",
+      "Span": [
+        74,
+        81
+      ],
+      "Match": "lefthand"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 582,
+      "Link": "",
+      "Message": "Did you really mean 'righthand'?",
+      "Severity": "error",
+      "Span": [
+        164,
+        172
+      ],
+      "Match": "righthand"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 609,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        93,
+        105
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 621,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        30,
+        42
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 621,
+      "Link": "",
+      "Message": "Did you really mean 'lefthand'?",
+      "Severity": "error",
+      "Span": [
+        125,
+        132
+      ],
+      "Match": "lefthand"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 629,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        245,
+        257
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 648,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        79,
+        91
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 652,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        20,
+        32
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 652,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        125,
+        137
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 666,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        53,
+        65
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 668,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        26,
+        38
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 668,
+      "Link": "",
+      "Message": "Did you really mean 'declarator'?",
+      "Severity": "error",
+      "Span": [
+        98,
+        107
+      ],
+      "Match": "declarator"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 668,
+      "Link": "",
+      "Message": "Did you really mean 'lefthand'?",
+      "Severity": "error",
+      "Span": [
+        209,
+        216
+      ],
+      "Match": "lefthand"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 682,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        55,
+        67
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 693,
+      "Link": "",
+      "Message": "Did you really mean 'destructure'?",
+      "Severity": "error",
+      "Span": [
+        87,
+        97
+      ],
+      "Match": "destructure"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 749,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        301,
+        313
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 753,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        12,
+        24
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 762,
+      "Link": "",
+      "Message": "Did you really mean 'destructure'?",
+      "Severity": "error",
+      "Span": [
+        30,
+        40
+      ],
+      "Match": "destructure"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 781,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        25,
+        37
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 781,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        67,
+        79
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 781,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        202,
+        214
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 797,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        28,
+        40
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 799,
+      "Link": "",
+      "Message": "Did you really mean 'Destructuring'?",
+      "Severity": "error",
+      "Span": [
+        6,
+        18
+      ],
+      "Match": "Destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 801,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        48,
+        60
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 801,
+      "Link": "",
+      "Message": "Did you really mean 'righthand'?",
+      "Severity": "error",
+      "Span": [
+        99,
+        107
+      ],
+      "Match": "righthand"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 813,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        135,
+        147
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 825,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        77,
+        89
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 841,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        17,
+        29
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 841,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        53,
+        65
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 852,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        82,
+        94
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 866,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        103,
+        115
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 875,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        134,
+        146
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 890,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        15,
+        27
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 910,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        134,
+        146
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 927,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        20,
+        32
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 929,
+      "Link": "",
+      "Message": "Did you really mean 'Destructuring'?",
+      "Severity": "error",
+      "Span": [
+        12,
+        24
+      ],
+      "Match": "Destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 931,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        22,
+        34
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 931,
+      "Link": "",
+      "Message": "Did you really mean 'destructure'?",
+      "Severity": "error",
+      "Span": [
+        75,
+        85
+      ],
+      "Match": "destructure"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 944,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        8,
+        20
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 944,
+      "Link": "",
+      "Message": "Did you really mean 'namespaces'?",
+      "Severity": "error",
+      "Span": [
+        64,
+        73
+      ],
+      "Match": "namespaces"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 959,
+      "Link": "",
+      "Message": "Did you really mean 'Destructuring'?",
+      "Severity": "error",
+      "Span": [
+        5,
+        17
+      ],
+      "Match": "Destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 971,
+      "Link": "",
+      "Message": "Did you really mean 'destructured'?",
+      "Severity": "error",
+      "Span": [
+        227,
+        238
+      ],
+      "Match": "destructured"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 973,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        16,
+        28
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 985,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        8,
+        20
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 997,
+      "Link": "",
+      "Message": "Did you really mean 'destructured'?",
+      "Severity": "error",
+      "Span": [
+        139,
+        150
+      ],
+      "Match": "destructured"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 999,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        55,
+        67
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 999,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        104,
+        116
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 999,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        136,
+        148
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 999,
+      "Link": "",
+      "Message": "Did you really mean 'Destructuring'?",
+      "Severity": "error",
+      "Span": [
+        177,
+        189
+      ],
+      "Match": "Destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1026,
+      "Link": "",
+      "Message": "Did you really mean 'Destructuring'?",
+      "Severity": "error",
+      "Span": [
+        6,
+        18
+      ],
+      "Match": "Destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1028,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        111,
+        123
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1048,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        119,
+        131
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1050,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        131,
+        143
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1054,
+      "Link": "",
+      "Message": "Did you really mean 'destructured'?",
+      "Severity": "error",
+      "Span": [
+        238,
+        249
+      ],
+      "Match": "destructured"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1077,
+      "Link": "",
+      "Message": "Did you really mean 'Destructured'?",
+      "Severity": "error",
+      "Span": [
+        23,
+        34
+      ],
+      "Match": "Destructured"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1079,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        146,
+        158
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1133,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        32,
+        44
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1153,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        63,
+        75
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1153,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        200,
+        212
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1153,
+      "Link": "",
+      "Message": "Did you really mean 'destructured'?",
+      "Severity": "error",
+      "Span": [
+        299,
+        310
+      ],
+      "Match": "destructured"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1157,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        83,
+        95
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1157,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        212,
+        224
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1159,
+      "Link": "",
+      "Message": "Did you really mean 'destructure'?",
+      "Severity": "error",
+      "Span": [
+        13,
+        23
+      ],
+      "Match": "destructure"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1189,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        140,
+        152
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1330,
+      "Link": "",
+      "Message": "Did you really mean 'hacky'?",
+      "Severity": "error",
+      "Span": [
+        174,
+        178
+      ],
+      "Match": "hacky"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1359,
+      "Link": "",
+      "Message": "Did you really mean 'untrustable'?",
+      "Severity": "error",
+      "Span": [
+        258,
+        268
+      ],
+      "Match": "untrustable"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1407,
+      "Link": "",
+      "Message": "Did you really mean 'transpilers'?",
+      "Severity": "error",
+      "Span": [
+        121,
+        131
+      ],
+      "Match": "transpilers"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1430,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        191,
+        203
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1558,
+      "Link": "",
+      "Message": "Did you really mean 'renderable'?",
+      "Severity": "error",
+      "Span": [
+        54,
+        63
+      ],
+      "Match": "renderable"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1560,
+      "Link": "",
+      "Message": "Did you really mean 'interpoliterals'?",
+      "Severity": "error",
+      "Span": [
+        107,
+        121
+      ],
+      "Match": "interpoliterals"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1638,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        159,
+        171
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1842,
+      "Link": "",
+      "Message": "Did you really mean 'destructuring'?",
+      "Severity": "error",
+      "Span": [
+        122,
+        134
+      ],
+      "Match": "destructuring"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1860,
+      "Link": "",
+      "Message": "Did you really mean 'multistatement'?",
+      "Severity": "error",
+      "Span": [
+        149,
+        162
+      ],
+      "Match": "multistatement"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1932,
+      "Link": "",
+      "Message": "Did you really mean 'prinicple'?",
+      "Severity": "error",
+      "Span": [
+        179,
+        187
+      ],
+      "Match": "prinicple"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1963,
+      "Link": "",
+      "Message": "Did you really mean 'multistatement'?",
+      "Severity": "error",
+      "Span": [
+        63,
+        76
+      ],
+      "Match": "multistatement"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1979,
+      "Link": "",
+      "Message": "Did you really mean 'iterable'?",
+      "Severity": "error",
+      "Span": [
+        52,
+        59
+      ],
+      "Match": "iterable"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1979,
+      "Link": "",
+      "Message": "Did you really mean 'iterable'?",
+      "Severity": "error",
+      "Span": [
+        185,
+        192
+      ],
+      "Match": "iterable"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 1979,
+      "Link": "",
+      "Message": "Did you really mean 'iterable'?",
+      "Severity": "error",
+      "Span": [
+        198,
+        205
+      ],
+      "Match": "iterable"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2026,
+      "Link": "",
+      "Message": "Did you really mean 'iterable'?",
+      "Severity": "error",
+      "Span": [
+        47,
+        54
+      ],
+      "Match": "iterable"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2028,
+      "Link": "",
+      "Message": "Did you really mean 'iterables'?",
+      "Severity": "error",
+      "Span": [
+        60,
+        68
+      ],
+      "Match": "iterables"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2035,
+      "Link": "",
+      "Message": "Did you really mean 'reasonings'?",
+      "Severity": "error",
+      "Span": [
+        219,
+        228
+      ],
+      "Match": "reasonings"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2046,
+      "Link": "",
+      "Message": "Did you really mean 'iterable'?",
+      "Severity": "error",
+      "Span": [
+        110,
+        117
+      ],
+      "Match": "iterable"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2066,
+      "Link": "",
+      "Message": "Did you really mean 'iterables'?",
+      "Severity": "error",
+      "Span": [
+        70,
+        78
+      ],
+      "Match": "iterables"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2076,
+      "Link": "",
+      "Message": "Did you really mean 'multibyte'?",
+      "Severity": "error",
+      "Span": [
+        305,
+        313
+      ],
+      "Match": "multibyte"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2105,
+      "Link": "",
+      "Message": "Did you really mean 'Bynens'?",
+      "Severity": "error",
+      "Span": [
+        109,
+        114
+      ],
+      "Match": "Bynens"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2278,
+      "Link": "",
+      "Message": "Did you really mean 'multiline'?",
+      "Severity": "error",
+      "Span": [
+        75,
+        83
+      ],
+      "Match": "multiline"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2326,
+      "Link": "",
+      "Message": "Did you really mean 'facto'?",
+      "Severity": "error",
+      "Span": [
+        163,
+        167
+      ],
+      "Match": "facto"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2383,
+      "Link": "",
+      "Message": "Did you really mean 'Bynens'?",
+      "Severity": "error",
+      "Span": [
+        238,
+        243
+      ],
+      "Match": "Bynens"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2606,
+      "Link": "",
+      "Message": "Did you really mean 'Bynens'?",
+      "Severity": "error",
+      "Span": [
+        19,
+        24
+      ],
+      "Match": "Bynens"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2628,
+      "Link": "",
+      "Message": "Did you really mean 'stringification'?",
+      "Severity": "error",
+      "Span": [
+        54,
+        68
+      ],
+      "Match": "stringification"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2694,
+      "Link": "",
+      "Message": "Did you really mean 'metaprogramming'?",
+      "Severity": "error",
+      "Span": [
+        160,
+        174
+      ],
+      "Match": "metaprogramming"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2728,
+      "Link": "",
+      "Message": "Did you really mean 'namespacing'?",
+      "Severity": "error",
+      "Span": [
+        157,
+        167
+      ],
+      "Match": "namespacing"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2758,
+      "Link": "",
+      "Message": "Did you really mean 'metaprogramming'?",
+      "Severity": "error",
+      "Span": [
+        270,
+        284
+      ],
+      "Match": "metaprogramming"
+    },
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 2818,
+      "Link": "",
+      "Message": "Did you really mean 'Destructuring'?",
+      "Severity": "error",
+      "Span": [
+        194,
+        206
+      ],
+      "Match": "Destructuring"
+    }
+  ]
+}

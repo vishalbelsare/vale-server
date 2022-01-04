@@ -1,0 +1,21 @@
+{
+  "Action": {
+    "Name": "edit",
+    "Params": [
+      "replace",
+      "[-–]",
+      "to"
+    ]
+  },
+  "Check": "Microsoft.RangeTime",
+  "Description": "",
+  "Line": 4,
+  "Link": "https://docs.microsoft.com/en-us/style-guide/numbers",
+  "Match": "AM - 2:00 PM",
+  "Message": "Use 'to' instead of a dash in 'AM - 2:00 PM'.",
+  "Severity": "error",
+  "Span": [
+    48,
+    59
+  ]
+}

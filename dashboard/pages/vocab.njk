@@ -1,0 +1,102 @@
+{% extends "base.njk" %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.0.7/css/tabulator.min.css" integrity="sha512-icPIPd8ECoTVfmBnGAo0u87EV4CFh9hk3oef4x3pitYxXOZg4NAlPv/5rm/BzgI7eeazl795eeSYbCmGqhp6mA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.0.7/css/tabulator_bootstrap4.min.css" integrity="sha512-5Y1k4NIwpzVq0J41SsoDme3CfPnsYT0b77ZeXvQu5FSpASxnPcm3whr3kNnxk1Jyb2Ic+yYuro2CTz2CRuA8xA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block body %}
+<div class="navbar breadcrumb-bar">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Vocab</li>
+        </ol>
+    </nav>
+</div>
+
+<div id="vocab-content">
+
+<div id="vocab-wrapper" data-bind="visible: hasAccess" class="container-fluid hide">
+    <div class="row justify-content-center">
+        <div class="col-lg-11 col-xl-10">
+            <div class="page-wrapper">
+                <form>
+                  <div class="row">
+                    <div class="col-8">
+                        <h1 class="mt-0">Vocab</h1>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group input-group-sm pt-1">
+                            <div class="input-group-addon input-group-button mr-1">
+                                <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-backdrop="static" data-target="#newVocabModal">New Vocab</button>
+                            </div>
+                            <select id="vocab" class="form-control" data-bind="options: vocab"></select>
+                        </div>
+                    </div>
+                  </div>
+                </form>
+                <div id="no-vocab" class="alert alert-warning alert-dismissible fade collapse" role="alert">
+                    <strong>No entries found.</strong> Please create a Vocab to edit the table below.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <p class="lead">
+                    Manage your use of words and phrases by populating the table below. See the <a href="https://errata-ai.github.io/vale-server/docs/ui#vocabularies">documentation</a> for more information.
+                </p>
+            </div>
+            <div id="table"></div>
+        </div>
+    </div>
+</div>
+<!-- page-content -->
+
+<div class="modal fade" id="newVocabModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form data-toggle="validator" id="form2" role="form">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="termName" class="control-label">Vocab name</label>
+                                <input type="text" class="form-control" id="vocabName" required>
+                                <p class="my-3">A new vocabulary will be created at <code>&lt;StylesPath&gt;/Vocab/&lt;name&gt;</code>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-arrow-left"></i> Back</button>
+                    <button id="new-vocab" type="submit" class="btn btn-primary float-right">Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="access-wrapper" data-bind="visible: !hasAccess()" class="main-container fullscreen hide">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-5 col-lg-6 col-md-7">
+        <div class="text-center">
+          <h1 class="display-1 text-primary">&#128274;</h1>
+          <p>
+            You don't have write access to <code data-bind="text: path"></code> (the current <code>StylesPath</code>). See the <a href="index.html">documentation</a> for more information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.0.7/js/tabulator.min.js" integrity="sha512-Xak2I6+wZChRIsrNus8RfDM3Li6RTk7oNceRwrYUGvLOFPFbiSd70GvtJnNJvtsohNQ3hyScX2F3GLQUlxqr0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/vocab.js"></script>
+<script src="js/table.js"></script>
+{% endblock %}

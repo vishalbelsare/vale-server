@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>dsa_pub.pem</file>
+        <file>img/logo.png</file>
+        <file>img/icon-theme-light.png</file>
+        <file>img/icon-theme-dark.png</file>
+        <file>img/logo-alt.png</file>
+        <file>img/logo-64.png</file>
+        <file>img/PrefsGeneral.png</file>
+        <file>img/PrefsAdvanced.png</file>
+        <file>img/PrefsVale.png</file>
+        <file>img/PrefsAddons.png</file>
+        <file>img/PrefsFolder.png</file>
+        <file>config/.vale.ini</file>
+        <file>config/server.properties</file>
+        <file>config/report.json</file>
+        <file>img/icon.png</file>
+    </qresource>
+</RCC>

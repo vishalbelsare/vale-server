@@ -1,0 +1,180 @@
+{% extends "base.njk" %}
+
+{% block css %}
+<link
+  href="https://pagecdn.io/lib/codemirror/5.56.0/codemirror.min.css"
+  rel="stylesheet"
+  crossorigin="anonymous"
+  integrity="sha256-Ez4TnBJ24JkU8Z622YHGxDaYrslkqNZ62ewvn08Skco="
+/>
+<link
+  href="https://pagecdn.io/lib/codemirror/5.56.0/addon/lint/lint.css"
+  rel="stylesheet"
+  crossorigin="anonymous"
+/>
+<link href="css/github.css" rel="stylesheet" />
+<link href="css/github-dark.css" rel="stylesheet" />
+
+<link href="css/studio.css" rel="stylesheet" />
+{% endblock %}
+
+{% block toolbar %}
+<!-- toolbar -->
+  <div id="toolbar" class="navbar pt-0">
+    <form class="form-inline">
+      <div
+        class="btn-group btn-group-sm"
+        role="group"
+        aria-label="Button group with nested dropdown"
+      >
+
+        <div class="btn-group mr-1">
+          <button type="button" id="run" class="btn btn-sm btn-success">Compile &#9658;</button>
+        </div>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-sm btn-secondary active">
+            <input type="radio" name="options" id="option1" checked /> View:
+            Plain
+          </label>
+          <label id="tags-view" class="btn btn-sm btn-secondary">
+            <input type="radio" name="options" id="option2" />
+            View: Tags
+          </label>
+        </div>
+
+      </div>
+    </form>
+
+    <form class="form-inline">
+      <button id="compile" type="button" class="btn btn-sm">
+        <i
+          class="fa fa-code fa-2x"
+          aria-hidden="true"
+          style="color: #586069"
+        ></i>
+      </button>
+      <button id="library" type="button" class="btn btn-sm" disabled>
+        <i
+          class="fa fa-users fa-2x"
+          aria-hidden="true"
+          style="color: #586069"
+        ></i>
+      </button>
+      <button
+        id="info"
+        type="button"
+        class="btn btn-sm"
+        data-toggle="modal"
+        data-target="#infoModal"
+        disabled
+      >
+        <i
+          class="fa fa-question-circle fa-2x"
+          aria-hidden="true"
+          style="color: #586069"
+        ></i>
+      </button>
+    </form>
+  </div>
+  <!-- /toolbar -->
+{% endblock %}
+
+{% block body %}
+<main class="body-wrapper">
+      <div class="content-wrapper">
+        <div class="editor-wrapper">
+          <div id="editor"></div>
+        </div>
+        <div class="help-wrapper">
+          <div id="results"></div>
+        </div>
+      </div>
+
+      <div id="log" class="log-wrapper">
+        <div class="log">
+          <div class="status">Syntax OK</div>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal fade" id="infoModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">About Vale Studio</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Vale Studio is a web service for creating and sharing
+              <a href="https://github.com/errata-ai/vale" target="_blank"
+                >Vale-compatible</a
+              >
+              rules. The goal is to make the process more straightforward by
+              providing a more detailed look at how Vale handles markup and
+              prose internally.
+            </p>
+            <p>The service is currently running Vale <code>v2.11.0</code>.</p>
+            <h5>Limitations &amp; Restrictions</h5>
+            <ul>
+              <li>
+                The markup editor (right-hand side) is limited to
+                <b>500 characters</b>. This should be enough to test snippets of
+                text without applying too much stress to the underlying server
+                infrastructure.
+              </li>
+              <li>
+                Currently only <b>CommonMark-flavored Markdown</b> content is
+                supported. Support for other formats will be added in later
+                releases.
+              </li>
+            </ul>
+            <h5>Bug Reporting</h5>
+            <p>
+              If you feel that you've discovered a bug (with Vale or Vale
+              Studio), please
+              <a
+                href="https://github.com/errata-ai/vale-studio/issues/new"
+                target="_blank"
+                >open an issue</a
+              >
+              at the Vale Studio repository.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+ <script
+  src="https://pagecdn.io/lib/codemirror/5.56.0/codemirror.min.js"
+  crossorigin="anonymous"
+  integrity="sha256-I8LA808v7gUOnmv3NkYAc85RADF8tLqo7hefb5HmhGY="
+></script>
+<script
+  src="https://pagecdn.io/lib/codemirror/5.56.0/mode/yaml/yaml.min.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://pagecdn.io/lib/codemirror/5.56.0/mode/markdown/markdown.min.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://pagecdn.io/lib/codemirror/5.56.0/addon/lint/lint.min.js"
+  crossorigin="anonymous"
+></script>
+
+<script src="js/api.js"></script>
+<script src="js/console.js"></script>
+<script src="js/config.js"></script>
+<script src="js/editor.js"></script>
+{% endblock %}

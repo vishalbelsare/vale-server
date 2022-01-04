@@ -1,0 +1,67 @@
+.panel-view {
+  max-height: 300px;
+}
+
+.inner {
+  height: 300px;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #fff;
+}
+
+/* horizontal panel*/
+
+.panel-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid silver;
+  overflow: hidden;
+
+  /* avoid browser level touch actions */
+  xtouch-action: none;
+}
+
+.panel-left {
+  flex: 0 0 auto;
+  /* only manually resize */
+  width: 50%;
+  min-height: 200px;
+  min-width: 150px;
+  white-space: nowrap;
+  background: #838383;
+  color: white;
+}
+
+.splitter {
+  flex: 0 0 auto;
+  width: 18px;
+  background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png)
+    center center no-repeat #6c757d;
+  min-height: 200px;
+  cursor: col-resize;
+}
+
+.panel-right {
+  flex: 1 1 auto;
+  /* resizable */
+  width: 100%;
+  min-height: 200px;
+  min-width: 200px;
+  background: #eee;
+}
+
+#console {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#editor,
+#preview {
+  height: 400px;
+}
+
+.alert-marker {
+  position: absolute;
+  background: url(http://i.imgur.com/HlfA2is.gif) bottom repeat-x;
+  z-index: 20;
+}

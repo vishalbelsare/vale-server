@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Dashboard</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!-- <script src="https://kit.fontawesome.com/33702ee793.js" crossorigin="anonymous"></script> -->
+
+    <link
+      href="https://pagecdn.io/lib/codemirror/5.56.0/codemirror.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+      integrity="sha256-Ez4TnBJ24JkU8Z622YHGxDaYrslkqNZ62ewvn08Skco="
+    />
+    <link
+      href="https://pagecdn.io/lib/codemirror/5.56.0/addon/lint/lint.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link href="css/github.css" rel="stylesheet" />
+    <link href="css/github-dark.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link href="css/dark-mode.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    {% block css %} {% endblock %}
+
+    <link href="css/final.css" rel="stylesheet" />
+  </head>
+
+  <body>
+   <div id="header">
+  <!-- navbar -->
+  <nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-white">
+    <a class="navbar-brand" href="/">
+      <img
+        src="/img/logo.svg"
+        height="36"
+        class="d-inline-block align-top mt-1"
+        alt=""
+      />
+      Dashboard <span id="project" class="badge badge-secondary" data-bind="text: project"></span>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-th-list" aria-hidden="true"></i> Modules
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="studio.html"><i class="fa fa-code" aria-hidden="true"></i> Studio</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a
+            class="nav-link"
+            href="https://github.com/errata-ai"
+            ><i class="fa fa-github" aria-hidden="true"></i> GitHub</a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://opencollective.com/vale"
+            ><i class="fa fa-heart" aria-hidden="true"></i> Support</a
+          >
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div class="custom-control custom-switch">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="darkSwitch"
+            />
+            <label class="custom-control-label" for="darkSwitch"
+              >Dark Mode</label
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /navbar -->
+
+  {% block toolbar %} {% endblock %}
+</div>
+
+   {% block body %} {% endblock %}
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+      integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js" integrity="sha512-vs7+jbztHoMto5Yd/yinM4/y2DOkPLt0fATcN+j+G4ANY2z4faIzZIOMkpBmWdcxt+596FemCh9M18NUJTZwvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/project.js"></script>
+
+    {% block js %} {% endblock %}
+  </body>
+</html>

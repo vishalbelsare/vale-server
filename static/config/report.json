@@ -1,0 +1,14 @@
+{
+  "Errors": {
+    "count": 5,
+    "scheme": "sliding"
+  },
+  "Suggestions": {
+    "count": 20,
+    "scheme": "sliding"
+  },
+  "Warnings": {
+    "count": 10,
+    "scheme": "sliding"
+  }
+}

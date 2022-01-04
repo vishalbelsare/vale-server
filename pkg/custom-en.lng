@@ -1,0 +1,13 @@
+# See https://clients.bitrock.com/installbuilder/docs/en.lng for all
+# available options.
+
+Installer.Welcome.Title=Setup - %1$s Server
+Installer.Welcome.Text=Welcome to the %1$s Server setup wizard.
+
+Installer.Parameter.installdir.explanation=Please specify the directory where ${product_fullname} Server will be installed.
+
+Installer.Ready.Text1=Setup is now ready to begin installing %1$s Server on your computer.\n\nIf an older version of Vale Server is already running, it will be stopped and the newly-installed version will be started upon completion of the installation process.
+
+Installer.Installing.Text=Please wait while Setup installs %1$s Server on your computer.
+
+Installer.Installation.Finished.Text=Setup has finished installing %1$s Server on your computer.\n\nVale Server v${product_version} is now running.

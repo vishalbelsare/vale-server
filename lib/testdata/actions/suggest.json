@@ -1,0 +1,19 @@
+{
+  "Action": {
+    "Name": "suggest",
+    "Params": [
+      "spellings"
+    ]
+  },
+  "Check": "Vale.Spelling",
+  "Description": "",
+  "Line": 8,
+  "Link": "",
+  "Message": "Did you really mean 'transpilers'?",
+  "Severity": "error",
+  "Span": [
+    332,
+    342
+  ],
+  "Match": "transpilers"
+}

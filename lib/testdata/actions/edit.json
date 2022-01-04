@@ -1,0 +1,21 @@
+{
+  "Action": {
+    "Name": "edit",
+    "Params": [
+      "replace",
+      "-",
+      "–"
+    ]
+  },
+  "Check": "Microsoft.RangeFormat",
+  "Description": "",
+  "Line": 1348,
+  "Link": "https://docs.microsoft.com/en-us/style-guide/numbers",
+  "Message": "Use an en dash in a range of numbers.",
+  "Severity": "error",
+  "Span": [
+    82,
+    84
+  ],
+  "Match": "1-2"
+}

@@ -1,0 +1,51 @@
+{% extends "base.njk" %}
+
+{% block css %}
+<link href="css/index.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<main class="body-wrapper">
+    <div class="container-fluid">
+
+        <div class="row py-4 py-lg-5 justify-content-center">
+            <div class="col-8">
+                <section>
+                    <div class="d-flex">
+                        <div>
+                            <span id="vbadge" class="badge badge-success" data-bind="text: version"></span>
+                        </div>
+                    </div>
+                    <h1 class="display-4 mb-3">Vale Dashboard</h1>
+                    <p class="lead">
+                        The Vale Dashboard provides a browser-based interface for managing your Vale-related configuration files and assets.
+                    </p>
+                    <div class="d-flex">
+                        <a href="https://headwayapp.co/errata-ai-release-notes" target_="blank">Release Notes</a>&nbsp;|&nbsp;
+                        <a href="https://docs.errata.ai/vale-server/install" target_="blank">Documentation</a>&nbsp;|&nbsp;
+                        <a href="https://docs.errata.ai/api/index.html" target_="blank">API Explorer</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div id="env" class="card">
+                  <div class="card-header">
+                    System Environment
+                  </div>
+                  <table id="env-table" class="table table-striped">
+                  <tbody></tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+{% endblock %}
+
+{% block js %}
+<script src="js/index.js"></script>
+{% endblock %}

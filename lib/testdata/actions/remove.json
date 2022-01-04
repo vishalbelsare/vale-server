@@ -1,0 +1,17 @@
+{
+  "Action": {
+    "Name": "remove",
+    "Params": null
+  },
+  "Check": "Microsoft.Adverbs",
+  "Description": "",
+  "Line": 4,
+  "Link": "https://docs.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences",
+  "Message": "Consider removing 'fairly'.",
+  "Severity": "warning",
+  "Span": [
+    150,
+    155
+  ],
+  "Match": "fairly"
+}

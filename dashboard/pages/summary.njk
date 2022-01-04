@@ -1,0 +1,131 @@
+{% extends "base.njk" %}
+
+{% block css %}
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
+{% endblock %}
+
+{% block body %}
+<div class="navbar breadcrumb-bar">
+   <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">Home</a>
+         </li>
+         <li class="breadcrumb-item active" aria-current="page">Summary</li>
+      </ol>
+   </nav>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-lg-11 col-xl-10">
+        <div class="page-wrapper">
+          <form>
+            <div class="row">
+              <div class="col-8">
+                  <h1 class="mt-0">Summary</h1>
+              </div>
+              <div class="col">
+                  <button type="button" class="btn btn-round ml-auto float-end" data-bs-toggle="modal" data-bs-target="#task-add-modal">
+                    <i class="bi bi-gear-fill" style="font-size: 1.5rem;"></i>
+                  </button>
+              </div>
+            </div>
+          </form>
+          <p class="lead">Generate a summary report for a local directory.</p>
+          <div class="input-group mb-3">
+              <input id="source" type="text" class="form-control" placeholder="Enter a local directory path" aria-label="Text input with segmented dropdown button">
+              <div class="input-group-append">
+                <button id="generate" type="button" class="btn btn-secondary">Generate Report</button>
+                <!--<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>-->
+              </div>
+            </div>
+          <div>
+            <div id="summary-error" class="alert alert-warning alert-dismissible fade collapse" role="alert">
+              <strong>Process timed out.</strong> Try generating a report for a subdirectory instead of your entire project.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div id="breakdown" class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center hide">
+        <div class="col-lg-11 col-xl-10">
+            <div class="page-wrapper">
+                <ul class="nav nav-tabs nav-fill" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#files" role="tab" aria-controls="files" aria-selected="true">Files</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#activity" role="tab" aria-controls="activity" aria-selected="false">Styles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tasks" role="tab" aria-controls="tasks" aria-selected="false">Rules</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-11 col-xl-10">
+            <div class="page-wrapper">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="files" role="tabpanel">
+                    <div id="toolbar" class="select"></div>
+                    <table id="table" data-toolbar="#toolbar" data-show-export="true" data-search="true" data-custom-search="customSearch" data-show-columns="true" data-minimum-count-columns="2" data-show-pagination-switch="false" data-pagination="true" data-page-list="[10, 25, 50, 100, ALL]" data-detail-view="true" data-detail-formatter="detailFormatter"></table>
+                  </div>
+                  <div class="tab-pane fade" id="tasks" role="tabpanel">
+                    <p>het</p>
+                  </div>
+                  <div class="tab-pane fade" id="activity" role="tabpanel">
+                    <p>hey</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form class="modal fade" id="task-add-modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Report Configuration</h5>
+        <button type="button" class="close btn btn-round" data-bs-dismiss="modal" aria-label="Close">
+          <i class="bi bi-x-circle-fill"></i>
+        </button>
+      </div>
+      <div id="json-editor" class="modal-body">
+
+      </div>
+      <!--end of modal body-->
+      <div class="modal-footer">
+        <button id="save-json" role="button" class="btn btn-primary" type="submit">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+{% endblock %}
+
+{% block js %}
+<script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+<script src="js/summary.js"></script>
+</script>
+{% endblock %}

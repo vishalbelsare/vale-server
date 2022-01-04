@@ -1,0 +1,19 @@
+{
+  "Action": {
+    "Name": "replace",
+    "Params": [
+      "some"
+    ]
+  },
+  "Check": "Microsoft.Wordiness",
+  "Description": "",
+  "Line": 8,
+  "Link": "https://docs.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences",
+  "Message": "Consider using 'some' instead of 'some of the'.",
+  "Severity": "warning",
+  "Span": [
+    39,
+    49
+  ],
+  "Match": "some of the"
+}

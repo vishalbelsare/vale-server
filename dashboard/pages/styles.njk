@@ -1,0 +1,102 @@
+{% extends "base.njk" %}
+
+{% block css %}
+<link href="css/loader.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="navbar breadcrumb-bar">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Styles</li>
+        </ol>
+    </nav>
+</div>
+
+<div id="styles-content">
+
+<div id="styles-wrapper" data-bind="visible: hasAccess" class="container-fluid hide">
+    <div class="row justify-content-center">
+        <div class="col-lg-11 col-xl-10">
+            <div class="page-wrapper">
+                <h1 class="mt-0">Styles</h1>
+                <p class="lead">
+                    Browse, install, and update your styles below.
+                </p>
+            </div>
+            <div id="styles">
+                <div class="input-group mb-3 mt-3">
+                    <input id="style-filter" type="text" class="form-control search" placeholder="Search styles" aria-label="Search styles" aria-describedby="basic-addon2" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
+                    <div class="input-group-append btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" value="All" data-bind="bsChecked: selectedCategory" checked> View All
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2" value="Installed" data-bind="bsChecked: selectedCategory"> Installed
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option3" value="Outdated" data-bind="bsChecked: selectedCategory"> Outdated
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ko if: false -->
+                <div class="loader"></div>
+                <!-- /ko -->
+
+                <div class="alert alert-primary alert-dismissible hide" role="alert" id="error-alert">
+                    <h4 class="alert-heading">Installation error!</h4>
+                    <p id="error"></p>
+                    <hr>
+                    <p class="mb-0" id="support"></p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div data-bind="css: { hide: false }" class="hide">
+                    <div class="list-group row list" data-bind="foreach: filteredStyles">
+                        <div class="col-12" data-bind="css: { classOne: installed, classTwo: has_update }">
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 title"><a data-bind="attr: { href: homepage }, text: name"></a></h5>
+                                    <h5 class="mb-1">
+                                        <span data-bind="visible: has_update && installed"><button type="button" class="badge bg-warning" data-bind="click: $parent.installStyle" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">Update</button></span>
+                                        <span data-bind="visible: !installed"><button type="button" class="badge bg-success" data-bind="click: $parent.installStyle" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">Install</button></span>
+                                        <span class="badge bg-info" data-bind="visible: !has_update && installed">Installed</span>
+                                    </h5>
+                                </div>
+                                <p class="mb-1 description" data-bind="html: description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="access-wrapper" data-bind="visible: !hasAccess()" class="main-container fullscreen hide">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-5 col-lg-6 col-md-7">
+        <div class="text-center">
+          <h1 class="display-1 text-primary">&#128274;</h1>
+          <p>
+            You don't have write access to <code data-bind="text: path"></code> (the current <code>StylesPath</code>). See the <a href="index.html">documentation</a> for more information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.2/list.min.js" integrity="sha512-MT5YyrGWqMGkIbwkVUZEWGrRDjlNx8loukEdFyzLo4s8INKVxnDQy2eFcpmnWGrFwJ+X8mRTQOJpWCayXz7+Og==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/styles.js"></script>
+{% endblock %}

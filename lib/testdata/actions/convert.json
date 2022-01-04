@@ -1,0 +1,14 @@
+{
+    "Link": "https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/a/auto",
+    "Span": [1, 12],
+    "Description": "",
+    "Action": {
+        "Params": ["simple"],
+        "Name": "convert"
+    },
+    "Message": "In general, don't hyphenate 'auto-sorting'.",
+    "Line": 7,
+    "Check": "Microsoft.Auto",
+    "Match": "auto-sorting",
+    "Severity": "error"
+}

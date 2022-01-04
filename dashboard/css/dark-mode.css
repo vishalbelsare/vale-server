@@ -1,0 +1,30 @@
+[data-theme="dark"] .body-wrapper {
+    background-color: #182431 !important;
+    color: #BDCEE1 !important;
+}
+
+[data-theme="dark"] .custom-switch {
+    color: #eee !important;
+}
+
+[data-theme="dark"] #log,
+[data-theme="dark"] #toolbar {
+    background-color: #182431 !important;
+}
+
+[data-theme="dark"] .content-wrapper {
+    border: 1px solid #101010;
+}
+
+[data-theme="dark"] .editor-wrapper {
+    border-right: 1px solid #101010 !important;
+}
+
+[data-theme="dark"] .log .status::before {
+    color: #eee;
+}
+
+[data-theme="dark"] .CodeMirror-lint-mark-error {
+    /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJDw4cOCW1/KIAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAHElEQVQI12NggIL/DAz/GdA5/xkY/qPKMDAwAADLZwf5rvm+LQAAAABJRU5ErkJggg=="); */
+    background: rgba(244, 77, 97, 0.4) !important;
+}

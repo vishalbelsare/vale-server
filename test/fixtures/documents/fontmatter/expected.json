@@ -1,0 +1,23 @@
+{
+  "test.md": [
+    {
+      "Action": {
+        "Name": "suggest",
+        "Params": [
+          "spellings"
+        ]
+      },
+      "Check": "Vale.Spelling",
+      "Description": "",
+      "Line": 48,
+      "Link": "",
+      "Match": "Uninstallation",
+      "Message": "Did you really mean 'Uninstallation'?",
+      "Severity": "error",
+      "Span": [
+        4,
+        17
+      ]
+    }
+  ]
+}
