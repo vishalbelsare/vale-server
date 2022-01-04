@@ -9,13 +9,13 @@ Vale Server is a native desktop application written in C++. It's available for *
     </tr>
     <tr>
         <td width="50%">
-            <a href="https://user-images.githubusercontent.com/8785025/60844501-541b1600-a18e-11e9-91a1-c19d6a5c6c66.png">
-                <img src="https://user-images.githubusercontent.com/8785025/60844501-541b1600-a18e-11e9-91a1-c19d6a5c6c66.png" width="100%">
+            <a href="https://user-images.githubusercontent.com/8785025/148132613-1cc63e35-33fc-43da-a292-dec568bbe24a.png">
+                <img src="https://user-images.githubusercontent.com/8785025/148132613-1cc63e35-33fc-43da-a292-dec568bbe24a.png" width="100%">
             </a>
         </td>
         <td width="50%">
-            <a href="https://user-images.githubusercontent.com/8785025/56324443-b3cfcb00-6123-11e9-9723-6088230b2943.png">
-                <img src="https://user-images.githubusercontent.com/8785025/56324443-b3cfcb00-6123-11e9-9723-6088230b2943.png" width="100%">
+            <a href="https://user-images.githubusercontent.com/8785025/148133098-76a29a15-8f35-4390-9bd0-7d2621b5b5dc.png">
+                <img src="https://user-images.githubusercontent.com/8785025/148133098-76a29a15-8f35-4390-9bd0-7d2621b5b5dc.png" width="100%">
             </a>
         </td>
     </tr>
