@@ -23,6 +23,6 @@ Vale Server is a native desktop application written in C++. It's available for *
         <td width="50%">
           Vale Server comes with a powerful content management dashboard, allowing you to maintain high-quality and on-brand writing across all of your projects.
         </td>
-        <td width="50%">Vale Server directly integrates with many popular writing applications and text editors&mdash;including Google Docs, Sublime Text, Atom, and VS Code.</td>
+        <td width="50%">Vale Server directly integrates with many popular writing applications and text editors&mdash;including Google Docs, Google Chrome, and VS Code.</td>
     </tr>
 </table>
