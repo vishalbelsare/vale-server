@@ -2,16 +2,16 @@ import os
 import shutil
 
 DEPS = {
-    "C:\\Qt\\6.1.2\\mingw81_64\\bin": [
+    "C:\\Qt\\5.15.2\\mingw81_64\\bin": [
         "LIBWINPTHREAD-1.DLL",
         "LIBGCC_S_seh-1.DLL",
         "LIBSTDC++-6.DLL",
 
-        "Qt6Svg.dll",
-        "Qt6Gui.dll",
-        "Qt6Core.dll",
-        "Qt6Network.dll",
-        "Qt6Widgets.dll",
+        "Qt5Svg.dll",
+        "Qt5Gui.dll",
+        "Qt5Core.dll",
+        "Qt5Network.dll",
+        "Qt5Widgets.dll",
 
         "libGLESV2.dll",
         "libEGL.dll",
@@ -24,11 +24,8 @@ DEPS = {
 
         "WinSparkle.dll",
         "WinSparkle.lib",
-
-        "TurboActivate.dll",
-        "TurboActivate.lib"
     ],
-    "C:\\Users\\jdkato\\Desktop\\Git\\build-systray-Desktop_Qt_6_1_2_MinGW_64_bit-Release\\release": [
+    "C:\\Users\\jdkato\\Desktop\\Git\\build-vale-server-Desktop_Qt_5_15_2_MinGW_64_bit-Release\\release": [
         "styles",
         "platforms",
         #"bearer",
@@ -40,8 +37,7 @@ DEPS = {
 
         "Vale Server.exe",
         "dashboard",
-        "valelib.exe",
-        "vale.exe"
+        "valelib.exe"
     ]
 
 }
