@@ -1,5 +1,3 @@
-DMG=/usr/local/Cellar/node/17.0.1/bin/create-dmg
-
 all: build
 
 build:
@@ -27,6 +25,6 @@ build:
 	codesign --verify -vvvv "Vale Server.app"
 	spctl -a -vvvv "Vale Server.app"
 
-	${DMG} --overwrite "Vale Server.app"
+	create-dmg --overwrite "Vale Server.app"
 
 	xcrun altool --notarize-app -t osx -f "$(shell find *.dmg)" --primary-bundle-id="ai.errata.Vale-Server" -u "${MAC_DEV_E}" -p "${MAC_DEV_P}"
