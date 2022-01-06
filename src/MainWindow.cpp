@@ -106,7 +106,7 @@ bool checkForAppUpdate(bool unattended) {
   CocoaInitializer initializer;
 
   AutoUpdater *updater = new SparkleAutoUpdater(
-      "https://raw.githubusercontent.com/errata-ai/vale-server/master/pkg/"
+      "https://raw.githubusercontent.com/errata-ai/vale-server/master/pkg/oss/"
       "appcast.xml");
 
   if (updater) {
@@ -124,7 +124,7 @@ bool checkForAppUpdate(bool unattended) {
   return false;
 #elif defined(Q_OS_WIN)
   win_sparkle_set_appcast_url(
-      "https://raw.githubusercontent.com/errata-ai/vale-server/master/pkg/"
+      "https://raw.githubusercontent.com/errata-ai/vale-server/master/pkg/oss/"
       "win.xml");
   win_sparkle_set_app_details(
       L"errata.ai", L"Vale Server",
