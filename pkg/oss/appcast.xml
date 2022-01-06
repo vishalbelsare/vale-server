@@ -2,5 +2,11 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Vale Server</title>
+        <item>
+            <title>2.0.0</title>
+            <pubDate>Wed, 05 Jan 2022 16:43:46 -0800</pubDate>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/errata-ai/vale-server/releases/download/v2.0.0/Vale-Server-2.0.0-macos.dmg" sparkle:version="2.0.0" sparkle:shortVersionString="2.0.0" length="14938510" type="application/octet-stream" sparkle:edSignature="6MQnICPXXYb3EQt+eqn0/n62x2JftxvEQAACUqo6n8Q3z4b6b6urdNc2g8rbX/GkdhYbgfCwU+x3wIwQqM4sBA=="/>
+        </item>
     </channel>
 </rss>

@@ -9,9 +9,9 @@
     <key>CFBundleVersion</key>
     <string>${QMAKE_FULL_VERSION}</string>
     <key>SUPublicEDKey</key>
-    <string>lgaB5Oo170msBMtv+I61gyCMifESZg+fhlOW2jorWEY=</string>
+    <string>VVszBA0LTMZiTq617cemoHNZvujDN6icXAoA5SmT4yY=</string>
     <key>SUFeedURL</key>
-    <string>https://raw.githubusercontent.com/errata-ai/vale-server/master/appcast.xml</string>
+    <string>https://raw.githubusercontent.com/errata-ai/vale-server/master/pkg/oss/appcast.xml</string>
     <key>CFBundleShortVersionString</key>
     <string>${QMAKE_FULL_VERSION}</string>
     <key>CFBundleGetInfoString</key>
@@ -19,7 +19,7 @@
     <key>CFBundleIconFile</key>
     <string>app.icns</string>
     <key>CFBundleIdentifier</key>
-    <string>com.errata-ai.Vale-Server</string>
+    <string>ai.errata.Vale-Server</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleSignature</key>
