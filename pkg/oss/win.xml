@@ -3,5 +3,14 @@
   <channel>
     <title>Vale Server</title>
     <language>en</language>
+    <item>
+      <title>2.0.0</title>
+      <sparkle:releaseNotesLink>https://docs.errata.ai/changelog.html</sparkle:releaseNotesLink>
+      <pubDate>Wed, 05 Jan 2022 16:43:46 -0800</pubDate>
+      <enclosure url="https://github.com/errata-ai/vale-server/releases/download/v2.0.0/Vale-Server-2.0.0-windows.exe"
+                 sparkle:version="1.13.0"
+                 sparkle:dsaSignature="MEUCIAnZFmjez8y3H0oSU/FKsqI5+RybFzNy3uDOp6KtVXbpAiEA6IAK+2gSJK0xT/R2nEUzrR6zQBfbhm3YqeCILXyzuF4="
+                 type="application/octet-stream"/>
+    </item>
   </channel>
 </rss>
