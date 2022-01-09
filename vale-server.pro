@@ -33,7 +33,7 @@ DEFINES += APP_VERSION='\\"$${VERSION}\\"'
 DEFINES += QAPPLICATION_CLASS=QApplication
 
 FORMS += \
-    src/aboutdialog.ui
+    src/AboutDialog.ui
 
 QT += widgets
 QT -= opengl svg qml dbus
