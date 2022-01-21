@@ -26,3 +26,5 @@ Vale Server is a native desktop application written in C++. It's available for *
         <td width="50%">Vale Server directly integrates with many popular writing applications and text editors&mdash;including Google Docs, Google Chrome, and VS Code.</td>
     </tr>
 </table>
+
+To install Vale Server, see the [Releases](https://github.com/errata-ai/vale-server/releases) page.
